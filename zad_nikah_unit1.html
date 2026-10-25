@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سلسلة زاد الأزهري — الفقه الحنفي (٣ث) — كتاب النكاح: الوحدة الأولى (تعريف النكاح وحكمه وأركانه وشروط انعقاده)</title>
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-quote: #fffbeb;
+      --border-quote: #d97706;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #0f766e;
+      --primary-light: #0d9488;
+      --primary-bg: #ccfbf1;
+      --navy: #1e293b;
+      --gold: #d97706;
+      --gold-bg: #fef3c7;
+      --crimson: #b91c1c;
+      --crimson-bg: #fee2e2;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --font-scale: 1;
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-alt: #334155;
+      --bg-quote: #272014;
+      --border-quote: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --primary: #14b8a6;
+      --primary-light: #2dd4bf;
+      --primary-bg: rgba(20, 184, 166, 0.18);
+      --navy: #020617;
+      --gold: #f59e0b;
+      --gold-bg: rgba(245, 158, 11, 0.18);
+      --crimson: #f87171;
+      --crimson-bg: rgba(239, 68, 68, 0.2);
+      --success: #22c55e;
+      --success-bg: rgba(34, 197, 94, 0.2);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.2);
+      --border-color: #334155;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.75;
+      font-size: calc(1rem * var(--font-scale));
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+    }
+
+    .top-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-card);
+      border-bottom: 2px solid var(--primary);
+      box-shadow: var(--shadow-md);
+      padding: 0.75rem 1.25rem;
+    }
+
+    .header-row-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .zad-badge {
+      background: linear-gradient(135deg, var(--primary), #065f46);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(15, 118, 110, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-titles h1 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+
+    .brand-titles p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      max-width: 420px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.5rem 2.2rem 0.5rem 0.85rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .ctrl-btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.38rem 0.65rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.18s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      text-decoration: none;
+    }
+
+    .ctrl-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .progress-bar-wrap {
+      margin-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 8px;
+      background: var(--bg-card-alt);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--gold));
+      transition: width 0.35s ease;
+      border-radius: 999px;
+    }
+
+    .app-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 1.25rem;
+      max-width: 1440px;
+      margin: 1.25rem auto;
+      padding: 0 1rem 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .app-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 118px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 960px) {
+      .sidebar {
+        position: static;
+      }
+    }
+
+    .sidebar-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      list-style: none;
+    }
+
+    .nav-btn {
+      width: 100%;
+      text-align: right;
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.6rem 0.75rem;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .nav-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(15, 118, 110, 0.3);
+    }
+
+    .nav-count {
+      font-size: 0.75rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .nav-btn.active .nav-count {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
+    .sidebar-actions {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .bulk-btn {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .bulk-btn:hover {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    .main-area {
+      min-width: 0;
+    }
+
+    .tab-section {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-banner {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-banner::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: var(--gold);
+    }
+
+    .section-banner h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-banner p {
+      font-size: 0.92rem;
+      opacity: 0.92;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.15rem;
+      background: var(--bg-card);
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+    }
+
+    .filter-pill {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--primary);
+    }
+
+    .filter-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .qa-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-right: 4px solid var(--primary);
+      border-radius: var(--radius);
+      margin-bottom: 0.9rem;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .qa-card.reviewed {
+      border-right-color: var(--gold);
+    }
+
+    .qa-header {
+      padding: 1rem 1.15rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .qa-header:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .qa-q-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      flex: 1;
+    }
+
+    .q-num-badge {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 7px;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .q-axis-badge {
+      background: var(--gold-bg);
+      color: var(--gold);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+
+    .q-text {
+      font-weight: 800;
+      font-size: 1.02rem;
+      color: var(--text-main);
+    }
+
+    .toggle-ans-btn {
+      background: var(--primary-bg);
+      color: var(--primary);
+      border: none;
+      padding: 0.38rem 0.8rem;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .toggle-ans-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .qa-body {
+      display: none;
+      padding: 1rem 1.25rem 1.15rem;
+      border-top: 1px dashed var(--border-color);
+      background: var(--bg-card);
+    }
+
+    .qa-body.open {
+      display: block;
+    }
+
+    .ans-point {
+      margin-bottom: 0.55rem;
+      position: relative;
+      padding-right: 1rem;
+    }
+
+    .ans-point::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: var(--crimson);
+      font-weight: 900;
+    }
+
+    .ans-label {
+      color: var(--crimson);
+      font-weight: 800;
+    }
+
+    .quote-box {
+      background: var(--bg-quote);
+      border-right: 4px solid var(--border-quote);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin: 0.6rem 0;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .imam-badge {
+      display: inline-block;
+      padding: 0.1rem 0.55rem;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      margin: 0 0.15rem;
+    }
+
+    .imam-hanifa { background: #dcfce7; color: #166534; }
+    .imam-yusuf { background: #dbeafe; color: #1e40af; }
+    .imam-muhammad { background: #fae8ff; color: #86198f; }
+    .imam-zufar { background: #ffedd5; color: #9a3412; }
+
+    [data-theme="dark"] .imam-hanifa { background: rgba(22, 101, 52, 0.35); color: #86efac; }
+    [data-theme="dark"] .imam-yusuf { background: rgba(30, 64, 175, 0.35); color: #93c5fd; }
+    [data-theme="dark"] .imam-muhammad { background: rgba(134, 25, 143, 0.35); color: #f0abfc; }
+    [data-theme="dark"] .imam-zufar { background: rgba(154, 52, 18, 0.35); color: #fdba74; }
+
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      margin-top: 0.5rem;
+    }
+
+    table.zad-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+      font-size: 0.92rem;
+    }
+
+    table.zad-table th {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 0.75rem 1rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    table.zad-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    table.zad-table tr:nth-child(even) td {
+      background: var(--bg-card-alt);
+    }
+
+    table.zad-table tr.current-unit-row td {
+      background: var(--gold-bg);
+      font-weight: 800;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .status-done { background: var(--success-bg); color: var(--success); }
+    .status-current { background: var(--gold); color: #fff; }
+    .status-upcoming { background: var(--bg-card-alt); color: var(--text-muted); border: 1px solid var(--border-color); }
+
+    .date-input {
+      padding: 0.35rem 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.82rem;
+    }
+
+    .score-board {
+      background: var(--bg-card);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .score-stats {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .score-pill {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .opt-btn {
+      text-align: right;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-bg);
+    }
+
+    .opt-btn.correct {
+      background: var(--success-bg) !important;
+      border-color: var(--success) !important;
+      color: var(--success) !important;
+    }
+
+    .opt-btn.wrong {
+      background: var(--danger-bg) !important;
+      border-color: var(--danger) !important;
+      color: var(--danger) !important;
+    }
+
+    .feedback-box {
+      display: none;
+      margin-top: 0.85rem;
+      padding: 0.85rem 1rem;
+      border-radius: 9px;
+      background: var(--bg-quote);
+      border-right: 4px solid var(--gold);
+      font-size: 0.92rem;
+    }
+
+    .feedback-box.show {
+      display: block;
+    }
+
+    .confidence-bar {
+      margin-top: 0.85rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-card-alt);
+      border-radius: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .conf-btns {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .conf-btn {
+      padding: 0.42rem 0.9rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 800;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .conf-btn.sure:hover, .conf-btn.sure.selected {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .conf-btn.unsure:hover, .conf-btn.unsure.selected {
+      background: var(--gold-bg);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .concept-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .root-node {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 14px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      border-bottom: 4px solid var(--gold);
+      position: relative;
+    }
+
+    .branches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+      width: 100%;
+    }
+
+    .branch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-top: 5px solid var(--crimson);
+      border-radius: var(--radius);
+      padding: 1.15rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .branch-card.temporary {
+      border-top-color: var(--gold);
+    }
+
+    .branch-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .branch-title {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--crimson);
+    }
+
+    .branch-card.temporary .branch-title { color: var(--gold); }
+
+    .leaf-item {
+      background: var(--bg-card-alt);
+      padding: 0.55rem 0.8rem;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .toast-container {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-md);
+      border-right: 5px solid var(--gold);
+      animation: slideUp 0.25s ease;
+    }
+
+    .toast.success { border-right-color: var(--success); }
+    .toast.error { border-right-color: var(--danger); }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .match-select {
+      padding: 0.4rem 0.65rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    @media print {
+      .sidebar, .search-box, .header-controls { display: none !important; }
+      .app-layout { grid-template-columns: 1fr; }
+      .tab-section { display: block !important; page-break-after: always; }
+      .qa-body, .feedback-box { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="top-header">
+    <div class="header-row-1">
+      <div class="brand-box">
+        <div class="zad-badge">زاد</div>
+        <div class="brand-titles">
+          <h1>سلسلة زاد الأزهري — الفقه الحنفي (الصف الثالث الثانوي الأزهري)</h1>
+          <p>كتاب النكاح — الوحدة الأولى: تعريف النكاح وحكمه وأركانه وشروط انعقاده | إعداد أ/ محمود صلاح الخطيب (01111916649)</p>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="globalSearchInput" placeholder="ابحث في نصوص الأسئلة، الأدلة، رأي زفر، المسائل..." oninput="handleGlobalSearch(this.value)" />
+      </div>
+
+      <div class="header-controls">
+        <button class="ctrl-btn" onclick="changeFontSize(-0.1)" title="تصغير الخط">-أ</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0)" title="الحجم الافتراضي">افتراضي</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0.1)" title="تكبير الخط">أ+</button>
+        <button class="ctrl-btn" onclick="window.print()" title="طباعة الوحدة">🖨️ طباعة</button>
+        <button class="ctrl-btn" id="themeToggleBtn" onclick="toggleTheme()" title="تبديل الوضع الليلي/النهاري">🌙 الوضع الليلي</button>
+      </div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <span id="progressText">مؤشر الإنجاز الدراسي: تم استعراض 0 من 49 عنصر مذاكرة — 0%</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="app-layout">
+    <!-- Right Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <span>🧭 خطة الدراسة والتنقل</span>
+        <span style="font-size:0.78rem; color:var(--text-muted)">٨ أقسام</span>
+      </div>
+      <ul class="nav-list" id="sidebarNav">
+        <li>
+          <button class="nav-btn active" onclick="switchTab('sec1', this)">
+            <span>١. الغلاف وخطة المتابعة</span>
+            <span class="nav-count">خريطة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec2', this)">
+            <span>٢. أولًا: بنك الأسئلة والأجوبة</span>
+            <span class="nav-count">21 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec3', this)">
+            <span>٣. ثانيًا: الملخص والجداول</span>
+            <span class="nav-count">3 جداول</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec4', this)">
+            <span>٤. ثالثًا: النوازل التطبيقية</span>
+            <span class="nav-count">4 نوازل</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec5', this)">
+            <span>٥. رابعًا: الاختيار من متعدد</span>
+            <span class="nav-count">6 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec6', this)">
+            <span>٦. خامسًا: الاختبار النموذجي</span>
+            <span class="nav-count">21 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec7', this)">
+            <span>٧. سادسًا: تدريبات الكتاب</span>
+            <span class="nav-count">12 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec8', this)">
+            <span>٨. سابعًا: خريطة المفاهيم</span>
+            <span class="nav-count">شجرة شاملة</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-actions">
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(true)">إظهار الكل 👁️</button>
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(false)">إخفاء الكل 🔒</button>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="main-area">
+
+      <!-- SECTION 1: Cover, Scope Map & Spaced Repetition -->
+      <section id="sec1" class="tab-section active">
+        <div class="section-banner">
+          <h2>كتاب النكاح — الوحدة الأولى: تعريف النكاح وحكمه العام وأركانه وشروط انعقاده</h2>
+          <p>تفتتح هذه الوحدة كتاب النكاح ببيان معناه في اللغة والشرع، والفرق بين استعماله حقيقةً ومجازًا، ثم تنتقل إلى حكمه العام وأدلته من الكتاب والسنة والإجماع، وبيان أحواله الثلاث بحسب حال المكلف، ثم إلى ركنه (الإيجاب والقبول) وصيغه، وأخيرًا شروط الشهود اللازمة لانعقاده صحيحًا.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📘 بطاقة تعريف الوحدة والمصدر المحقق</div>
+          <p style="margin-bottom:0.6rem;"><strong>المصدر المعتمد:</strong> شرح كتاب «المختار من الاختيار لتعليل المختار» للعلامة عبد الله بن محمود بن مودود الموصلي الحنفي (رحمه الله) — المقرر على طلاب الصف الثالث الثانوي الأزهري.</p>
+          <p style="margin-bottom:0.6rem;"><strong>محاور الوحدة الأربعة:</strong> (١) تعريف النكاح لغةً وشرعًا وحقيقةً ومجازًا — (٢) الحكم العام للنكاح وأدلته وأحواله الثلاث (الاعتدال، التوقان، الخوف من الجَوْر) — (٣) ركن النكاح وصيغ انعقاده — (٤) شروط الشهود على عقد النكاح وحكم شهادة الفاسق والأعمى والمحدود في القذف.</p>
+          <p style="color:var(--primary); font-weight:800;">إعداد وحقوق الملكية: الأستاذ / محمود صلاح الخطيب (01111916649) — جميع الحقوق محفوظة لسلسلة «زاد الأزهري».</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">🗺️ خارطة نطاق المذكرة الكاملة — توزيع المقرر على الأبواب والوحدات الدراسية</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الباب / الوحدة الدراسية</th>
+                  <th>موضوعات الوحدة التفصيلية</th>
+                  <th>حالة الإنجاز</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>كتاب النكاح — الوحدة الأولى</td>
+                  <td>تعريف النكاح وحكمه العام وركنه وشروط الشهود على العقد</td>
+                  <td><span class="status-badge status-done">مكتمل ✓</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>كتاب النكاح — الوحدة الثانية</td>
+                  <td>محرمات النكاح (القرابة، الصهرية، الرضاع، الجمع، حق الغير، الكفر، الثلاث)</td>
+                  <td><span class="status-badge status-done">مكتمل ✓</span></td>
+                </tr>
+                <tr class="current-unit-row">
+                  <td>3</td>
+                  <td>كتاب النكاح — الوحدة الثالثة</td>
+                  <td>نكاح المتعة والنكاح المؤقت والفرق بينهما ورأي زفر والرد عليه</td>
+                  <td><span class="status-badge status-current">هذا الجزء 🌟</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>كتاب النكاح — الوحدة الرابعة</td>
+                  <td>عبارة النساء في النكاح واستئمار البكر والثيب وصور الرضا</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>كتاب النكاح — الوحدة الخامسة</td>
+                  <td>ترتيب الأولياء، غيبة الولي الأقرب، تزويج الأب والجد، تولي طرفي العقد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>كتاب النكاح — الوحدة السادسة</td>
+                  <td>الكفاءة في النكاح وأمورها الخمسة وأثر الإخلال بها</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>كتاب النكاح — الوحدة السابعة</td>
+                  <td>المهر، مقداره، متى يجب كاملًا أو نصفه، الخلوة الصحيحة، مهر الفاسد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>كتاب النكاح — الوحدة الثامنة</td>
+                  <td>القَسْم بين الزوجات، ما يجب فيه التسوية وما لا يجب، هبة اليوم</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>كتاب الرضاع</td>
+                  <td>تعريفه، مدته عند الإمام والصاحبين، ما يحرم به، اختلاط اللبن، مسائل الشك</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>كتاب الطلاق (الوحدات ١–٣)</td>
+                  <td>صريح الطلاق، كنايات الطلاق والتفويض، وباب الرجعة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>أبواب الخلع والظهار والعدة والنفقة والحضانة</td>
+                  <td>أحكام الخلع، الظهار وكفارته، العدة والإحداد، النفقة والحضانة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title" style="justify-content:space-between; flex-wrap:wrap;">
+            <span>📅 جدول متابعة المراجعة بنظام التكرار المتباعد (Spaced Repetition)</span>
+            <button class="ctrl-btn" onclick="resetSpacedDates()">🗑️ تصفير التواريخ المسجلة</button>
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.75rem;">سجّل تاريخ مذاكرتك الأولى ومواعيد المراجعة الدورية (بعد يوم، بعد أسبوع، بعد شهر)؛ تُحفظ تواريخك تلقائيًّا في متصفحك بمعرّف مستقل للوحدة الثالثة.</p>
+          <div class="table-responsive">
+            <table class="zad-table" id="spacedRepTable">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>اسم الباب / الوحدة (كتاب النكاح)</th>
+                  <th>تاريخ أول مذاكرة</th>
+                  <th>مراجعة (بعد يوم)</th>
+                  <th>مراجعة (بعد أسبوع)</th>
+                  <th>مراجعة (بعد شهر)</th>
+                </tr>
+              </thead>
+              <tbody id="spacedRepBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Q&A Bank (13 Questions across 2 Axes) -->
+      <section id="sec2" class="tab-section">
+        <div class="section-banner">
+          <h2>أولًا: بنك الأسئلة والأجوبة الشامل (١٣ سؤالًا وجوابًا)</h2>
+          <p>جميع أسئلة وأجوبة الوحدة الثالثة من كتاب النكاح موزعة على المحورين: (١) نكاح المتعة، و(٢) النكاح المؤقت، بنظام الاستدعاء النشط (Active Recall).</p>
+        </div>
+
+        <div class="filter-bar" id="qaFilterBar"></div>
+        <div id="qaListContainer"></div>
+      </section>
+
+      <!-- SECTION 3: Visual Summary & Comparison Table -->
+      <section id="sec3" class="tab-section">
+        <div class="section-banner">
+          <h2>ثانيًا: الملخص البصري والتقطير المعرفي (الجداول المقارنة الثلاثة)</h2>
+          <p>مقارنات هيكلية مركزة تلخص أحوال النكاح وأحكامها، وشروط الشهود على عقد النكاح، وصيغ انعقاد النكاح.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📊 جدول «١»: أحوال النكاح وأحكامها وعللها</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الحالة</th>
+                  <th>الحكم الشرعي</th>
+                  <th>العلة والتوجيه الفقهي</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>١</td>
+                  <td><strong>حالة الاعتدال</strong></td>
+                  <td><span class="status-badge status-done">سنة مؤكدة مرغوبة</span></td>
+                  <td>دلالة النصوص بالأمر والترغيب والتأكيد على فعله</td>
+                </tr>
+                <tr>
+                  <td>٢</td>
+                  <td><strong>حالة التوقان (شدة الميل)</strong></td>
+                  <td><span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">واجب</span></td>
+                  <td>دفع الوقوع في الزنا فرض، والنكاح وسيلته</td>
+                </tr>
+                <tr>
+                  <td>٣</td>
+                  <td><strong>حالة الخوف من الجَوْر</strong></td>
+                  <td><span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">مكروه (كراهة تحريمية)</span></td>
+                  <td>رجحان مفسدة الظلم على مصلحة النكاح؛ فإن تيقّن الجَوْر حَرُم</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📊 جدول «٢»: شروط الشهود على عقد النكاح عند الحنفية</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الشرط</th>
+                  <th>تفصيله</th>
+                  <th>هل يُشترط لانعقاد العقد؟</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>١</td>
+                  <td><strong>العدد</strong></td>
+                  <td>رجلان، أو رجل وامرأتان</td>
+                  <td><span class="status-badge status-done">نعم — لازم</span></td>
+                </tr>
+                <tr>
+                  <td>٢</td>
+                  <td><strong>الإسلام</strong></td>
+                  <td>في نكاح المسلمين</td>
+                  <td><span class="status-badge status-done">نعم — لازم</span></td>
+                </tr>
+                <tr>
+                  <td>٣</td>
+                  <td><strong>العقل والبلوغ</strong></td>
+                  <td>أن يملك الشاهد القبول بنفسه</td>
+                  <td><span class="status-badge status-done">نعم — لازم</span></td>
+                </tr>
+                <tr>
+                  <td>٤</td>
+                  <td><strong>العدالة</strong></td>
+                  <td>استقامة الحال وعدم الفسق</td>
+                  <td><span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">لا يُشترط (ينعقد بشهادة الفاسقين والمحدود في القذف)</span></td>
+                </tr>
+                <tr>
+                  <td>٥</td>
+                  <td><strong>البصر</strong></td>
+                  <td>أن يكون الشاهد مبصرًا</td>
+                  <td><span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">لا يُشترط (ينعقد بشهادة العميان)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📊 جدول «٣»: صيغ انعقاد النكاح</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الصيغة</th>
+                  <th>مثالها</th>
+                  <th>الحكم</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>١</td>
+                  <td><strong>لفظان ماضيان</strong></td>
+                  <td>زوّجتُك / تزوّجتُ أو قبلتُ</td>
+                  <td>ينعقد به النكاح؛ لأن الماضي يُستعمل للإنشاء شرعًا</td>
+                </tr>
+                <tr>
+                  <td>٢</td>
+                  <td><strong>ماضٍ + مستقبل</strong></td>
+                  <td>زوِّجني / زوّجتُك</td>
+                  <td>ينعقد به النكاح (الأول توكيل واستدعاء، والثاني إيجاب)</td>
+                </tr>
+                <tr>
+                  <td>٣</td>
+                  <td><strong>لفظ النكاح أو التزويج</strong></td>
+                  <td>أي صيغة بأحد اللفظين الصريحين</td>
+                  <td>ينعقد به النكاح لصراحتهما فيه، وكذا كل لفظ وُضع لتمليك العين مطلقًا</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</section>
+
+      <!-- SECTION 4: Applied Scenarios (3 Cases) -->
+      <section id="sec4" class="tab-section">
+        <div class="section-banner">
+          <h2>ثالثًا: النوازل والأسئلة التطبيقية («قيِّم نفسك» — ٣ نوازل فقهية)</h2>
+          <p>تطبيقات عملية ووقائع فقهية لتدريب الملكة الفقهية على تنزيل أحكام نكاح المتعة والنكاح المؤقت والرد على الشبهات القياسية.</p>
+        </div>
+        <div id="casesContainer"></div>
+      </section>
+
+      <!-- SECTION 5: Interactive MCQ Bank (5 Questions) -->
+      <section id="sec5" class="tab-section">
+        <div class="section-banner">
+          <h2>رابعًا: بنك أسئلة الاختيار من متعدد التفاعلي (٥ أسئلة)</h2>
+          <p>اختر الإجابة الصحيحة لتظهر لك التغذية الراجعة الفورية مع صندوق «التوضيح والتعليل» لتفنيد الخلط الشائع بين الطلاب.</p>
+        </div>
+
+        <div class="score-board">
+          <div class="score-stats">
+            <span class="score-pill" id="mcqScoreText">النتيجة: 0 / 5</span>
+            <span class="status-badge status-done" id="mcqPercentText">نسبة الإتقان: 0%</span>
+          </div>
+          <button class="ctrl-btn" onclick="resetMcqQuiz()">🔄 إعادة الاختبار</button>
+        </div>
+
+        <div id="mcqContainer"></div>
+      </section>
+
+      <!-- SECTION 6: Interactive Model Exam & Self-Assessment Exam -->
+      <section id="sec6" class="tab-section">
+        <div class="section-banner">
+          <h2>خامسًا: الاختبار النموذجي التفاعلي والاختبار الختامي الذاتي للوحدة الثالثة</h2>
+          <p>يضم هذا القسم: (أ) الاختبار النموذجي للوحدة شاملاً أسئلة الصواب والخطأ التفاعلية والأسئلة المقالية والتعليلية، و(ب) الاختبار الذاتي الختامي للوحدة الثالثة (١٣ سؤالًا — ٦٠ درجة) مبنيًّا على مستويات بلوم المعرفية.</p>
+        </div>
+
+        <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+          <div>
+            <strong style="color:var(--primary);">أدوات التحكم في نماذج الإجابة:</strong>
+            <span style="font-size:0.88rem; color:var(--text-muted); margin-right:0.5rem;">يمكنك كشف كل إجابة منفردة أو إظهار كافة عناصر نموذج الإجابة للمراجعة الشاملة.</span>
+          </div>
+          <button class="ctrl-btn" onclick="toggleAllInActiveTab(true)">📑 إظهار كافة عناصر نموذج الإجابة</button>
+        </div>
+
+        <h3 style="margin: 1.25rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (أ): أسئلة الصواب والخطأ التفاعلية مع التصويب والتعليل الفوري</h3>
+        <div id="examTfContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (ب): الأسئلة المقالية والتعليلية في الاختبار النموذجي</h3>
+        <div id="examEssayContainer"></div>
+
+        <h3 style="margin: 1.75rem 0 0.75rem; color:var(--crimson); font-weight:800;">القسم الثاني: الاختبار الختامي الذاتي للوحدة الثالثة (١٣ سؤالًا — ٦٠ درجة — تدرج مستويات بلوم)</h3>
+        <div id="selfExamContainer"></div>
+      </section>
+
+      <!-- SECTION 7: Textbook Exercises with Metacognitive Confidence Calibration -->
+      <section id="sec7" class="tab-section">
+        <div class="section-banner">
+          <h2>سادسًا: حل تدريبات الكتاب المدرسي (بنظام تقييم الثقة الذاتية)</h2>
+          <p>شامل لجميع أسئلة «المناقشة والتدريبات» وأسئلة «تطبيق عام» الواردة في الكتاب المدرسي على الوحدة الثالثة. قيّم ثقتك في إجابتك أولًا ([متأكد 👍] أو [غير متأكد 🧐]) ليفتح لك الحل النموذجي الكامل!</p>
+        </div>
+
+        <h3 style="margin: 1rem 0 0.75rem; color:var(--primary); font-weight:800;">أولًا: من «المناقشة والتدريبات» بالكتاب المدرسي (٣ مسائل)</h3>
+        <div id="tbDiscussContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">ثانيًا: من «تطبيق عام» بالكتاب المدرسي (مسألتان)</h3>
+        <div id="tbGeneralContainer"></div>
+      </section>
+
+      <!-- SECTION 8: Concept Map -->
+      <section id="sec8" class="tab-section">
+        <div class="section-banner">
+          <h2>سابعًا: خريطة المفاهيم الهيكلية الشاملة (النكاح ١–٥)</h2>
+          <p>شجرة مفاهيم بصرية متكاملة تلخص تعريف النكاح لغةً وشرعًا، وحكمه العام وأحواله، وركنه وصيغته، وشروط الشهود على العقد.</p>
+        </div>
+
+        <div class="card">
+          <div class="concept-tree">
+            <div class="root-node">
+              🌳 خريطة المفاهيم: كتاب النكاح — الوحدة الأولى (التعريف، الحكم، الركن، الشهود)
+            </div>
+
+            <div class="branches-grid">
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">١. النكاح لغةً</span>
+                  <span class="status-badge status-done">الأصل اللغوي</span>
+                </div>
+                <div class="leaf-item">• معناه في اللغة: <strong>الضمّ والجمع</strong>.</div>
+              </div>
+
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">٢. النكاح شرعًا</span>
+                  <span class="status-badge status-done">الحقيقة والمجاز</span>
+                </div>
+                <div class="leaf-item">• <strong>حقيقة في الوطء</strong> (عند الإطلاق بلا قرينة): كحديث «وُلِدْتُ مِنْ نِكَاحٍ» وحديث الحائض.</div>
+                <div class="leaf-item">• <strong>مجاز في العقد</strong> (بقرينة: إذن الأهل ▯ العدد ▯ الشهود)؛ لإفضاء العقد إلى الضمّ باعتبار مآله.</div>
+                <div class="leaf-item">• يُعرَّف أيضًا بأنه: <strong>عقد يفيد ملك المتعة قصدًا</strong>.</div>
+              </div>
+
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٣. حكمه العام وأحواله</span>
+                  <span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">الأحكام التكليفية</span>
+                </div>
+                <div class="leaf-item">• <strong>حكمه العام:</strong> عقد مشروع مستحب مندوب إليه (دليل: كتاب ▯ سنة ▯ إجماع).</div>
+                <div class="leaf-item">• <strong>حالة الاعتدال:</strong> سنة مؤكدة مرغوبة.</div>
+                <div class="leaf-item">• <strong>حالة التوقان (خوف الزنا):</strong> واجب.</div>
+                <div class="leaf-item">• <strong>حالة خوف الجَوْر:</strong> مكروه كراهة تحريمية (فإن تيقن الجَوْر حَرُم).</div>
+              </div>
+
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٤. ركنه وصيغته</span>
+                  <span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">الركن والإنشاء</span>
+                </div>
+                <div class="leaf-item">• <strong>ركنه:</strong> الإيجاب والقبول.</div>
+                <div class="leaf-item">• <strong>صيغته:</strong> لفظان ماضيان (زوّجتُك / تزوّجتُ) ▯ أو ماضٍ ومستقبل (زوِّجني / زوّجتُك).</div>
+                <div class="leaf-item">• <strong>الألفاظ:</strong> بلفظ «النكاح» أو «التزويج» لصراحتهما، وما وُضع لتمليك الأعيان مطلقًا.</div>
+              </div>
+
+              <div class="branch-card appendix">
+                <div class="branch-header">
+                  <span class="branch-title">٥. شرط انعقاده: الشهود</span>
+                  <span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">شروط الانعقاد</span>
+                </div>
+                <div class="leaf-item">• <strong>العدد:</strong> رجلان، أو رجل وامرأتان (اعتبارًا بالشهادة على المال).</div>
+                <div class="leaf-item">• <strong>الصفة اللازمة:</strong> الإسلام ▯ العقل ▯ البلوغ (كل من ملك القبول بنفسه).</div>
+                <div class="leaf-item">• <strong>ما لا يُشترط:</strong> لا تُشترط العدالة ولا البصر؛ فينعقد بشهادة الفاسقين والعميان والمحدود في القذف (لأن الفسق يؤثر في الأداء لا التحمّل).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    const SPACED_UNITS = [
+      { id: 1, title: "الوحدة ١: تعريف النكاح وحكمه وركنه وشروط انعقاده" },
+      { id: 2, title: "الوحدة ٢: محرمات النكاح" },
+      { id: 3, title: "الوحدة ٣: نكاح المتعة والنكاح المؤقت (الوحدة الحالية 🌟)" },
+      { id: 4, title: "الوحدة ٤: عبارة النساء في النكاح" },
+      { id: 5, title: "الوحدة ٥: ترتيب الأولياء" },
+      { id: 6, title: "الوحدة ٦: الكفاءة في النكاح" },
+      { id: 7, title: "الوحدة ٧: المهر" },
+      { id: 8, title: "الوحدة ٨: القسم بين الزوجات" }
+    ];
+
+    const QA_AXES = [{"id": "all", "label": "الكل (21)"}, {"id": "axis1", "label": "١. تعريف النكاح (س1-س5)"}, {"id": "axis2", "label": "٢. الحكم العام للنكاح وأحواله (س6-س12)"}, {"id": "axis3", "label": "٣. ركن النكاح وصيغته (س13-س15)"}, {"id": "axis4", "label": "٤. شروط الشهود على عقد النكاح (س16-س21)"}];
+
+    const QA_BANK = [{"num": "س1", "axis": "axis1", "axisTitle": "١. تعريف النكاح", "q": "ما معنى النكاح لغةً؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">النكاح لغةً:</span> الضمّ والجمع.</div>"}, {"num": "س2", "axis": "axis1", "axisTitle": "١. تعريف النكاح", "q": "ما معنى النكاح في اصطلاح الشرع؟", "a": "\n          <div class=\"ans-point\">عبارة عن ضمٍّ وجمعٍ مخصوص، وهو <strong>الوَطْء</strong>؛ لأن الزوجين حالة الوطء يجتمعان، وينضمّ كل واحد منهما إلى صاحبه حتى يصيرا كالشخص الواحد. وقد يُستعمل في العقد مجازًا؛ لأنه يئول إلى الضمّ، وإنما هو حقيقة في الوطء.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">تعريف آخر:</span> يُعرَّف النكاح شرعًا أيضًا بأنه: <strong>عقد يفيد ملك المتعة قصدًا</strong>.</div>\n        "}, {"num": "س3", "axis": "axis1", "axisTitle": "١. تعريف النكاح", "q": "متى يُراد بلفظ النكاح في الشرع معنى الوطء (الحقيقة)؟", "a": "\n          <div class=\"ans-point\">إذا أُطلق النكاح في الشرع أُريد به الوطء ما لم تقم قرينة تصرفه إلى العقد.</div>\n          <div class=\"quote-box\">• الدليل: قوله ﷺ: «وُلِدْتُ مِنْ نِكَاحٍ» أي: من وطء حلال، وقوله ﷺ: «يَحِلُّ لِلرَّجُلِ مِنِ امْرَأَتِهِ الْحَائِضِ كُلُّ شَيْءٍ إِلَّا النِّكَاحَ».</div>\n        "}, {"num": "س4", "axis": "axis1", "axisTitle": "١. تعريف النكاح", "q": "متى يُفهم من لفظ النكاح معنى العقد (المجاز)؟", "a": "\n          <div class=\"ans-point\">يُفهم منه العقد إذا قامت قرينة تدل عليه؛ لأن الوطء لا يتوقف على إذن الأهل، والعقد هو الذي يختص بالعدد دون الوطء، وكذلك الشهود لا تكون على الوطء.</div>\n          <div class=\"quote-box\">• الدليل: قوله تعالى: ﴿فَانكِحُوهُنَّ بِإِذْنِ أَهْلِهِنَّ﴾ [النساء: ٢٥]، وقوله تعالى: ﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ﴾ [النساء: ٣]، وقوله ﷺ: «لَا نِكَاحَ إِلَّا بِشُهُودٍ».</div>\n        "}, {"num": "س5", "axis": "axis1", "axisTitle": "١. تعريف النكاح", "q": "لماذا يُطلق لفظ النكاح على العقد مجازًا مع أن حقيقته الوطء؟", "a": "\n          <div class=\"ans-point\"><span class=\"ans-label\">العلة:</span> لإفضاء العقد إلى الضمّ عند حصول الوطء بعده.</div>\n          <div class=\"quote-box\">• الدليل والنظير: قوله تعالى: ﴿إِنِّي أَرَانِي أَعْصِرُ خَمْرًا﴾ [يوسف: ٣٦]؛ أي: أعصر عنبًا فيؤول إلى خمر، فسمّي العنب خمرًا باعتبار مآله، كما سُمّي العقد نكاحًا باعتبار مآله.</div>\n        "}, {"num": "س6", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما الحكم العام للنكاح؟", "a": "<div class=\"ans-point\">هو <strong>عقد مشروع مستحب مندوب إليه</strong>، ثبتت شرعيته بالكتاب والسنة والإجماع.</div>"}, {"num": "س7", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما دليل مشروعية النكاح من الكتاب؟", "a": "<div class=\"quote-box\">• قوله تعالى: ﴿وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ﴾ [النور: ٣٢]، وقوله تعالى: ﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ﴾ [النساء: ٣].</div>"}, {"num": "س8", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما دليل مشروعية النكاح من السنة والإجماع؟", "a": "\n          <div class=\"quote-box\">• من السنة: قوله ﷺ: «تَنَاكَحُوا تَكْثُرُوا؛ فَإِنِّي أُبَاهِي بِكُمُ الأُمَمَ يَوْمَ الْقِيَامَةِ»، وقوله ﷺ: «النِّكَاحُ سُنَّتِي، فَمَنْ رَغِبَ عَنْ سُنَّتِي فَلَيْسَ مِنِّي».</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">من الإجماع:</span> انعقاد إجماع الأمة على شرعية النكاح.</div>\n        "}, {"num": "س9", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما أحوال النكاح باعتبار حال المكلَّف؟", "a": "\n          <div class=\"ans-point\"><span class=\"ans-label\">ثلاث حالات:</span> حالة الاعتدال، وحالة التوقان (شدة الميل للجماع)، وحالة الخوف من الجَوْر (الظلم).</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">المقصود بالتوقان:</span> شدة ميل الرجل إلى الجماع، أي حالة خوفه من الوقوع في الزنا إن لم يتزوج.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">المراد بالجَوْر:</span> الظلم، أي أن يخاف الرجل أن يظلم المرأة التي يتزوجها؛ فإن تيقَّن وقوع الجَوْر حَرُم عليه النكاح.</div>\n        "}, {"num": "س10", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما حكم النكاح حالة الاعتدال؟ ولماذا؟", "a": "\n          <div class=\"ans-point\"><span class=\"ans-label\">حكم النكاح حالة الاعتدال:</span> <strong>سنة مؤكدة مرغوبة</strong>.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">العلة:</span> لدلالة النصوص عليه بالأمر والترغيب والتأكيد على فعله.</div>\n        "}, {"num": "س11", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما حكم النكاح حالة التوقان؟ ولماذا؟", "a": "\n          <div class=\"ans-point\"><span class=\"ans-label\">حكم النكاح حالة التوقان:</span> <strong>واجب</strong>.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">العلة:</span> لأن مَن خاف على نفسه الوقوع في الزنا يجب عليه دفع هذا المحرَّم عن نفسه، والنكاح يمنعه من ذلك، والامتناع عن الوقوع في الحرام فرض.</div>\n        "}, {"num": "س12", "axis": "axis2", "axisTitle": "٢. الحكم العام للنكاح وأحواله", "q": "ما حكم النكاح حالة الخوف من الجَوْر؟ ولماذا؟", "a": "\n          <div class=\"ans-point\"><span class=\"ans-label\">حكم النكاح حالة الخوف من الجَوْر:</span> <strong>مكروه كراهة تحريمية</strong> (فإن تيقّن الجَوْر حَرُم).</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">العلة:</span> لأن مَن يخاف الجَوْر أو الميل إن تزوّج يأثم بذلك، وترتكب في حقه المفاسد المرجوحة على المصالح.</div>\n        "}, {"num": "س13", "axis": "axis3", "axisTitle": "٣. ركن النكاح وصيغته", "q": "ما ركن النكاح؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">ركن النكاح:</span> <strong>الإيجاب والقبول</strong>؛ لأن العقد يوجد بهما، وركن الشيء ما يوجد به، كأركان البيت.</div>"}, {"num": "س14", "axis": "axis3", "axisTitle": "٣. ركن النكاح وصيغته", "q": "بم ينعقد النكاح من حيث الصيغة؟", "a": "\n          <div class=\"ans-point\">ينعقد <strong>بلفظين ماضيين</strong>، كقول أحدهما: «زوّجتُك»، وقول الآخر: «تزوّجتُ» أو «قبلتُ»؛ لأن لفظ الماضي يُستعمل للإنشاء شرعًا للحاجة.</div>\n          <div class=\"ans-point\">كما ينعقد <strong>بلفظين أحدهما ماضٍ والآخر مستقبل</strong>، كقوله: «زوِّجني»، فيقول: «زوّجتُك».</div>\n        "}, {"num": "س15", "axis": "axis3", "axisTitle": "٣. ركن النكاح وصيغته", "q": "بأي لفظين ينعقد النكاح تحديدًا من بين الألفاظ الدالة على التمليك؟", "a": "<div class=\"ans-point\">ينعقد بلفظ <strong>النكاح والتزويج</strong>؛ لأنهما صريحان فيه، والقاعدة أن كل لفظ يصح لتمليك الأعيان مطلقًا ينعقد به النكاح.</div>"}, {"num": "س16", "axis": "axis4", "axisTitle": "٤. شروط الشهود على عقد النكاح", "q": "ما الشرط اللازم لانعقاد نكاح المسلمين من حيث الشهود؟", "a": "\n          <div class=\"ans-point\">لا ينعقد نكاح المسلمين إلا بحضور <strong>رجلين، أو رجل وامرأتين</strong>.</div>\n          <div class=\"quote-box\">• الدليل: قوله ﷺ: «لَا نِكَاحَ إِلَّا بِشُهُودٍ»، وما رُوي عن ابن عباس عن النبي ﷺ: «الزَّانِيَةُ الَّتِي تُنْكِحُ نَفْسَهَا بِغَيْرِ بَيِّنَةٍ».</div>\n        "}, {"num": "س17", "axis": "axis4", "axisTitle": "٤. شروط الشهود على عقد النكاح", "q": "لماذا يجوز الاكتفاء برجل وامرأتين في الشهادة على النكاح؟", "a": "<div class=\"ans-point\">اعتبارًا بالشهادة على المال، إذ جعل الحنفية النكاح كالمال في هذا الباب فهو عقد كالعقود.</div>"}, {"num": "س18", "axis": "axis4", "axisTitle": "٤. شروط الشهود على عقد النكاح", "q": "ما الصفات المشترطة في الشاهد على عقد النكاح؟", "a": "\n          <div class=\"ans-point\"><strong>العقل والبلوغ والإسلام</strong>؛ فلا تُشترط العدالة.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">الضابط عند الحنفية:</span> كل من ملك القبول بنفسه انعقد العقد بحضوره، ومن لا يملكه فلا.</div>\n        "}, {"num": "س19", "axis": "axis4", "axisTitle": "٤. شروط الشهود على عقد النكاح", "q": "ما حكم انعقاد النكاح بحضور شاهدين فاسقين؟", "a": "\n          <div class=\"ans-point\"><strong>ينعقد النكاح بحضورهما</strong>؛ لأن النص لم يفصّل بين الفاسق وغيره، ولأن الفاسق يملك القبول بنفسه كالعدل، ولأنه غير مسلوب الولاية عن نفسه فلا يُسلَبها عن غيره، ولأن الفسق يؤثر في الشهادة عند الأداء لا عند التحمّل.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">الفسق لغةً:</span> الخروج، <span class=\"ans-label\">واصطلاحًا:</span> ارتكاب الكبائر أو الإصرار على الصغائر؛ <span class=\"ans-label\">والكبيرة:</span> ما وجب فيها الحد وتوجَّه إليها الوعيد.</div>\n          <div class=\"ans-point\"><span class=\"ans-label\">تحمُّل الشهادة:</span> معاينة الحادثة التي قد تحتاج إلى شهادة عليها، <span class=\"ans-label\">والأداء:</span> إعلام الشاهد القاضيَ بما عاينه؛ والفسق يؤثر في الشهادة عند الأداء للتهمة، ولا يمنع انعقاد العقد بحضوره.</div>\n        "}, {"num": "س20", "axis": "axis4", "axisTitle": "٤. شروط الشهود على عقد النكاح", "q": "ما حكم انعقاد النكاح بشهادة العميان؟", "a": "<div class=\"ans-point\"><strong>ينعقد النكاح بشهادتهم</strong>؛ لأنهم من أهل الشهادة حتى لو حكم بها حاكم جاز (وهو مُجتهَد فيه)، ولأن الأعمى يملك القبول بنفسه فصار كالبصير.</div>"}, {"num": "س21", "axis": "axis4", "axisTitle": "٤. شروط الشهود على عقد النكاح", "q": "ما حكم شهادة المحدود في القذف على عقد النكاح؟", "a": "<div class=\"ans-point\"><strong>ينعقد النكاح بحضوره</strong> سواء تاب أو لم يتب؛ لأن الفسق يؤثر في قبول الشهادة عند الأداء فحسب، وهذا لا يمنع من انعقاد العقد بحضوره.</div>"}];
+
+    const APPLIED_CASES = [{"id": "case1", "title": "نازلة 1: تقدم كلام الزوج بلفظ الماضي (تزوجتُك) وقبول المرأة بلفظ (زوّجتُك نفسي)", "q": "رجل قال لامرأة: (تزوجتُك)، فقالت هي: (زوّجتُك نفسي) — هل ينعقد النكاح بهذه الصيغة؟ ولماذا؟", "a": "نعم ينعقد؛ لأن الصيغة تضمنت لفظين ماضيين دالّين على الإيجاب والقبول، والعبرة بترتيب المعنى (إيجاب من طرف وقبول من الآخر) لا بترتيب المتكلمين، وقد استعملا لفظ التزويج والزواج وهما صريحان في النكاح."}, {"id": "case2", "title": "نازلة 2: الاعتراض على صحة عقد النكاح لفسق أحد الشاهدين", "q": "حضر عقد نكاح رجلٌ معروف بالفسق (يشرب الخمر جهرًا) مع رجل آخر عدل، فاعترض أحد الحاضرين على صحة العقد بسبب فسق أحد الشاهدين. فما الحكم؟", "a": "العقد صحيح منعقد؛ لأن النص الشرعي «لا نكاح إلا بشهود» لم يفرّق بين الفاسق والعدل، ولأن الفاسق يملك القبول بنفسه فيملك الشهادة كالعدل، والفسق إنما يؤثر في قبول الشهادة عند الأداء أمام القاضي، لا في مجرد انعقاد العقد بحضوره."}, {"id": "case3", "title": "نازلة 3: شهادة كفيف البصر على عقد النكاح", "q": "طلب رجل كفيف البصر أن يكون شاهدًا على عقد نكاح أخيه، فرفض بعض الحاضرين حضوره بحجة أنه لا يرى العاقدين. ناقش هذا الرأي فقهيًا.", "a": "الرفض غير صحيح؛ فالأعمى من أهل الشهادة على النكاح، وينعقد العقد بحضوره؛ لأنه يملك القبول بنفسه فصار كالبصير في هذا الحكم، ولو حكم حاكم بشهادته جاز ذلك؛ لأنه مسألة مجتهَد فيها وقد أجازها بعض الأئمة."}, {"id": "case4", "title": "نازلة 4: الانعقاد بصيغة (زوِّجني / زوّجتُك) وتولي الوكيل طرفي العقد", "q": "أراد رجل أن يوكّل صديقه ليتولى طرفي عقد نكاحه من امرأة معينة (أي يكون وكيلًا عن الزوج وعن وليّ الزوجة معًا)، فقيل له: (زوِّجني فلانة) وأجابه صديقه: (زوّجتُك). ما نوع هذه الصيغة؟ وهل تصح؟", "a": "هذه صيغة (ماضٍ + مستقبل): (زوِّجني) توكيل واستدعاء، وقوله (زوّجتُك) إيجاب بلفظ ماضٍ، وهي صيغة صحيحة منعقد بها النكاح؛ لأن الوكيل يتولى طرفي عقد النكاح، وقد سبق بيان جوازها في باب ما ينعقد به النكاح."}];
+
+    const MCQ_BANK = [{"id": "mcq1", "q": "1. متى يُراد بلفظ (النكاح) في الشرع (الوطء) لا (العقد)؟", "options": ["أ) عند وجود قرينة تصرفه للعقد", "ب) عند إطلاقه بلا قرينة", "ج) دائمًا يراد به العقد", "د) لا يراد به الوطء مطلقًا"], "correct": 1, "explanation": "النكاح عند الحنفية حقيقة في الوطء مجاز في العقد؛ فإذا أُطلق في الشرع بلا قرينة أُريد به الوطء (كحديث «وُلِدْتُ مِنْ نِكَاحٍ»)، ولا يُراد به العقد إلا بقرينة صارفة."}, {"id": "mcq2", "q": "2. حكم النكاح حالة التوقان (شدة الميل للجماع مع خوف الوقوع في الحرام) هو:", "options": ["أ) سنة مؤكدة", "ب) واجب", "ج) مكروه", "د) مباح فقط"], "correct": 1, "explanation": "السنة المؤكدة (أ) هي حكمه حالة الاعتدال، أما حالة التوقان مع خوف الوقوع في الزنا فحكمه الوجوب؛ لأن الامتناع عن الوقوع في الحرام فرض والنكاح وسيلته."}, {"id": "mcq3", "q": "3. ركن النكاح عند الحنفية هو:", "options": ["أ) الشهود", "ب) الإيجاب والقبول", "ج) الوليّ", "د) المهر"], "correct": 1, "explanation": "ركن الشيء ما يوجد به؛ وركن النكاح عند الحنفية هو الإيجاب والقبول فقط، أما الشهود فشرط انعقاد، والمهر حكم وأثر من آثاره."}, {"id": "mcq4", "q": "4. العدد المشترط من الشهود لانعقاد نكاح المسلمين:", "options": ["أ) رجل واحد فقط", "ب) رجلان، أو رجل وامرأتان", "ج) أربعة رجال", "د) امرأتان فقط"], "correct": 1, "explanation": "ينعقد نكاح المسلمين بحضور رجلين أو رجل وامرأتين اعتبارًا بالشهادة على المال، ولا ينعقد بشهادة النساء وحدهن بلا رجل."}, {"id": "mcq5", "q": "5. الوصف الذي لا يُشترط في شاهد عقد النكاح عند الحنفية:", "options": ["أ) الإسلام", "ب) العقل والبلوغ", "ج) العدالة", "د) أن يملك القبول بنفسه"], "correct": 2, "explanation": "يُشترط في الشاهد على نكاح المسلمين: العقل والبلوغ والإسلام (وضابطه أن يملك القبول بنفسه)، ولا تُشترط العدالة فينعقد بحضور الفاسقين."}, {"id": "mcq6", "q": "6. ينعقد النكاح بشهادة العميان لأنهم:", "options": ["أ) يملكون القبول بأنفسهم فصاروا كالبصير", "ب) لا تشترط فيهم الشهادة أصلًا", "ج) معفَوّن من شرط العدد", "د) لا يحتاج عقدهم إلى شهود"], "correct": 0, "explanation": "ينعقد النكاح بشهادة العميان لأنهم من أهل الشهادة ويملكون القبول بأنفسهم فصاروا كالبصير وفق ضابط الحنفية."}];
+
+    const EXAM_TF = [{"id": "tf1", "statement": "١. «تُشترط العدالة في شهود عقد النكاح عند الحنفية»", "isTrue": false, "explanation": "خطأ؛ والتصويب: لا تُشترط العدالة في شهود عقد النكاح عند الحنفية، بل ينعقد بشهادة الفاسقين لأن الفسق يؤثر في الأداء لا في التحمّل."}, {"id": "tf2", "statement": "٢. «لا ينعقد النكاح بشهادة رجل وامرأتين»", "isTrue": false, "explanation": "خطأ؛ والتصويب: ينعقد النكاح بشهادة رجل وامرأتين اعتبارًا بالشهادة على المال."}, {"id": "tf3", "statement": "٣. «النكاح عند الحنفية حقيقة في الوطء عند الإطلاق، ومجاز في العقد بقرينة»", "isTrue": true, "explanation": "صواب؛ فإذا أُطلق النكاح في الشرع أُريد به الوطء ما لم تقم قرينة تصرفه إلى العقد (كإذن الأهل أو العدد أو الشهود)."}, {"id": "tf4", "statement": "٤. «ينعقد النكاح بحضور المحدود في القذف سواء تاب أو لم يتب»", "isTrue": true, "explanation": "صواب؛ لأن الفسق يؤثر في قبول الشهادة عند الأداء أمام القاضي فحسب، ولا يمنع انعقاد العقد بحضوره."}, {"id": "tf5", "statement": "٥. «حكم النكاح حالة الخوف من الجَوْر (الظلم) سنة مؤكدة»", "isTrue": false, "explanation": "خطأ؛ والتصويب: حكم النكاح حالة الخوف من الجَوْر مكروه كراهة تحريمية (فإن تيقّن الجَوْر حَرُم)، وإنما يكون سنة مؤكدة في حالة الاعتدال."}];
+
+    const EXAM_ESSAY = [{"id": "ex_e1", "q": "1. عرّف النكاح لغةً وشرعًا.", "a": "نموذج الإجابة: النكاح لغة: الضمّ والجمع. وشرعًا: عبارة عن ضمّ وجمع مخصوص وهو الوطء، ويُستعمل في العقد مجازًا (ويُعرَّف أيضًا بأنه: عقد يفيد ملك المتعة قصدًا)."}, {"id": "ex_e2", "q": "2. وضح الفرق بين استعمال لفظ النكاح حقيقةً واستعماله مجازًا، مع التمثيل.", "a": "نموذج الإجابة: الحقيقة: إطلاق اللفظ بلا قرينة فيُراد به الوطء (كحديث «وُلِدْتُ مِنْ نِكَاحٍ»). المجاز: إطلاقه بقرينة فيُراد به العقد (كقوله تعالى ﴿فَانكِحُوهُنَّ بِإِذْنِ أَهْلِهِنَّ﴾ إذ الوطء لا يتوقف على إذن الأهل)."}, {"id": "ex_e3", "q": "3. قارن بين أحوال النكاح الثلاث من حيث الحكم والعلة.", "a": "نموذج الإجابة: الاعتدال: سنة مؤكدة (لدلالة النصوص بالترغيب). التوقان: واجب (لأن دفع الوقوع في الزنا فرض). الخوف من الجَوْر: مكروه كراهة تحريمية (لرجحان مفسدة الظلم؛ فإن تيقن الجور حرم)."}, {"id": "ex_e4", "q": "4. ما ركن النكاح؟ وبِمَ ينعقد من الألفاظ؟", "a": "نموذج الإجابة: الركن: الإيجاب والقبول. ينعقد بلفظين ماضيين، أو بلفظ ماضٍ وآخر مستقبل، وذلك بلفظ النكاح أو التزويج تحديدًا."}, {"id": "ex_e5", "q": "5. بيّن شروط الشهود على عقد النكاح عند الحنفية.", "a": "نموذج الإجابة: العدد: رجلان أو رجل وامرأتان. الصفة: الإسلام، والعقل، والبلوغ، دون اشتراط العدالة أو البصر."}, {"id": "ex_e6", "q": "8. (تفكير عليا) علّل: لماذا فرّق الفقهاء بين تأثير الفسق في التحمّل وتأثيره في الأداء عند الحديث عن شهادة الفاسق في النكاح؟", "a": "نموذج الإجابة: لأن التحمّل (معاينة الواقعة) أمر مشاهَد لا مجال فيه للتهمة، بخلاف الأداء (الإخبار بها أمام القاضي) الذي يُخشى فيه تأثر الفاسق بهواه أو مصلحته، فاعتُبر الفسق مؤثرًا في مقام الأداء دون التحمّل، وهذا هو سبب صحة انعقاد العقد بحضور الفاسق مع احتمال ردّ شهادته لاحقًا عند التنازع."}];
+
+    const SELF_EXAM_ITEMS = [{"id": "se1", "type": "mcq", "q": "س1 [اختيار من متعدد — ٤ درجات]: النكاح في اللغة: الضم والجمع، ويُطلق في الشرع حقيقةً على:", "options": ["أ) العقد", "ب) الوطء", "ج) المهر", "د) الخطبة"], "correct": 1, "explanation": "النكاح في الشرع حقيقة في الوطء عند الإطلاق، ولا يُراد به العقد إلا مجازًا بقرينة."}, {"id": "se2", "type": "mcq", "q": "س2 [اختيار من متعدد — ٤ درجات]: أقل ما تنعقد به الشهادة على نكاح المسلمين:", "options": ["أ) شاهد واحد عدل", "ب) امرأتان فقط", "ج) رجلان أو رجل وامرأتان", "د) أربعة رجال"], "correct": 2, "explanation": "لا ينعقد نكاح المسلمين إلا بحضور رجلين أو رجل وامرأتين اعتبارًا بالشهادة على المال."}, {"id": "se4", "type": "mcq", "q": "س4 [اختيار من متعدد — ٤ درجات]: حكم النكاح في حق من تاقت نفسه إليه وقدر على المهر والنفقة وأمن الجَوْر:", "options": ["أ) مباح", "ب) واجب", "ج) مكروه", "د) حرام"], "correct": 1, "explanation": "حكمه الوجوب؛ لأن من خاف على نفسه الوقوع في الزنا يجب عليه دفع هذا المحرم عن نفسه والنكاح وسيلته."}, {"id": "se5", "type": "essay", "q": "س5 [استدلال — ٤ درجات]: اذكر دليلًا من القرآن الكريم على مشروعية النكاح.", "a": "قوله تعالى: ﴿وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ﴾ [النور: ٣٢]، وقوله تعالى: ﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ﴾ [النساء: ٣]."}, {"id": "se6", "type": "essay", "q": "س6 [استدلال — ٤ درجات]: اذكر الدليل من السنة على اشتراط الشهود لانعقاد النكاح.", "a": "قوله ﷺ: «لَا نِكَاحَ إِلَّا بِشُهُودٍ»، وما رُوي عن ابن عباس رضي الله عنهما عن النبي ﷺ: «الزَّانِيَةُ الَّتِي تُنْكِحُ نَفْسَهَا بِغَيْرِ بَيِّنَةٍ»."}, {"id": "se7", "type": "essay", "q": "س7 [تعليل — ٤ درجات]: علّل: يجوز الاكتفاء برجل وامرأتين في الشهادة على النكاح.", "a": "اعتبارًا بالشهادة على المال، إذ جعل الحنفية النكاح كالمال في هذا الباب فهو عقد كالعقود."}, {"id": "se8", "type": "essay", "q": "س8 [حكم فقهي — ٥ درجات]: عقد رجل على امرأة بحضور شاهدين أعميين. بيّن حكم العقد مع التوجيه.", "a": "الحكم: ينعقد النكاح صحيحًا بشهادتهما. التوجيه: لأن العميان من أهل الشهادة حتى لو حكم بها حاكم جاز (وهو مجتهد فيه)، ولأن الأعمى يملك القبول بنفسه فصار كالبصير."}, {"id": "se9", "type": "essay", "q": "س9 [حكم فقهي — ٥ درجات]: شاب قادر على المهر والنفقة تتوق نفسه إلى الزواج ويأمن الجَوْر، فامتنع عنه. بيّن الحكم الفقهي مع التوجيه.", "a": "الحكم: يأثم بامتناعه؛ لأن النكاح في حقه واجب. التوجيه: لأن من تاقت نفسه إلى النكاح وخاف الوقوع في الزنا يجب عليه دفع هذا المحرَّم عن نفسه، والامتناع عن الوقوع في الحرام فرض."}, {"id": "se10", "type": "essay", "q": "س10 [تعليل — ٤ درجات]: علّل: ينعقد النكاح بحضور شاهدين فاسقين عند الحنفية.", "a": "لأن النص («لا نكاح إلا بشهود») لم يفصّل بين الفاسق وغيره، ولأن الفاسق يملك القبول بنفسه كالعدل، وغير مسلوب الولاية عن نفسه فلا يُسلَبها عن غيره، ولأن الفسق يؤثر في الشهادة عند الأداء لا عند التحمّل."}, {"id": "se11", "type": "essay", "q": "س11 [تحليل — ٥ درجات]: وازن بين المواضع التي يُراد فيها بلفظ النكاح الوطء والمواضع التي يُراد فيها العقد، مستخرجًا القرينة في كل موضع.", "a": "١. المواضع التي يُراد فيها الوطء (الحقيقة): عند التجرد عن القرائن الصارفة، مثل حديث «وُلِدْتُ مِنْ نِكَاحٍ»، وحديث «يَحِلُّ لِلرَّجُلِ مِنِ امْرَأَتِهِ الْحَائِضِ كُلُّ شَيْءٍ إِلَّا النِّكَاحَ» (والقرينة هنا أن العقد حاصل أصلًا مع الزوجة فالمنهي عنه حال الحيض هو الوطء). ٢. المواضع التي يُراد فيها العقد (المجاز): عند قيام قرينة صارفة، مثل: ﴿فَانكِحُوهُنَّ بِإِذْنِ أَهْلِهِنَّ﴾ (القرينة: توقفه على إذن الأهل والوطء لا يتوقف على إذنهم)، و﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ﴾ (القرينة: الاختصاص بالعدد)، وحديث «لَا نِكَاحَ إِلَّا بِشُهُودٍ» (القرينة: اشتراط الشهود والوطء لا يشهد عليه)."}, {"id": "se12", "type": "essay", "q": "س12 [تركيب — ٦ درجات]: ضع ضابطًا جامعًا لأحوال النكاح الأربع (الاعتدال، التوقان، خوف الجَوْر، تيقُّن الجَوْر) مع بيان علة الحكم في كل حالة.", "a": "الضابط الجامع: يدور حكم النكاح مع غلبة المصلحة أو المفسدة في حق المكلف: (١) حالة الاعتدال: سنة مؤكدة؛ لدلالة نصوص الترغيب والتأكيد. (٢) حالة التوقان (خوف الزنا): واجب؛ لأن صون النفس عن الحرام فرض متعين. (٣) حالة الخوف من الجَوْر: مكروه كراهة تحريمية؛ لرجحان مفسدة الظلم المحتمل على مصلحة النكاح. (٤) حالة تيقُّن الجَوْر: حرام؛ لأن ارتكاب الظلم المتيقن محرَّم قطعًا."}, {"id": "se13", "type": "essay", "q": "س13 [تقويم — ٦ درجات]: ناقش قول من يشترط العدالة في شاهدَي النكاح، وبيّن الراجح عند الحنفية مع الدليل.", "a": "مناقشة قول مشترطي العدالة: قياسهم لحضور عقد النكاح على أداء الشهادة أمام القاضي قياس مع الفارق؛ لأن التهمة بالكذب إنما تُخشى عند الإخبار والأداء أمام القضاء لا عند مجرد معاينة الإنشاء وتحمّل الشهادة. والراجح عند الحنفية: عدم اشتراط العدالة وانعقاد النكاح بشهادة الفاسقين؛ لإطلاق حديث «لا نكاح إلا بشهود» دون تقييد بالعدالة، ولأن الفاسق كامل الأهلية يملك القبول بنفسه وغير مسلوب الولاية عن نفسه فلا يُسلبها عن غيره."}];
+
+    const TEXTBOOK_DISCUSS = [{"id": "tbd1", "q": "السؤال الأول (أ): ما النكاح لغة وشرعًا؟ وما حكمه؟ وبم ينعقد؟", "a": "الحل النموذجي: لغة: الضمّ والجمع. شرعًا: عبارة عن ضمّ وجمع مخصوص هو الوطء، ويُطلق على العقد مجازًا. حكمه: عقد مشروع مستحب، ويختلف باختلاف حال المكلف (سنة مؤكدة / واجب / مكروه). ينعقد بلفظين ماضيين، أو ماضٍ ومستقبل، بلفظ النكاح أو التزويج."}, {"id": "tbd2", "q": "السؤال الأول (ج): ما أحوال النكاح إجمالًا؟ وما حكمه في كل حالة؟ مع التعليل.", "a": "الحل النموذجي: حالة الاعتدال: سنة مؤكدة؛ لدلالة نصوص الترغيب والتأكيد. حالة التوقان: واجب؛ لأن دفع الوقوع في الزنا فرض والنكاح وسيلته. حالة الخوف من الجَوْر: مكروه كراهة تحريمية؛ لرجحان مفسدة الظلم على مصلحة النكاح."}, {"id": "tbd3", "q": "السؤال الثاني (٩): تخير: متى أُطلق النكاح في الشرع يراد به: (العقد – الوطء – السكن والمودة)؟", "a": "الحل النموذجي: يراد به (الوطء)؛ فهو حقيقة فيه، ولا يُراد به العقد إلا بقرينة صارفة."}, {"id": "tbd4", "q": "السؤال الثاني (٤): تخير: ينعقد النكاح بـ: (الإيجاب – القبول – هما معًا)؟", "a": "الحل النموذجي: ينعقد بـ (هما معًا: الإيجاب والقبول)؛ لأنهما ركن العقد الذي يوجد بهما."}, {"id": "tbd5", "q": "السؤال الثاني (٣): تخير: النكاح حالة التوقان: (واجب – مندوب – مكروه)؟", "a": "الحل النموذجي: (واجب)؛ لأن دفع الوقوع في الحرام فرض والنكاح وسيلة إليه في هذه الحالة."}, {"id": "tbd6", "q": "السؤال الثالث (ب-٤): بيّن الحكم في: انعقاد النكاح بشهادة الفاسق. مع التعليل.", "a": "الحل النموذجي: ينعقد النكاح بشهادته؛ لأن النص «لا نكاح إلا بشهود» لم يفصّل بين الفاسق والعدل، ولأن الفاسق يملك القبول بنفسه، والفسق إنما يؤثر في الشهادة عند الأداء لا عند التحمّل."}, {"id": "tbd7", "q": "السؤال الثالث (ب-٥): بيّن الحكم في: النكاح حالة الخوف من الجَوْر.", "a": "الحل النموذجي: حكمه الكراهة (كراهة تحريمية)؛ لأن مَن يخاف الجَوْر إن تزوّج يأثم به فترجح المفسدة، فإن تيقّن الجَوْر حَرُم النكاح."}];
+
+    const TEXTBOOK_GENERAL = [{"id": "tbg1", "q": "س1: عرّف النكاح لغة وشرعًا، ومتى يستخدم النكاح حقيقة، ومتى يراد به المجاز؟", "a": "الحل النموذجي: لغة: الضمّ والجمع. شرعًا: عبارة عن ضمّ وجمع مخصوص هو الوطء وهذا استعماله الحقيقي عند الإطلاق بلا قرينة. ويُستعمل مجازًا في العقد إذا قامت قرينة تصرفه إليه، كتوقف الحكم على إذن الأهل أو تعلقه بالعدد أو الشهود."}, {"id": "tbg2", "q": "س2: ما حكم النكاح؟ وما دليله؟ وما ركنه؟ وممن يكون الإيجاب؟ وممن يكون القبول؟", "a": "الحل النموذجي: حكمه: مشروع مستحب مندوب إليه. دليله: الكتاب (﴿وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ﴾) والسنة («تَنَاكَحُوا تَكْثُرُوا») والإجماع. ركنه: الإيجاب والقبول، ويكون الإيجاب ممن يبدأ بالعقد (الزوج أو الزوجة أو وليّها)، والقبول ممن يرد عليه بعد الإيجاب."}, {"id": "tbg3", "q": "س3: علّل: النكاح حالة الاعتدال سنة مؤكدة / حالة التوقان واجب / حالة الخوف من الجَوْر مكروه.", "a": "الحل النموذجي: الاعتدال سنة مؤكدة لدلالة النصوص بالأمر والترغيب. التوقان واجب لأن الامتناع عن الوقوع في الزنا فرض والنكاح وسيلته. الخوف من الجَوْر مكروه لأن مرتكبه يأثم بالظلم المحتمل فترجح مفسدته."}, {"id": "tbg4", "q": "س4: ما العدد المطلوب من الشهود لانعقاد نكاح المسلمين؟ وما الذي يُشترط فيهم؟ وما دليل ذلك؟", "a": "الحل النموذجي: العدد: رجلان، أو رجل وامرأتان. يُشترط فيهم: الإسلام والعقل والبلوغ (دون العدالة). الدليل: قوله ﷺ: «لَا نِكَاحَ إِلَّا بِشُهُودٍ»."}, {"id": "tbg5", "q": "س5 (أ، ب، ج): علّل: (أ) لا بد في شهود عقد نكاح المسلمين من العقل والبلوغ والإسلام. (ب) ينعقد نكاح المسلمين بحضور فاسقين. (ج) ينعقد النكاح بشهادة العميان.", "a": "الحل النموذجي: (أ) لأن الصبي والمجنون ليسا من أهل الشهادة ولا يملكان القبول بأنفسهما، ولا بد من الإسلام في نكاح المسلمين خاصة. (ب) لأن النص لم يفرّق بين الفاسق والعدل، والفاسق يملك القبول بنفسه، والفسق يؤثر في الأداء لا التحمّل. (ج) لأن الأعمى يملك القبول بنفسه فصار كالبصير في هذا الحكم، وهي مسألة مجتهَد فيها أجازها بعض الأئمة."}];
+
+    const STORAGE_KEYS = {
+      THEME: "zad_3sec_nikah_u1_theme",
+      PROGRESS: "zad_3sec_nikah_u1_progress",
+      DATES: "zad_3sec_nikah_u1_dates",
+      CONFIDENCE: "zad_3sec_nikah_u1_conf"
+    };
+
+    const TOTAL_STUDY_ITEMS = 62;
+    let reviewedItems = new Set();
+    let savedDates = {};
+    let savedConf = {};
+    let mcqState = {};
+    let currentFontScale = 1;
+    let activeAxisFilter = "all";
+
+    function safeGetStorage(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function safeSetStorage(key, val) {
+      try {
+        localStorage.setItem(key, JSON.stringify(val));
+      } catch (e) {}
+    }
+
+    function initApp() {
+      const savedTheme = safeGetStorage(STORAGE_KEYS.THEME, "light");
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateThemeBtnLabel(savedTheme);
+
+      const loadedProg = safeGetStorage(STORAGE_KEYS.PROGRESS, []);
+      reviewedItems = new Set(loadedProg);
+
+      savedDates = safeGetStorage(STORAGE_KEYS.DATES, {});
+      savedConf = safeGetStorage(STORAGE_KEYS.CONFIDENCE, {});
+
+      renderSpacedRepetition();
+      renderQaFilters();
+      renderQaBank();
+      renderAppliedCases();
+      renderMcqBank();
+      renderExamSections();
+      renderTextbookExercises();
+      updateProgressUI();
+    }
+
+    function showToast(msg, type = "info") {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast " + type;
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        setTimeout(() => toast.remove(), 250);
+      }, 2600);
+    }
+
+    function markItemReviewed(itemId) {
+      if (!reviewedItems.has(itemId)) {
+        reviewedItems.add(itemId);
+        safeSetStorage(STORAGE_KEYS.PROGRESS, Array.from(reviewedItems));
+        updateProgressUI();
+      }
+    }
+
+    function updateProgressUI() {
+      const count = reviewedItems.size;
+      const pct = Math.min(100, Math.round((count / TOTAL_STUDY_ITEMS) * 100));
+      document.getElementById("progressText").textContent =
+        `مؤشر الإنجاز الدراسي: تم استعراض ${count} من ${TOTAL_STUDY_ITEMS} عنصر مذاكرة — ${pct}%`;
+      document.getElementById("progressFill").style.width = pct + "%";
+    }
+
+    function renderSpacedRepetition() {
+      const tbody = document.getElementById("spacedRepBody");
+      tbody.innerHTML = SPACED_UNITS.map(u => {
+        const d1 = savedDates[`u${u.id}_d1`] || "";
+        const d2 = savedDates[`u${u.id}_d2`] || "";
+        const d3 = savedDates[`u${u.id}_d3`] || "";
+        const d4 = savedDates[`u${u.id}_d4`] || "";
+        const rowClass = u.id === 1 ? "current-unit-row" : "";
+        return `
+          <tr class="${rowClass}">
+            <td>${u.id}</td>
+            <td>${u.title}</td>
+            <td><input type="date" class="date-input" value="${d1}" onchange="saveSpacedDate('u${u.id}_d1', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d2}" onchange="saveSpacedDate('u${u.id}_d2', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d3}" onchange="saveSpacedDate('u${u.id}_d3', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d4}" onchange="saveSpacedDate('u${u.id}_d4', this.value)" /></td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function saveSpacedDate(key, val) {
+      savedDates[key] = val;
+      safeSetStorage(STORAGE_KEYS.DATES, savedDates);
+      showToast("تم حفظ تاريخ المراجعة تلقائيًّا 📅", "success");
+    }
+
+    function resetSpacedDates() {
+      savedDates = {};
+      safeSetStorage(STORAGE_KEYS.DATES, {});
+      renderSpacedRepetition();
+      showToast("تم تصفير جميع التواريخ المسجلة بنجاح 🔄", "info");
+    }
+
+    function renderQaFilters() {
+      const bar = document.getElementById("qaFilterBar");
+      bar.innerHTML = QA_AXES.map(ax => `
+        <button class="filter-pill ${ax.id === activeAxisFilter ? 'active' : ''}" onclick="setAxisFilter('${ax.id}')">
+          ${ax.label}
+        </button>
+      `).join("");
+    }
+
+    function setAxisFilter(axisId) {
+      activeAxisFilter = axisId;
+      renderQaFilters();
+      renderQaBank();
+    }
+
+    function renderQaBank() {
+      const container = document.getElementById("qaListContainer");
+      const filtered = activeAxisFilter === "all"
+        ? QA_BANK
+        : QA_BANK.filter(item => item.axis === activeAxisFilter);
+
+      container.innerHTML = filtered.map(item => {
+        const isRev = reviewedItems.has("qa_" + item.num);
+        return `
+          <div class="qa-card searchable-card ${isRev ? 'reviewed' : ''}" id="card_qa_${item.num}">
+            <div class="qa-header" onclick="toggleAccordion('qa_${item.num}')">
+              <div class="qa-q-wrap">
+                <span class="q-num-badge">${item.num}</span>
+                <div>
+                  <span class="q-axis-badge">${item.axisTitle}</span>
+                  <div class="q-text">${item.q}</div>
+                </div>
+              </div>
+              <button class="toggle-ans-btn" id="btn_qa_${item.num}">إظهار الإجابة ∨</button>
+            </div>
+            <div class="qa-body" id="body_qa_${item.num}">
+              ${item.a}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function toggleAccordion(id) {
+      const body = document.getElementById("body_" + id);
+      const btn = document.getElementById("btn_" + id);
+      const card = document.getElementById("card_" + id);
+      if (!body) return;
+      const isOpen = body.classList.toggle("open");
+      if (btn) {
+        btn.textContent = isOpen ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      }
+      if (isOpen) {
+        if (card) card.classList.add("reviewed");
+        markItemReviewed(id);
+      }
+    }
+
+    function renderAppliedCases() {
+      const container = document.getElementById("casesContainer");
+      container.innerHTML = APPLIED_CASES.map((c, idx) => `
+        <div class="qa-card searchable-card ${reviewedItems.has(c.id) ? 'reviewed' : ''}" id="card_${c.id}">
+          <div class="qa-header" onclick="toggleAccordion('${c.id}')">
+            <div class="qa-q-wrap">
+              <span class="q-num-badge" style="background:var(--gold);">نازلة ${idx + 1}</span>
+              <div>
+                <span class="q-axis-badge">${c.title}</span>
+                <div class="q-text">${c.q}</div>
+              </div>
+            </div>
+            <button class="toggle-ans-btn" id="btn_${c.id}">إظهار الإجابة والتحليل ∨</button>
+          </div>
+          <div class="qa-body" id="body_${c.id}">
+            <div class="ans-point"><span class="ans-label">الإجابة والتحليل الفقهي:</span> ${c.a}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderMcqBank() {
+      const container = document.getElementById("mcqContainer");
+      container.innerHTML = MCQ_BANK.map(item => `
+        <div class="card searchable-card" id="card_${item.id}">
+          <div class="q-text" style="margin-bottom:0.5rem;">${item.q}</div>
+          <div class="options-grid" id="opts_${item.id}">
+            ${item.options.map((opt, oIdx) => `
+              <button class="opt-btn" onclick="answerMcq('${item.id}', ${oIdx})">
+                <span>${opt}</span>
+                <span class="opt-mark"></span>
+              </button>
+            `).join("")}
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">💡 التوضيح والتعليل:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+      updateMcqScoreUI();
+    }
+
+    function answerMcq(mcqId, chosenIdx) {
+      if (mcqState[mcqId] !== undefined) return;
+      const item = MCQ_BANK.find(m => m.id === mcqId);
+      if (!item) return;
+
+      const isCorrect = chosenIdx === item.correct;
+      mcqState[mcqId] = isCorrect;
+      markItemReviewed(mcqId);
+
+      const optsWrap = document.getElementById("opts_" + mcqId);
+      const buttons = optsWrap.querySelectorAll(".opt-btn");
+      buttons.forEach((btn, idx) => {
+        btn.disabled = true;
+        const mark = btn.querySelector(".opt-mark");
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          if (mark) mark.textContent = "✓";
+        } else if (idx === chosenIdx && !isCorrect) {
+          btn.classList.add("wrong");
+          if (mark) mark.textContent = "✗";
+        }
+      });
+
+      const fb = document.getElementById("fb_" + mcqId);
+      if (fb) fb.classList.add("show");
+
+      if (isCorrect) {
+        showToast("إجابة صحيحة! أحسنت 🌟", "success");
+      } else {
+        showToast("إجابة غير صحيحة، طالع التوضيح بالأسفل 💡", "error");
+      }
+      updateMcqScoreUI();
+    }
+
+    function updateMcqScoreUI() {
+      const total = MCQ_BANK.length;
+      const correctCount = Object.values(mcqState).filter(Boolean).length;
+      const pct = Math.round((correctCount / total) * 100);
+      document.getElementById("mcqScoreText").textContent = `النتيجة: ${correctCount} / ${total}`;
+      document.getElementById("mcqPercentText").textContent = `نسبة الإتقان: ${pct}%`;
+    }
+
+    function resetMcqQuiz() {
+      mcqState = {};
+      renderMcqBank();
+      showToast("تمت إعادة ضبط بنك الاختيار من متعدد 🔄", "info");
+    }
+
+    function renderExamSections() {
+      const tfContainer = document.getElementById("examTfContainer");
+      tfContainer.innerHTML = EXAM_TF.map(item => `
+        <div class="card searchable-card">
+          <div class="q-text">${item.statement}</div>
+          <div class="options-grid" id="tf_opts_${item.id}" style="max-width:460px;">
+            <button class="opt-btn" onclick="answerTf('${item.id}', true)">
+              <span>✓ عبارة صحيحة</span>
+              <span class="opt-mark"></span>
+            </button>
+            <button class="opt-btn" onclick="answerTf('${item.id}', false)">
+              <span>✗ عبارة خاطئة</span>
+              <span class="opt-mark"></span>
+            </button>
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">⚖️ التصويب والتعليل الفقهي:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+
+      const essayContainer = document.getElementById("examEssayContainer");
+      essayContainer.innerHTML = EXAM_ESSAY.map(item => `
+        <div class="qa-card searchable-card" id="card_${item.id}">
+          <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+            <div class="q-text">${item.q}</div>
+            <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+          </div>
+          <div class="qa-body" id="body_${item.id}">
+            <div class="ans-point">${item.a}</div>
+          </div>
+        </div>
+      `).join("");
+
+      const selfContainer = document.getElementById("selfExamContainer");
+      const matchingCardHtml = `
+        <div class="card searchable-card">
+          <div class="q-text" style="margin-bottom:0.75rem;">س3 [مزاوجة تفاعلية — ٥ درجات]: صِلْ بين عناصر المجموعة (أ) وما يناسبها من المجموعة (ب):</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>المجموعة (أ)</th>
+                  <th>اختر ما يناسبها من المجموعة (ب)</th>
+                  <th>التحقق الفوري</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${[
+                  { id: "m1", a: "١. لفظ نكاح المتعة", correct: "ب" },
+                  { id: "m2", a: "٢. لفظ النكاح المؤقت", correct: "أ" },
+                  { id: "m3", a: "٣. حكم الصورتين عند الجمهور", correct: "د" },
+                  { id: "m4", a: "٤. رأي زفر في النكاح المؤقت", correct: "هـ" },
+                  { id: "m5", a: "٥. دليل تحريم المتعة من السنة", correct: "ج" }
+                ].map(row => `
+                  <tr>
+                    <td><strong>${row.a}</strong></td>
+                    <td>
+                      <select class="match-select" onchange="checkMatchRow('${row.id}', '${row.correct}', this.value)">
+                        <option value="">-- اختر الإجابة --</option>
+                        <option value="أ">أ) تزوجتك شهرًا</option>
+                        <option value="ب">ب) متعيني نفسك</option>
+                        <option value="ج">ج) تحريمه ﷺ لها يوم خيبر</option>
+                        <option value="د">د) باطل</option>
+                        <option value="هـ">هـ) يصح ويلغو شرط التوقيت</option>
+                      </select>
+                    </td>
+                    <td id="match_res_${row.id}" style="font-weight:800;">—</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      const otherSelfItemsHtml = SELF_EXAM_ITEMS.map(item => {
+        if (item.type === "mcq") {
+          return `
+            <div class="card searchable-card">
+              <div class="q-text">${item.q}</div>
+              <div class="options-grid" id="se_opts_${item.id}">
+                ${item.options.map((opt, idx) => `
+                  <button class="opt-btn" onclick="answerSelfMcq('${item.id}', ${idx}, ${item.correct})">
+                    <span>${opt}</span>
+                    <span class="opt-mark"></span>
+                  </button>
+                `).join("")}
+              </div>
+              <div class="feedback-box" id="fb_${item.id}">
+                <strong style="color:var(--primary);">💡 التوضيح:</strong> ${item.explanation}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="qa-card searchable-card" id="card_${item.id}">
+              <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+                <div class="q-text">${item.q}</div>
+                <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+              </div>
+              <div class="qa-body" id="body_${item.id}">
+                <div class="ans-point"><span class="ans-label">نموذج الإجابة:</span> ${item.a}</div>
+              </div>
+            </div>
+          `;
+        }
+      });
+
+      otherSelfItemsHtml.splice(2, 0, matchingCardHtml);
+      selfContainer.innerHTML = otherSelfItemsHtml.join("");
+    }
+
+    function answerTf(tfId, userChoice) {
+      const item = EXAM_TF.find(t => t.id === tfId);
+      if (!item) return;
+      markItemReviewed(tfId);
+
+      const wrap = document.getElementById("tf_opts_" + tfId);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = userChoice === item.isTrue;
+
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        const btnRepresentsTrue = idx === 0;
+        if (btnRepresentsTrue === item.isTrue) {
+          btn.classList.add("correct");
+        } else if (btnRepresentsTrue === userChoice && !isCorrect) {
+          btn.classList.add("wrong");
+        }
+      });
+
+      document.getElementById("fb_" + tfId).classList.add("show");
+      if (isCorrect) {
+        showToast("أحسنت! إجابتك صائبة 🌟", "success");
+      } else {
+        showToast("انتبه! طالع التصويب الفقهي بالأسفل 💡", "error");
+      }
+    }
+
+    function checkMatchRow(rowId, correctVal, chosenVal) {
+      const cell = document.getElementById("match_res_" + rowId);
+      if (!chosenVal) {
+        cell.textContent = "—";
+        cell.style.color = "";
+        return;
+      }
+      markItemReviewed("match_" + rowId);
+      if (chosenVal === correctVal) {
+        cell.textContent = "✓ إجابة صحيحة";
+        cell.style.color = "var(--success)";
+        showToast("مطابقة صحيحة! 🌟", "success");
+      } else {
+        cell.textContent = `✗ خطأ (الصواب: ${correctVal})`;
+        cell.style.color = "var(--danger)";
+        showToast("مطابقة غير صحيحة، حاول مرة أخرى", "error");
+      }
+    }
+
+    function answerSelfMcq(id, chosenIdx, correctIdx) {
+      markItemReviewed(id);
+      const wrap = document.getElementById("se_opts_" + id);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = chosenIdx === correctIdx;
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === correctIdx) btn.classList.add("correct");
+        else if (idx === chosenIdx && !isCorrect) btn.classList.add("wrong");
+      });
+      document.getElementById("fb_" + id).classList.add("show");
+      showToast(isCorrect ? "إجابة صحيحة! 🌟" : "راجع التوضيح بالأسفل 💡", isCorrect ? "success" : "error");
+    }
+
+    function renderTextbookExercises() {
+      const renderGroup = (list) => list.map(item => {
+        const confVal = savedConf[item.id];
+        const isRevealed = Boolean(confVal);
+        return `
+          <div class="card searchable-card" id="card_${item.id}">
+            <div class="q-text">${item.q}</div>
+            <div class="confidence-bar">
+              <span style="font-size:0.88rem; font-weight:700; color:var(--text-muted);">
+                قيّم ثقتك في إجابتك قبل الاطلاع على الحل:
+              </span>
+              <div class="conf-btns">
+                <button class="conf-btn sure ${confVal === 'sure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'sure')">
+                  [ متأكد 👍 ]
+                </button>
+                <button class="conf-btn unsure ${confVal === 'unsure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'unsure')">
+                  [ غير متأكد 🧐 ]
+                </button>
+              </div>
+            </div>
+            <div class="qa-body ${isRevealed ? 'open' : ''}" id="body_${item.id}" style="margin-top:0.75rem; border-radius:8px; background:var(--bg-quote);">
+              <div class="ans-point">${item.a}</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("tbDiscussContainer").innerHTML = renderGroup(TEXTBOOK_DISCUSS);
+      document.getElementById("tbGeneralContainer").innerHTML = renderGroup(TEXTBOOK_GENERAL);
+    }
+
+    function rateConfidence(itemId, level) {
+      savedConf[itemId] = level;
+      safeSetStorage(STORAGE_KEYS.CONFIDENCE, savedConf);
+      markItemReviewed(itemId);
+      renderTextbookExercises();
+      showToast(
+        level === "sure"
+          ? "رائع! قارن الآن إجابتك بالحل النموذجي لتأكيد إتقانك 👍"
+          : "خطوة ممتازة! راجع الحل النموذجي الآن لتثبيت المعلومة 🧐",
+        "success"
+      );
+    }
+
+    function switchTab(sectionId, btnEl) {
+      document.querySelectorAll(".tab-section").forEach(sec => sec.classList.remove("active"));
+      const target = document.getElementById(sectionId);
+      if (target) target.classList.add("active");
+
+      document.querySelectorAll("#sidebarNav .nav-btn").forEach(b => b.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function toggleAllInActiveTab(openState) {
+      const activeSec = document.querySelector(".tab-section.active");
+      if (!activeSec) return;
+
+      activeSec.querySelectorAll(".qa-body, .feedback-box").forEach(el => {
+        if (openState) {
+          el.classList.add("open", "show");
+        } else {
+          el.classList.remove("open", "show");
+        }
+      });
+
+      activeSec.querySelectorAll(".toggle-ans-btn").forEach(btn => {
+        btn.textContent = openState ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      });
+
+      showToast(openState ? "تم إظهار جميع الإجابات في هذا القسم 👁️" : "تم طيّ جميع الإجابات للمراجعة الذاتية 🔒", "info");
+    }
+
+    function handleGlobalSearch(query) {
+      const q = query.trim().toLowerCase();
+      if (q.length > 0) {
+        const activeSec = document.querySelector(".tab-section.active");
+        if (activeSec && activeSec.id === "sec1") {
+          const qaBtn = document.querySelectorAll("#sidebarNav .nav-btn")[1];
+          switchTab("sec2", qaBtn);
+        }
+      }
+
+      document.querySelectorAll(".searchable-card").forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    }
+
+    function changeFontSize(delta) {
+      if (delta === 0) {
+        currentFontScale = 1;
+      } else {
+        currentFontScale = Math.min(1.35, Math.max(0.85, +(currentFontScale + delta).toFixed(2)));
+      }
+      document.documentElement.style.setProperty("--font-scale", currentFontScale);
+    }
+
+    function toggleTheme() {
+      const curr = document.documentElement.getAttribute("data-theme") || "light";
+      const next = curr === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      safeSetStorage(STORAGE_KEYS.THEME, next);
+      updateThemeBtnLabel(next);
+    }
+
+    function updateThemeBtnLabel(theme) {
+      const btn = document.getElementById("themeToggleBtn");
+      if (btn) {
+        btn.textContent = theme === "dark" ? "☀️ الوضع النهاري" : "🌙 الوضع النهاري/الليلي";
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", initApp);
+  </script>
+</body>
+</html>

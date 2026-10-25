@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سلسلة زاد الأزهري — الفقه الحنفي (٣ث) — كتاب النكاح: الوحدة الثانية (محرمات النكاح)</title>
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-quote: #fffbeb;
+      --border-quote: #d97706;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #0f766e;
+      --primary-light: #0d9488;
+      --primary-bg: #ccfbf1;
+      --navy: #1e293b;
+      --gold: #d97706;
+      --gold-bg: #fef3c7;
+      --crimson: #b91c1c;
+      --crimson-bg: #fee2e2;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --font-scale: 1;
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-alt: #334155;
+      --bg-quote: #272014;
+      --border-quote: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --primary: #14b8a6;
+      --primary-light: #2dd4bf;
+      --primary-bg: rgba(20, 184, 166, 0.18);
+      --navy: #020617;
+      --gold: #f59e0b;
+      --gold-bg: rgba(245, 158, 11, 0.18);
+      --crimson: #f87171;
+      --crimson-bg: rgba(239, 68, 68, 0.2);
+      --success: #22c55e;
+      --success-bg: rgba(34, 197, 94, 0.2);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.2);
+      --border-color: #334155;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.75;
+      font-size: calc(1rem * var(--font-scale));
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+    }
+
+    /* Sticky Top Header */
+    .top-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-card);
+      border-bottom: 2px solid var(--primary);
+      box-shadow: var(--shadow-md);
+      padding: 0.75rem 1.25rem;
+    }
+
+    .header-row-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .zad-badge {
+      background: linear-gradient(135deg, var(--primary), #065f46);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(15, 118, 110, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-titles h1 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+
+    .brand-titles p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      max-width: 420px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.5rem 2.2rem 0.5rem 0.85rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .ctrl-btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.38rem 0.65rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.18s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .ctrl-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Progress Bar in Header */
+    .progress-bar-wrap {
+      margin-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 8px;
+      background: var(--bg-card-alt);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--gold));
+      transition: width 0.35s ease;
+      border-radius: 999px;
+    }
+
+    /* Layout Grid */
+    .app-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 1.25rem;
+      max-width: 1440px;
+      margin: 1.25rem auto;
+      padding: 0 1rem 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .app-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Right Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 118px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 960px) {
+      .sidebar {
+        position: static;
+      }
+    }
+
+    .sidebar-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      list-style: none;
+    }
+
+    .nav-btn {
+      width: 100%;
+      text-align: right;
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.6rem 0.75rem;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .nav-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(15, 118, 110, 0.3);
+    }
+
+    .nav-count {
+      font-size: 0.75rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .nav-btn.active .nav-count {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
+    .sidebar-actions {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .bulk-btn {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .bulk-btn:hover {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    /* Main Content Area */
+    .main-area {
+      min-width: 0;
+    }
+
+    .tab-section {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Banner */
+    .section-banner {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-banner::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: var(--gold);
+    }
+
+    .section-banner h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-banner p {
+      font-size: 0.92rem;
+      opacity: 0.92;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Filter Pills */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.15rem;
+      background: var(--bg-card);
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+    }
+
+    .filter-pill {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--primary);
+    }
+
+    .filter-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Q&A Accordion Cards */
+    .qa-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-right: 4px solid var(--primary);
+      border-radius: var(--radius);
+      margin-bottom: 0.9rem;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .qa-card.reviewed {
+      border-right-color: var(--gold);
+    }
+
+    .qa-header {
+      padding: 1rem 1.15rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .qa-header:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .qa-q-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      flex: 1;
+    }
+
+    .q-num-badge {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 7px;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .q-axis-badge {
+      background: var(--gold-bg);
+      color: var(--gold);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+
+    .q-text {
+      font-weight: 800;
+      font-size: 1.02rem;
+      color: var(--text-main);
+    }
+
+    .toggle-ans-btn {
+      background: var(--primary-bg);
+      color: var(--primary);
+      border: none;
+      padding: 0.38rem 0.8rem;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .toggle-ans-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .qa-body {
+      display: none;
+      padding: 1rem 1.25rem 1.15rem;
+      border-top: 1px dashed var(--border-color);
+      background: var(--bg-card);
+    }
+
+    .qa-body.open {
+      display: block;
+    }
+
+    .ans-point {
+      margin-bottom: 0.55rem;
+      position: relative;
+      padding-right: 1rem;
+    }
+
+    .ans-point::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: var(--crimson);
+      font-weight: 900;
+    }
+
+    .ans-label {
+      color: var(--crimson);
+      font-weight: 800;
+    }
+
+    .quote-box {
+      background: var(--bg-quote);
+      border-right: 4px solid var(--border-quote);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin: 0.6rem 0;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .imam-badge {
+      display: inline-block;
+      padding: 0.1rem 0.55rem;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      margin: 0 0.15rem;
+    }
+
+    .imam-hanifa { background: #dcfce7; color: #166534; }
+    .imam-yusuf { background: #dbeafe; color: #1e40af; }
+    .imam-muhammad { background: #fae8ff; color: #86198f; }
+    .imam-zufar { background: #ffedd5; color: #9a3412; }
+
+    [data-theme="dark"] .imam-hanifa { background: rgba(22, 101, 52, 0.35); color: #86efac; }
+    [data-theme="dark"] .imam-yusuf { background: rgba(30, 64, 175, 0.35); color: #93c5fd; }
+    [data-theme="dark"] .imam-muhammad { background: rgba(134, 25, 143, 0.35); color: #f0abfc; }
+    [data-theme="dark"] .imam-zufar { background: rgba(154, 52, 18, 0.35); color: #fdba74; }
+
+    /* Tables */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      margin-top: 0.5rem;
+    }
+
+    table.zad-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+      font-size: 0.92rem;
+    }
+
+    table.zad-table th {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 0.75rem 1rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    table.zad-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    table.zad-table tr:nth-child(even) td {
+      background: var(--bg-card-alt);
+    }
+
+    table.zad-table tr.current-unit-row td {
+      background: var(--gold-bg);
+      font-weight: 800;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .status-done { background: var(--success-bg); color: var(--success); }
+    .status-current { background: var(--gold); color: #fff; }
+    .status-upcoming { background: var(--bg-card-alt); color: var(--text-muted); border: 1px solid var(--border-color); }
+
+    .date-input {
+      padding: 0.35rem 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.82rem;
+    }
+
+    /* Interactive MCQ & True/False */
+    .score-board {
+      background: var(--bg-card);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .score-stats {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .score-pill {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .opt-btn {
+      text-align: right;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-bg);
+    }
+
+    .opt-btn.correct {
+      background: var(--success-bg) !important;
+      border-color: var(--success) !important;
+      color: var(--success) !important;
+    }
+
+    .opt-btn.wrong {
+      background: var(--danger-bg) !important;
+      border-color: var(--danger) !important;
+      color: var(--danger) !important;
+    }
+
+    .feedback-box {
+      display: none;
+      margin-top: 0.85rem;
+      padding: 0.85rem 1rem;
+      border-radius: 9px;
+      background: var(--bg-quote);
+      border-right: 4px solid var(--gold);
+      font-size: 0.92rem;
+    }
+
+    .feedback-box.show {
+      display: block;
+    }
+
+    /* Confidence Calibration Buttons */
+    .confidence-bar {
+      margin-top: 0.85rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-card-alt);
+      border-radius: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .conf-btns {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .conf-btn {
+      padding: 0.42rem 0.9rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 800;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .conf-btn.sure:hover, .conf-btn.sure.selected {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .conf-btn.unsure:hover, .conf-btn.unsure.selected {
+      background: var(--gold-bg);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Concept Map Tree */
+    .concept-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .root-node {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 14px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      border-bottom: 4px solid var(--gold);
+      position: relative;
+    }
+
+    .branches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .branch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-top: 5px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .branch-card.temporary {
+      border-top-color: var(--gold);
+    }
+
+    .branch-card.appendix {
+      border-top-color: var(--crimson);
+    }
+
+    .branch-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.65rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .branch-title {
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+
+    .branch-card.temporary .branch-title { color: var(--gold); }
+    .branch-card.appendix .branch-title { color: var(--crimson); }
+
+    .leaf-item {
+      background: var(--bg-card-alt);
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.45rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-md);
+      border-right: 5px solid var(--gold);
+      animation: slideUp 0.25s ease;
+    }
+
+    .toast.success { border-right-color: var(--success); }
+    .toast.error { border-right-color: var(--danger); }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Matching Select */
+    .match-select {
+      padding: 0.4rem 0.65rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    @media print {
+      .sidebar, .search-box, .header-controls { display: none !important; }
+      .app-layout { grid-template-columns: 1fr; }
+      .tab-section { display: block !important; page-break-after: always; }
+      .qa-body, .feedback-box { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="top-header">
+    <div class="header-row-1">
+      <div class="brand-box">
+        <div class="zad-badge">زاد</div>
+        <div class="brand-titles">
+          <h1>سلسلة زاد الأزهري — الفقه الحنفي (الصف الثالث الثانوي الأزهري)</h1>
+          <p>كتاب النكاح — الوحدة الثانية: محرمات النكاح | إعداد أ/ محمود صلاح الخطيب (01111916649)</p>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="globalSearchInput" placeholder="ابحث في نصوص الأسئلة، الأحاديث، المسائل..." oninput="handleGlobalSearch(this.value)" />
+      </div>
+
+      <div class="header-controls">
+        <button class="ctrl-btn" onclick="changeFontSize(-0.1)" title="تصغير الخط">-أ</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0)" title="الحجم الافتراضي">افتراضي</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0.1)" title="تكبير الخط">أ+</button>
+        <button class="ctrl-btn" onclick="window.print()" title="طباعة الوحدة">🖨️ طباعة</button>
+        <button class="ctrl-btn" id="themeToggleBtn" onclick="toggleTheme()" title="تبديل الوضع الليلي/النهاري">🌙 الوضع الليلي</button>
+      </div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <span id="progressText">مؤشر الإنجاز الدراسي: تم استعراض 0 من 76 عنصر مذاكرة — 0%</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="app-layout">
+    <!-- Right Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <span>🧭 خطة الدراسة والتنقل</span>
+        <span style="font-size:0.78rem; color:var(--text-muted)">٨ أقسام</span>
+      </div>
+      <ul class="nav-list" id="sidebarNav">
+        <li>
+          <button class="nav-btn active" onclick="switchTab('sec1', this)">
+            <span>١. الغلاف وخطة المتابعة</span>
+            <span class="nav-count">خريطة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec2', this)">
+            <span>٢. أولًا: بنك الأسئلة والأجوبة</span>
+            <span class="nav-count">33 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec3', this)">
+            <span>٣. ثانيًا: الملخص والجداول</span>
+            <span class="nav-count">3 جداول</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec4', this)">
+            <span>٤. ثالثًا: النوازل التطبيقية</span>
+            <span class="nav-count">4 نوازل</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec5', this)">
+            <span>٥. رابعًا: الاختيار من متعدد</span>
+            <span class="nav-count">7 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec6', this)">
+            <span>٦. خامسًا: الاختبار النموذجي</span>
+            <span class="nav-count">21 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec7', this)">
+            <span>٧. سادسًا: تدريبات الكتاب</span>
+            <span class="nav-count">9 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec8', this)">
+            <span>٨. سابعًا: خريطة المفاهيم</span>
+            <span class="nav-count">8 عقد</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-actions">
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(true)">إظهار الكل 👁️</button>
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(false)">إخفاء الكل 🔒</button>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="main-area">
+
+      <!-- SECTION 1: Cover, Scope Map & Spaced Repetition -->
+      <section id="sec1" class="tab-section active">
+        <div class="section-banner">
+          <h2>كتاب النكاح — الوحدة الثانية: محرمات النكاح</h2>
+          <p>تتناول هذه الوحدة بيان مَن تحرم عليهن الرجل من النساء تحريمًا مؤبدًا أو مؤقتًا، وذلك بحسب أسباب سبعة: القرابة، والصهرية، والرضاع، والجمع، وتعلّق حق الغير، والكفر، والطلقات الثلاث؛ كما تبيّن أثر الزنا في حرمة المصاهرة، وحكم زواج المُحْرِم حالة الإحرام.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📘 بطاقة تعريف الوحدة والمصدر المحقق</div>
+          <p style="margin-bottom:0.6rem;"><strong>المصدر المعتمد:</strong> شرح كتاب «المختار من الاختيار لتعليل المختار» للعلامة عبد الله بن محمود بن مودود الموصلي الحنفي (رحمه الله) — المقرر على طلاب الصف الثالث الثانوي الأزهري.</p>
+          <p style="margin-bottom:0.6rem;"><strong>محاور الوحدة التسعة:</strong> (١) أقسام المحرمات إجمالًا — (٢) المحرمات بالقرابة — (٣) المحرمات بالصهرية — (٤) المحرمات بالرضاع — (٥) المحرمات بالجمع — (٦) المحرمات بتعلق حق الغير — (٧) المحرمات بالكفر — (٨) أثر الزنا وحكم زواج المُحْرِم — (٩) المحرمات بالطلقات الثلاث.</p>
+          <p style="color:var(--primary); font-weight:800;">إعداد وحقوق الملكية: الأستاذ / محمود صلاح الخطيب (01111916649) — جميع الحقوق محفوظة لسلسلة «زاد الأزهري».</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">🗺️ خارطة نطاق المذكرة الكاملة — توزيع المقرر على الأبواب والوحدات الدراسية</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الباب / الوحدة الدراسية</th>
+                  <th>موضوعات الوحدة التفصيلية</th>
+                  <th>حالة الإنجاز</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>كتاب النكاح — الوحدة الأولى</td>
+                  <td>تعريف النكاح وحكمه العام وركنه وشروط الشهود على العقد</td>
+                  <td><span class="status-badge status-done">مكتمل ✓</span></td>
+                </tr>
+                <tr class="current-unit-row">
+                  <td>2</td>
+                  <td>كتاب النكاح — الوحدة الثانية</td>
+                  <td>محرمات النكاح (القرابة، الصهرية، الرضاع، الجمع، حق الغير، الكفر، الثلاث)</td>
+                  <td><span class="status-badge status-current">هذا الجزء 🌟</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>كتاب النكاح — الوحدة الثالثة</td>
+                  <td>نكاح المتعة والنكاح المؤقت والفرق بينهما ورأي زفر</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>كتاب النكاح — الوحدة الرابعة</td>
+                  <td>عبارة النساء في النكاح واستئمار البكر والثيب وصور الرضا</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>كتاب النكاح — الوحدة الخامسة</td>
+                  <td>ترتيب الأولياء، غيبة الولي الأقرب، تزويج الأب والجد، تولي طرفي العقد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>كتاب النكاح — الوحدة السادسة</td>
+                  <td>الكفاءة في النكاح وأمورها الخمسة وأثر الإخلال بها</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>كتاب النكاح — الوحدة السابعة</td>
+                  <td>المهر، مقداره، متى يجب كاملًا أو نصفه، الخلوة الصحيحة، مهر الفاسد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>كتاب النكاح — الوحدة الثامنة</td>
+                  <td>القَسْم بين الزوجات، ما يجب فيه التسوية وما لا يجب، هبة اليوم</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>كتاب الرضاع</td>
+                  <td>تعريفه، مدته عند الإمام والصاحبين، ما يحرم به، اختلاط اللبن، مسائل الشك</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>كتاب الطلاق (الوحدات ١–٣)</td>
+                  <td>صريح الطلاق، كنايات الطلاق والتفويض، وباب الرجعة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>أبواب الخلع والظهار والعدة والنفقة والحضانة</td>
+                  <td>أحكام الخلع، الظهار وكفارته، العدة والإحداد، النفقة والحضانة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title" style="justify-content:space-between; flex-wrap:wrap;">
+            <span>📅 جدول متابعة المراجعة بنظام التكرار المتباعد (Spaced Repetition)</span>
+            <button class="ctrl-btn" onclick="resetSpacedDates()">🗑️ تصفير التواريخ المسجلة</button>
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.75rem;">سجّل تاريخ مذاكرتك الأولى ومواعيد المراجعة الدورية (بعد يوم، بعد أسبوع، بعد شهر)؛ تُحفظ تواريخك تلقائيًّا على جهازك.</p>
+          <div class="table-responsive">
+            <table class="zad-table" id="spacedRepTable">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>اسم الباب / الوحدة (كتاب النكاح)</th>
+                  <th>تاريخ أول مذاكرة</th>
+                  <th>مراجعة (بعد يوم)</th>
+                  <th>مراجعة (بعد أسبوع)</th>
+                  <th>مراجعة (بعد شهر)</th>
+                </tr>
+              </thead>
+              <tbody id="spacedRepBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Q&A Bank (33 Questions across 9 Axes) -->
+      <section id="sec2" class="tab-section">
+        <div class="section-banner">
+          <h2>أولًا: بنك الأسئلة والأجوبة الشامل (٣٣ سؤالًا وجوابًا)</h2>
+          <p>جميع أسئلة وأجوبة الوحدة الثانية من كتاب النكاح موزعة على المحاور التسعة بنظام الاستدعاء النشط (Active Recall). اضغط على السؤال أو زر «إظهار الإجابة» لكشف الجواب التفصيلي.</p>
+        </div>
+
+        <div class="filter-bar" id="qaFilterBar"></div>
+        <div id="qaListContainer"></div>
+      </section>
+
+      <!-- SECTION 3: Visual Summary & Comparison Tables (3 Tables) -->
+      <section id="sec3" class="tab-section">
+        <div class="section-banner">
+          <h2>ثانيًا: الملخص البصري والتقطير المعرفي (الجداول المقارنة الثلاثة)</h2>
+          <p>مقارنات هيكلية مركزة تلخص أقسام المحرمات السبعة، وشروط المحرمات بالصهرية الأربعة، والأحكام التفصيلية لمسائل الجمع بين الأختين.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📊 جدول «١»: أقسام المحرمات السبعة وأمثلتها ونوع التحريم</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>القسم</th>
+                  <th>أمثلته</th>
+                  <th>نوع التحريم</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>١</td>
+                  <td><strong>بالقرابة</strong></td>
+                  <td>الأم، البنت، الأخت، العمة، الخالة، بنت الأخ، بنت الأخت</td>
+                  <td><span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">مؤبد</span></td>
+                </tr>
+                <tr>
+                  <td>٢</td>
+                  <td><strong>بالصهرية</strong></td>
+                  <td>أم الزوجة، بنت الزوجة (بعد الدخول)، حليلة الابن، حليلة الأب</td>
+                  <td><span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">مؤبد</span></td>
+                </tr>
+                <tr>
+                  <td>٣</td>
+                  <td><strong>بالرضاع</strong></td>
+                  <td>كل من يحرم بالقرابة والصهرية من النسب</td>
+                  <td><span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">مؤبد</span></td>
+                </tr>
+                <tr>
+                  <td>٤</td>
+                  <td><strong>بالجمع</strong></td>
+                  <td>الزيادة على أربع، الجمع بين الأختين أو المرأة وعمتها/خالتها</td>
+                  <td><span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">مؤقت (يزول بالفرقة)</span></td>
+                </tr>
+                <tr>
+                  <td>٥</td>
+                  <td><strong>بتعلق حق الغير</strong></td>
+                  <td>زوجة الغير، معتدّته، الحامل من غيره (غير الزانية)</td>
+                  <td><span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">مؤقت</span></td>
+                </tr>
+                <tr>
+                  <td>٦</td>
+                  <td><strong>بالكفر</strong></td>
+                  <td>المجوسية والوثنية (بخلاف الكتابية فتحل)</td>
+                  <td><span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">مؤقت (يزول بالإسلام)</span></td>
+                </tr>
+                <tr>
+                  <td>٧</td>
+                  <td><strong>بالطلقات الثلاث</strong></td>
+                  <td>المطلَّقة ثلاثًا حتى تنكح زوجًا غيره</td>
+                  <td><span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">مؤقت</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📊 جدول «٢»: المحرمات بالصهرية الأربعة وشرط التحريم</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>المحرَّمة بالصهرية</th>
+                  <th>شرط ثبوت التحريم</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>أ</td>
+                  <td><strong>أم الزوجة</strong></td>
+                  <td>بمجرد العقد الصحيح على البنت (دون اشتراط الدخول)</td>
+                </tr>
+                <tr>
+                  <td>ب</td>
+                  <td><strong>بنت الزوجة (الربيبة)</strong></td>
+                  <td>لا تحرم إلا بعد الدخول بالأم (ولا يُشترط كونها في حجره)</td>
+                </tr>
+                <tr>
+                  <td>ج</td>
+                  <td><strong>حليلة الابن (وابن الابن وابن البنت وإن سفل)</strong></td>
+                  <td>بمجرد العقد، دخل بها الابن أو لم يدخل (بشرط أن يكون ابنًا صُلبيًّا لا بالتبني)</td>
+                </tr>
+                <tr>
+                  <td>د</td>
+                  <td><strong>حليلة الأب والجد (من قِبَل الأب والأم وإن علا)</strong></td>
+                  <td>بمجرد العقد الصحيح عليها</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📊 جدول «٣»: مسائل الجمع بين الأختين وأحكامها</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الصورة الفقهية</th>
+                  <th>الحكم الشرعي والآثار المترتبة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>١</td>
+                  <td><strong>تزوج أختين في عقد واحد</strong></td>
+                  <td>فسد نكاحهما معًا؛ لعدم أولوية جواز نكاح إحداهما على الأخرى</td>
+                </tr>
+                <tr>
+                  <td>٢</td>
+                  <td><strong>تزوج أختين في عقدين ولم يُعلم أيتهما أولى</strong></td>
+                  <td>يُفرَّق بينه وبينهما معًا، ولهما نصف المهر بينهما لجهالة المستحقة</td>
+                </tr>
+                <tr>
+                  <td>٣</td>
+                  <td><strong>تزوجهما على التعاقب (معلوم الترتيب)</strong></td>
+                  <td>فسد نكاح الأخيرة (المتأخرة) منهما ويُفارقها، ويبقى نكاح الأولى صحيحًا</td>
+                </tr>
+                <tr>
+                  <td>٤</td>
+                  <td><strong>طلّق إحداهما وأراد نكاح أختها فورًا</strong></td>
+                  <td>لا يجوز حتى تنقضي عدة المطلَّقة (سواء كان الطلاق بائنًا أو رجعيًّا)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Applied Scenarios (4 Cases) -->
+      <section id="sec4" class="tab-section">
+        <div class="section-banner">
+          <h2>ثالثًا: النوازل والأسئلة التطبيقية («قيِّم نفسك» — ٤ نوازل فقهية)</h2>
+          <p>تطبيقات عملية ووقائع فقهية لتدريب الملكة الفقهية على تنزيل أحكام محرمات النكاح على الصور الواقعية.</p>
+        </div>
+        <div id="casesContainer"></div>
+      </section>
+
+      <!-- SECTION 5: Interactive MCQ Bank -->
+      <section id="sec5" class="tab-section">
+        <div class="section-banner">
+          <h2>رابعًا: بنك أسئلة الاختيار من متعدد التفاعلي</h2>
+          <p>اختر الإجابة الصحيحة لتظهر لك التغذية الراجعة الفورية مع صندوق «التوضيح والتعليل» لتفنيد الخلط الشائع.</p>
+        </div>
+
+        <div class="score-board">
+          <div class="score-stats">
+            <span class="score-pill" id="mcqScoreText">النتيجة: 0 / 7</span>
+            <span class="status-badge status-done" id="mcqPercentText">نسبة الإتقان: 0%</span>
+          </div>
+          <button class="ctrl-btn" onclick="resetMcqQuiz()">🔄 إعادة الاختبار</button>
+        </div>
+
+        <div id="mcqContainer"></div>
+      </section>
+
+      <!-- SECTION 6: Interactive Model Exam & Self-Assessment Exam -->
+      <section id="sec6" class="tab-section">
+        <div class="section-banner">
+          <h2>خامسًا: الاختبار النموذجي التفاعلي والاختبار الختامي الذاتي للوحدة الثانية</h2>
+          <p>يضم هذا القسم: (أ) الاختبار النموذجي للوحدة شاملاً أسئلة الصواب والخطأ التفاعلية والأسئلة المقالية والتعليلية، و(ب) الاختبار الذاتي الختامي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة) مبنيًّا على مستويات بلوم المعرفية.</p>
+        </div>
+
+        <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+          <div>
+            <strong style="color:var(--primary);">أدوات التحكم في نماذج الإجابة:</strong>
+            <span style="font-size:0.88rem; color:var(--text-muted); margin-right:0.5rem;">يمكنك كشف كل إجابة منفردة أو إظهار كافة عناصر نموذج الإجابة للمراجعة الشاملة.</span>
+          </div>
+          <button class="ctrl-btn" onclick="toggleAllInActiveTab(true)">📑 إظهار كافة عناصر نموذج الإجابة</button>
+        </div>
+
+        <h3 style="margin: 1.25rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (أ): أسئلة الصواب والخطأ التفاعلية مع التصويب والتعليل الفوري</h3>
+        <div id="examTfContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (ب): الأسئلة المقالية والتعليلية وتفكير المستويات العليا في الاختبار النموذجي</h3>
+        <div id="examEssayContainer"></div>
+
+        <h3 style="margin: 1.75rem 0 0.75rem; color:var(--crimson); font-weight:800;">القسم الثاني: الاختبار الختامي الذاتي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة — تدرج مستويات بلوم)</h3>
+        <div id="selfExamContainer"></div>
+      </section>
+
+      <!-- SECTION 7: Textbook Exercises with Metacognitive Confidence Calibration -->
+      <section id="sec7" class="tab-section">
+        <div class="section-banner">
+          <h2>سادسًا: حل تدريبات الكتاب المدرسي (بنظام تقييم الثقة الذاتية)</h2>
+          <p>شامل لجميع أسئلة «المناقشة والتدريبات» وأسئلة «تطبيق عام» الواردة في الكتاب المدرسي على الوحدة الثانية. قيّم ثقتك في إجابتك أولًا ([متأكد 👍] أو [غير متأكد 🧐]) ليفتح لك الحل النموذجي الكامل!</p>
+        </div>
+
+        <h3 style="margin: 1rem 0 0.75rem; color:var(--primary); font-weight:800;">أولًا: من «المناقشة والتدريبات» بالكتاب المدرسي (٦ مسائل)</h3>
+        <div id="tbDiscussContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">ثانيًا: من «تطبيق عام» بالكتاب المدرسي (٣ مسائل)</h3>
+        <div id="tbGeneralContainer"></div>
+      </section>
+
+      <!-- SECTION 8: Concept Map -->
+      <section id="sec8" class="tab-section">
+        <div class="section-banner">
+          <h2>سابعًا: خريطة المفاهيم الهيكلية الشاملة (محرمات النكاح ١–٨)</h2>
+          <p>شجرة مفاهيم بصرية متكاملة تلخص أقسام المحرمات المؤبدة والمؤقتة والملحق الفقهي لأثر الزنا وزواج المُحْرِم.</p>
+        </div>
+
+        <div class="card">
+          <div class="concept-tree">
+            <div class="root-node">
+              🌳 محرمات النكاح في الفقه الحنفي (ترجع إلى ٩ أقسام — اقتصر المصنف على ٧ لعدم وجود التقديم والملك في زماننا)
+            </div>
+
+            <div class="branches-grid">
+              <!-- Node 1 -->
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">١. المحرمات بالقرابة (سبعة أنواع)</span>
+                  <span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">تحريم مؤبد</span>
+                </div>
+                <div class="leaf-item">• الأمهات وإن عَلَوْن، والبنات وإن سَفَلْن</div>
+                <div class="leaf-item">• الأخوات من أي جهة كنّ (شقيقات، لأب، لأم)</div>
+                <div class="leaf-item">• العمات والخالات جميعهن، وبنات الأخ وبنات الأخت وإن سفلن</div>
+                <div class="leaf-item">• ما وراء ذلك (كبنات العم والخال): محلَّلات</div>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">٢. المحرمات بالصهرية (أربعة أنواع)</span>
+                  <span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">تحريم مؤبد</span>
+                </div>
+                <div class="leaf-item">• أم الزوجة: تحرم بمجرد العقد الصحيح على البنت</div>
+                <div class="leaf-item">• بنت الزوجة (الربيبة): تحرم بالدخول بالأم (ولو لم تكن في حجره)</div>
+                <div class="leaf-item">• حليلة الابن الصُّلبي (لا المتبنى) وحليلة الأب والجد: بمجرد العقد</div>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">٣. المحرمات بالرضاع</span>
+                  <span class="status-badge" style="background:var(--crimson-bg); color:var(--crimson);">تحريم مؤبد</span>
+                </div>
+                <div class="leaf-item">• الضابط: يحرم بالرضاع كل من يحرم بالقرابة والصهرية</div>
+                <div class="leaf-item">• الدليل: آية النساء (٢٣) وحديث «يحرم من الرضاع ما يحرم من النسب»</div>
+              </div>
+
+              <!-- Node 4 -->
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٤. المحرمات بالجمع</span>
+                  <span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">تحريم مؤقت</span>
+                </div>
+                <div class="leaf-item">• الزيادة على أربع نسوة (حديث غيلان الدَّيْلَمي)</div>
+                <div class="leaf-item">• الجمع بين الأختين (عقدًا أو عدةً)، أو بين المرأة وعمتها/خالتها</div>
+                <div class="leaf-item">• يجوز الجمع بين امرأة وبنت زوج سابق لها لعدم القرابة أو المصاهرة</div>
+              </div>
+
+              <!-- Node 5 -->
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٥. المحرمات بتعلق حق الغير</span>
+                  <span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">تحريم مؤقت</span>
+                </div>
+                <div class="leaf-item">• زوجة الغير ومعتدّته؛ منعًا لاشتباه الأنساب</div>
+                <div class="leaf-item">• الحامل من غيره (غير الزانية): لا تُنكح حتى تضع</div>
+                <div class="leaf-item">• الحامل من الزنا: يجوز نكاحها استثناءً ولا يطؤها حتى تضع (خلافًا لأبي يوسف)</div>
+              </div>
+
+              <!-- Node 6 -->
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٦. المحرمات بالكفر</span>
+                  <span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">يزول بالإسلام</span>
+                </div>
+                <div class="leaf-item">• المجوسية (عابدة النار) والوثنية (عابدة الأصنام): لا يجوز نكاحهن</div>
+                <div class="leaf-item">• نساء أهل الكتاب (الكتابيات): مستثنيات، يجوز تزويجهن بنص المائدة (٥)</div>
+              </div>
+
+              <!-- Node 7 -->
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٧. المحرمات بالطلقات الثلاث</span>
+                  <span class="status-badge" style="background:var(--gold-bg); color:var(--gold);">تحريم مؤقت</span>
+                </div>
+                <div class="leaf-item">• المطلَّقة ثلاث تطليقات تحرم على مطلِّقها</div>
+                <div class="leaf-item">• الغاية: حتى تنكح زوجًا آخر نكاحًا صحيحًا ويدخل بها ثم يفارقها</div>
+              </div>
+
+              <!-- Node 8 -->
+              <div class="branch-card appendix">
+                <div class="branch-header">
+                  <span class="branch-title">٨. ملحق: أثر الزنا وزواج المُحْرِم</span>
+                  <span class="status-badge" style="background:var(--primary-bg); color:var(--primary);">مسائل مكملة</span>
+                </div>
+                <div class="leaf-item">• الزنا والوطء بشبهة: يوجبان حرمة المصاهرة (أصول وفروع الطرفين)</div>
+                <div class="leaf-item">• زواج المُحْرِم بالحج أو العمرة: جائز وصحيح، والمحظور الوطء ودواعيه فقط</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    // =========================================================================
+    // 1. DATA REPOSITORY (100% Verbatim Coverage of Unit 2)
+    // =========================================================================
+
+    const SPACED_UNITS = [
+      { id: 1, title: "الوحدة ١: تعريف النكاح وحكمه وركنه وشروط انعقاده" },
+      { id: 2, title: "الوحدة ٢: محرمات النكاح (الوحدة الحالية 🌟)" },
+      { id: 3, title: "الوحدة ٣: نكاح المتعة والنكاح المؤقت" },
+      { id: 4, title: "الوحدة ٤: عبارة النساء في النكاح" },
+      { id: 5, title: "الوحدة ٥: ترتيب الأولياء" },
+      { id: 6, title: "الوحدة ٦: الكفاءة في النكاح" },
+      { id: 7, title: "الوحدة ٧: المهر" },
+      { id: 8, title: "الوحدة ٨: القسم بين الزوجات" }
+    ];
+
+    const QA_AXES = [
+      { id: "all", label: "الكل (33)" },
+      { id: "axis1", label: "١. أقسام المحرمات إجمالًا (س1-س2)" },
+      { id: "axis2", label: "٢. المحرمات بالقرابة (س3-س6)" },
+      { id: "axis3", label: "٣. المحرمات بالصهرية (س7-س15)" },
+      { id: "axis4", label: "٤. المحرمات بالرضاع (س16)" },
+      { id: "axis5", label: "٥. المحرمات بالجمع (س17-س24)" },
+      { id: "axis6", label: "٦. تعلق حق الغير (س25-س28)" },
+      { id: "axis7", label: "٧. المحرمات بالكفر (س29-س30)" },
+      { id: "axis8", label: "٨. أثر الزنا وزواج المحرم (س31، س33)" },
+      { id: "axis9", label: "٩. المحرمات بالطلقات الثلاث (س32)" }
+    ];
+
+    const QA_BANK = [
+      {
+        num: "س1", axis: "axis1", axisTitle: "١. أقسام المحرمات إجمالًا",
+        q: "إلامَ ترجع أسباب تحريم النكاح عند الحنفية؟ وكم عددها؟",
+        a: `
+          <div class="ans-point"><span class="ans-label">عددها:</span> ترجع إلى تسعة أقسام.</div>
+          <div class="ans-point"><span class="ans-label">أسباب تحريم النكاح عند الحنفية:</span> بالقرابة، وبالصهرية، وبالرضاع، وبالجمع، وبتعلق حق الغير، وبالكفر، وبالطلقات الثلاث (وقد اقتصر المصنف على سبعة منها؛ لعدم وجود التقديم والملك في زماننا).</div>
+          <div class="ans-point">وقد اقتُصر في البيان على سبعة أقسام منها، ولم يُذكر ما يتعلق بالتقديم والملك لعدم وجودهما في زماننا.</div>
+        `
+      },
+      {
+        num: "س2", axis: "axis1", axisTitle: "١. أقسام المحرمات إجمالًا",
+        q: "ما المقصود بالتحريم على التأبيد؟ وما الأقسام الداخلة تحته؟",
+        a: `
+          <div class="ans-point"><span class="ans-label">المقصود بالتحريم على التأبيد:</span> هو ما كان سبب التحريم فيه وصفًا لازمًا لا يزول مدى الحياة.</div>
+          <div class="ans-point"><span class="ans-label">الأقسام الداخلة تحته:</span> ويشمل: المحرمات بالنسب (القرابة)، وبالمصاهرة (الصهرية)، وبالرضاع.</div>
+        `
+      },
+      {
+        num: "س3", axis: "axis2", axisTitle: "٢. المحرمات بالقرابة",
+        q: "ما أنواع المحرمات بالقرابة؟ وكم عددها؟",
+        a: `
+          <div class="ans-point"><span class="ans-label">عددها:</span> سبعة أنواع.</div>
+          <div class="ans-point"><span class="ans-label">أنواع المحرمات بالقرابة:</span> الأمهات وإن عَلَوْن، والبنات وإن سَفَلْن، والأخوات من أي جهة كنّ، والخالات والعمات جميعهن، وبنات الأخ وبنات الأخت وإن سَفَلن.</div>
+        `
+      },
+      {
+        num: "س4", axis: "axis2", axisTitle: "٢. المحرمات بالقرابة",
+        q: "ما دليل تحريم هؤلاء (المحرمات بالقرابة) من الكتاب؟",
+        a: `
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿حُرِّمَتْ عَلَيْكُمْ أُمَّهَاتُكُمْ وَبَنَاتُكُمْ وَأَخَوَاتُكُمْ وَعَمَّاتُكُمْ وَخَالَاتُكُمْ وَبَنَاتُ الْأَخِ وَبَنَاتُ الْأُخْتِ﴾ [النساء: ٢٣].</div>
+        `
+      },
+      {
+        num: "س5", axis: "axis2", axisTitle: "٢. المحرمات بالقرابة",
+        q: "ما مقتضى صيغة (حُرِّمَتْ) في الآية؟",
+        a: `
+          <div class="ans-point">تقتضي حرمة جميع الأفعال في المحل المضاف إليه التحريم (كالنظر واللمس والخلوة) إلا فعلًا فيه تعظيم وتكريم، فإنه خارج عن الإرادة؛ لأنه مأمور به بنصوص صلة الرحم وبر الوالدين.</div>
+          <div class="ans-point"><span class="ans-label">المراد بالأفعال هنا:</span> الاستمتاع بالمذكورات في الآية الكريمة.</div>
+        `
+      },
+      {
+        num: "س6", axis: "axis2", axisTitle: "٢. المحرمات بالقرابة",
+        q: "ما حكم القرابات غير السبع المذكورة، كبنات العم وبنات الخال؟",
+        a: `
+          <div class="ans-point"><span class="ans-label">الحكم:</span> محلَّلات.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَأُحِلَّ لَكُم مَّا وَرَاءَ ذَٰلِكُمْ﴾ [النساء: ٢٤].</div>
+        `
+      },
+      {
+        num: "س7", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "ما المحرمات بالصهرية؟ وكم عددها؟",
+        a: `
+          <div class="ans-point"><span class="ans-label">عددها:</span> أربعة.</div>
+          <div class="ans-point"><span class="ans-label">المحرمات بالصهرية:</span> (أ) أم امرأته، (ب) وبناتها، (جـ) وحليلة ابنه وابن ابنه وابن بنته وإن سفل، (د) وحليلة أبيه وجده من قِبَل الأب والأم وإن علا.</div>
+        `
+      },
+      {
+        num: "س8", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "متى تحرم أم الزوجة على الرجل؟",
+        a: `
+          <div class="ans-point">تحرم بنفس العقد على البنت، مطلقًا، دخل بها أو لم يدخل.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَأُمَّهَاتُ نِسَائِكُمْ﴾ [النساء: ٢٣].</div>
+        `
+      },
+      {
+        num: "س9", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "متى تحرم بنت الزوجة (الرَّبيبة) على زوج أمها؟",
+        a: `
+          <div class="ans-point">لا تحرم حتى يدخل الرجل بالأم؛ فإن طلّق الأم قبل الدخول بها جاز له نكاح ابنتها.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَرَبَائِبُكُمُ اللَّاتِي فِي حُجُورِكُم مِّن نِّسَائِكُمُ اللَّاتِي دَخَلْتُم بِهِنَّ﴾ [النساء: ٢٣].</div>
+        `
+      },
+      {
+        num: "س10", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "هل يُشترط أن تكون الربيبة في حِجْر (بيت) الزوج ليحرم نكاحها؟",
+        a: `
+          <div class="ans-point">لا يُشترط ذلك؛ فتحرم الربيبة وإن لم تكن في حِجْر الزوج، وذِكر (الحِجْر) خرج مخرج العادة الغالبة لا للاشتراط.</div>
+          <div class="ans-point"><span class="ans-label">الربيبة:</span> بنت الزوجة من رجل آخر، وسُمّيت ربيبة لقيام زوج الأم بتربيتها.</div>
+          <div class="ans-point"><span class="ans-label">المراد بالحِجْر:</span> بيت الزوج أو رعايته وحمايته للربيبة.</div>
+        `
+      },
+      {
+        num: "س11", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "هل تدخل بنات بنت الزوجة وبنات ابنها في التحريم؟",
+        a: `
+          <div class="ans-point">نعم؛ لدخولهن تحت اسم (الربيبة) شرعًا.</div>
+        `
+      },
+      {
+        num: "س12", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "لماذا تحرم حليلة الابن على الأب سواء دخل بها الابن أو لم يدخل؟",
+        a: `
+          <div class="ans-point">لعموم الآية الكريمة دون تقييد بالدخول؛ بخلاف حرمة الربيبة المقيدة بالدخول بالأم.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَحَلَائِلُ أَبْنَائِكُمُ الَّذِينَ مِنْ أَصْلَابِكُمْ﴾ [النساء: ٢٣].</div>
+        `
+      },
+      {
+        num: "س13", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "هل تدخل حليلة الابن بالتبني في هذا التحريم؟",
+        a: `
+          <div class="ans-point">لا؛ فالآية اشترطت أن يكون الابن (من أصلابكم)، فلا يدخل فيها حليلة الابن المتبنَّى.</div>
+        `
+      },
+      {
+        num: "س14", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "ما دليل تحريم حليلة الأب والجد على الابن؟",
+        a: `
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَلَا تَنكِحُوا مَا نَكَحَ آبَاؤُكُم مِّنَ النِّسَاءِ إِلَّا مَا قَدْ سَلَفَ ۚ إِنَّهُ كَانَ فَاحِشَةً وَمَقْتًا وَسَاءَ سَبِيلًا﴾ [النساء: ٢٢].</div>
+        `
+      },
+      {
+        num: "س15", axis: "axis3", axisTitle: "٣. المحرمات بالصهرية",
+        q: "ما العقد المعتبر في ترتب التحريم بالصهرية؟",
+        a: `
+          <div class="ans-point">هو العقد الصحيح دون الفاسد؛ لأن مطلق لفظ (النكاح) و(الزوجة) و(الحليلة) إنما ينصرف إلى العقد الصحيح.</div>
+        `
+      },
+      {
+        num: "س16", axis: "axis4", axisTitle: "٤. المحرمات بالرضاع",
+        q: "ما ضابط المحرمات بالرضاع؟",
+        a: `
+          <div class="ans-point"><span class="ans-label">الضابط:</span> يحرم بالرضاع كل من يحرم بالقرابة والصهرية.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَأُمَّهَاتُكُمُ اللَّاتِي أَرْضَعْنَكُمْ وَأَخَوَاتُكُم مِّنَ الرَّضَاعَةِ﴾ [النساء: ٢٣]، وقوله ﷺ: «يَحْرُمُ مِنَ الرَّضَاعِ مَا يَحْرُمُ مِنَ النَّسَبِ».</div>
+        `
+      },
+      {
+        num: "س17", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "ما أقصى عدد من الزوجات يحل للمسلم الجمع بينهن في وقت واحد؟",
+        a: `
+          <div class="ans-point">أربع نسوة، فلا يجوز الزيادة عليهن.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ﴾ [النساء: ٣]، وحديث غيلان الدَّيْلَمي الذي أسلم وتحته عشر نسوة، فأمره النبي ﷺ أن يُمسك أربعًا ويُفارق الباقي.</div>
+          <div class="quote-box">• نص الحديث كاملًا: «أَنَّ غَيْلَانَ الدَّيْلَمِيَّ أَسْلَمَ وَتَحْتَهُ عَشْرُ نِسْوَةٍ، فَأَمَرَهُ النَّبِيُّ ﷺ أَنْ يُمْسِكَ مِنْهُنَّ أَرْبَعًا وَيُفَارِقَ الْبَاقِيَ».</div>
+        `
+      },
+      {
+        num: "س18", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "هل يجوز الجمع بين الأختين في النكاح؟",
+        a: `
+          <div class="ans-point">لا يجوز.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ إِلَّا مَا قَدْ سَلَفَ﴾ [النساء: ٢٣]، وقوله ﷺ: «مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلَا يَجْمَعَنَّ مَاءَهُ فِي رَحِمِ أُخْتَيْنِ».</div>
+        `
+      },
+      {
+        num: "س19", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "ما حكم مَن تزوج أختين في عقد واحد؟",
+        a: `
+          <div class="ans-point">فسد نكاحهما معًا؛ لعدم أولوية جواز نكاح إحداهما على الأخرى.</div>
+        `
+      },
+      {
+        num: "س20", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "ما حكم مَن تزوج أختين في عقدين ولم يُدرَ أيتهما أُولى؟",
+        a: `
+          <div class="ans-point">يُفرَّق بينه وبينهما معًا؛ لأن نكاح إحداهما باطل يقينًا، ولا سبيل إلى تعيينها لعدم الأولوية. ولهما نصف المهر بينهما لجهالة المستحقة.</div>
+        `
+      },
+      {
+        num: "س21", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "إذا عُلم ترتيب العقدين على الأختين، فما الحكم؟",
+        a: `
+          <div class="ans-point">يفسد نكاح المتأخرة (الثانية) منهما، ويُفارقها، ويبقى نكاح الأولى صحيحًا.</div>
+        `
+      },
+      {
+        num: "س22", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "إذا طلّق امرأته، فهل له أن يتزوج أختها فورًا؟",
+        a: `
+          <div class="ans-point">لا يجوز حتى تنقضي عدة المطلَّقة، سواء كان الطلاق بائنًا أو رجعيًّا؛ لبقاء أثر نكاح الأولى من وجهٍ ما دامت العدة قائمة (النفقة، السكنى، ثبوت النسب)، فيُؤخذ بالاحتياط في باب الحرمة.</div>
+        `
+      },
+      {
+        num: "س23", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "هل يجوز الجمع بين المرأة وعمتها أو خالتها؟",
+        a: `
+          <div class="ans-point">لا يجوز.</div>
+          <div class="quote-box">• نص الحديث كاملًا: «لَا يُجْمَعُ بَيْنَ الْمَرْأَةِ وَعَمَّتِهَا، وَلَا بَيْنَ الْمَرْأَةِ وَخَالَتِهَا. وفي رواية: لَا تُنْكَحُ الْمَرْأَةُ عَلَى عَمَّتِهَا وَلَا عَلَى خَالَتِهَا وَلَا عَلَى بِنْتِ أَخِيهَا وَلَا عَلَى بِنْتِ أُخْتِهَا؛ فَإِنَّكُمْ إِذَا فَعَلْتُمْ ذَلِكَ فَقَدْ قَطَعْتُمْ أَرْحَامَهُنَّ» (متفق عليه في أصله).</div>
+        `
+      },
+      {
+        num: "س24", axis: "axis5", axisTitle: "٥. المحرمات بالجمع",
+        q: "هل يجوز الجمع بين امرأة وبنت زوج سابق لها؟",
+        a: `
+          <div class="ans-point">نعم يجوز؛ لأنه لا قرابة ولا مصاهرة بينهما.</div>
+        `
+      },
+      {
+        num: "س25", axis: "axis6", axisTitle: "٦. المحرمات بتعلق حق الغير",
+        q: "هل يجوز أن يتزوج الرجل زوجة غيره أو معتدّته؟",
+        a: `
+          <div class="ans-point">لا يجوز؛ لأن ذلك يُفضي إلى اشتباه الأنساب.</div>
+          <div class="quote-box">• الدليل: قوله ﷺ: «مَلْعُونٌ مَنْ سَقَى مَاءَهُ زَرْعَ غَيْرِهِ». ونص الحديث كاملًا: «مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلَا يَسْقِ مَاءَهُ زَرْعَ غَيْرِهِ» (أخرجه أبو داود).</div>
+          <div class="ans-point"><span class="ans-label">وجه اشتباه الأنساب:</span> أنه لا يُعلم والد الطفل: أهو الزوج الأول أم الثاني؟</div>
+        `
+      },
+      {
+        num: "س26", axis: "axis6", axisTitle: "٦. المحرمات بتعلق حق الغير",
+        q: "ما حكم الزواج من امرأة حامل من غير الزوج (غير زانية)؟",
+        a: `
+          <div class="ans-point">لا يجوز نكاحها حتى تضع حملها؛ صيانةً للنسب الثابت وحقًّا لصاحب الماء.</div>
+        `
+      },
+      {
+        num: "س27", axis: "axis6", axisTitle: "٦. المحرمات بتعلق حق الغير",
+        q: "ما حكم نكاح المرأة الحامل من الزنا؟",
+        a: `
+          <div class="ans-point">يجوز نكاحها استثناءً (عند <span class="imam-badge imam-hanifa">أبي حنيفة</span> و<span class="imam-badge imam-muhammad">محمد</span>)، لكن لا يطؤها الزوج حتى تضع؛ لأن الزنا لا حرمة له ولا نسب ثابتًا يُصان.</div>
+          <div class="quote-box">• الدليل: دخولها تحت قوله تعالى: ﴿وَالْمُحْصَنَاتُ مِنَ النِّسَاءِ إِلَّا مَا مَلَكَتْ أَيْمَانُكُمْ * كِتَابَ اللَّهِ عَلَيْكُمْ وَأُحِلَّ لَكُم مَّا وَرَاءَ ذَٰلِكُمْ﴾ [النساء: ٢٤].</div>
+        `
+      },
+      {
+        num: "س28", axis: "axis6", axisTitle: "٦. المحرمات بتعلق حق الغير",
+        q: "بمَ استدل أبو يوسف على فساد نكاح الحامل من الزنا؟",
+        a: `
+          <div class="ans-point">استدل <span class="imam-badge imam-yusuf">أبو يوسف</span> بحديث «ملعون من سقى ماءه زرع غيره»، وبأن الحمل - وإن كان من زنا - محترم شرعًا حتى لا يجوز إسقاطه.</div>
+        `
+      },
+      {
+        num: "س29", axis: "axis7", axisTitle: "٧. المحرمات بالكفر",
+        q: "ما حكم نكاح المجوسيات والوثنيات؟",
+        a: `
+          <div class="ans-point">لا يجوز نكاحهن. <span class="ans-label">المجوسيات:</span> اللاتي يعبدن النار، <span class="ans-label">الوثنيات:</span> اللاتي يعبدن الأصنام.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَلَا تَنكِحُوا الْمُشْرِكَاتِ حَتَّىٰ يُؤْمِنَّ﴾ [البقرة: ٢٢١]، وقوله ﷺ في المجوس: «سُنُّوا بِهِمْ سُنَّةَ أَهْلِ الْكِتَابِ غَيْرَ نَاكِحِي نِسَائِهِمْ وَلَا آكِلِي ذَبَائِحِهِمْ».</div>
+        `
+      },
+      {
+        num: "س30", axis: "axis7", axisTitle: "٧. المحرمات بالكفر",
+        q: "ما حكم نكاح نساء أهل الكتاب (الكتابيات)؟",
+        a: `
+          <div class="ans-point">يجوز تزويجهن.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿وَالْمُحْصَنَاتُ مِنَ الَّذِينَ أُوتُوا الْكِتَابَ مِن قَبْلِكُمْ﴾ [المائدة: ٥].</div>
+        `
+      },
+      {
+        num: "س31", axis: "axis8", axisTitle: "٨. أثر الزنا وحكم زواج المُحْرِم",
+        q: "ما أثر الزنا في حرمة المصاهرة؟",
+        a: `
+          <div class="ans-point">الزنا يُوجب حرمة المصاهرة؛ فمن زنى بامرأة أو وطئها بشبهة، حرمت عليه أصولها وفروعها، وتحرم الموطوءة على أصول الزاني وفروعه.</div>
+        `
+      },
+      {
+        num: "س32", axis: "axis9", axisTitle: "٩. المحرمات بالطلقات الثلاث",
+        q: "متى تحرم المرأة على مَن طلَّقها؟",
+        a: `
+          <div class="ans-point">تحرم عليه إذا طلَّقها ثلاث تطليقات، ولا تحلّ له حتى تنكح زوجًا آخر نكاحًا صحيحًا ويدخل بها ثم يفارقها.</div>
+          <div class="quote-box">• الدليل: قوله تعالى: ﴿فَإِن طَلَّقَهَا فَلَا تَحِلُّ لَهُ مِن بَعْدُ حَتَّىٰ تَنكِحَ زَوْجًا غَيْرَهُ﴾ [البقرة: ٢٣٠]، وعليه الإجماع.</div>
+        `
+      },
+      {
+        num: "س33", axis: "axis8", axisTitle: "٨. أثر الزنا وحكم زواج المُحْرِم",
+        q: "ما حكم زواج المُحْرِم (بالحج أو العمرة) حالة إحرامه؟",
+        a: `
+          <div class="ans-point">يجوز أن يتزوج المُحْرِم حالة إحرامه؛ فالمحظور عليه هو الوطء ودواعيه لا العقد نفسه.</div>
+          <div class="quote-box">• الدليل: أن النبي ﷺ «تَزَوَّجَ مَيْمُونَةَ وَهُوَ مُحْرِمٌ». وأما حديث «نَهَى أَنْ يَنكِحَ المُحْرِمُ» فمحمول على الوطء لا العقد.</div>
+        `
+      }
+    ];
+
+    const APPLIED_CASES = [
+      {
+        id: "case1",
+        title: "نازلة 1: حكم التزوج بأم الزوجة بعد وفاة الزوجة",
+        q: "توفيت زوجة رجل بعد أن دخل بها، فأراد أن يتزوج أمها (أم زوجته المتوفاة). فما الحكم؟ ولماذا؟",
+        a: "لا يجوز له ذلك؛ لأن أم الزوجة تحرم على الرجل بمجرد العقد على ابنتها، سواء دخل بها أو لم يدخل، وسواء بقيت الزوجة على قيد الحياة أو ماتت أو طُلِّقت؛ لأن التحريم مؤبد ثبت بنفس العقد ولا يزول بزوال الزوجية."
+      },
+      {
+        id: "case2",
+        title: "نازلة 2: حكم التزوج ببنت الزوجة (الربيبة) بعد طلاق الأم قبل الدخول",
+        q: "عقد رجل على امرأة ولم يدخل بها، ثم طلّقها قبل الدخول. فهل يجوز له أن يتزوج ابنتها من زوج سابق؟",
+        a: "نعم يجوز؛ لأن الربيبة (بنت الزوجة) لا تحرم إلا إذا دخل الرجل بأمها، وقد فُرض في هذه الواقعة أنه لم يدخل بها، فلم يتحقق شرط التحريم، فتحل له ابنتها."
+      },
+      {
+        id: "case3",
+        title: "نازلة 3: التزوج بخامسة أثناء عدة الرابعة من طلاق بائن",
+        q: "رجل متزوج بأربع نسوة، فطلّق إحداهن طلاقًا بائنًا، وقبل انقضاء عدتها أراد أن يتزوج امرأة خامسة. فما الحكم؟",
+        a: "لا يجوز له ذلك حتى تنقضي عدة المطلَّقة؛ لأن نكاح الأولى له بقاء من وجه ما دامت في العدة (من نفقة وسكنى وثبوت نسب)، فتبقى الأربع في حكم القائمات احتياطًا في باب الحرمة، فلا يجوز له الزواج بخامسة حتى تنقضي العدة فتصير الأربع ثلاثًا فعليًّا."
+      },
+      {
+        id: "case4",
+        title: "نازلة 4: عقد النكاح حال الإحرام بالحج دون وطء",
+        q: "رجل مُحْرِم بالحج، عقد نكاحه على امرأة حال إحرامه، ولم يطأها حتى تحلل من إحرامه. ناقش صحة هذا العقد.",
+        a: "العقد صحيح ومنعقد؛ لأن المحظور على المُحْرِم هو الوطء ودواعيه لا نفس عقد النكاح، وقد ثبت أن النبي ﷺ تزوج ميمونة رضي الله عنها وهو مُحرِم. أما ما ورد من النهي عن نكاح المُحرِم فمحمول على الوطء لا على العقد."
+      }
+    ];
+
+    const MCQ_BANK = [
+      {
+        id: "mcq1",
+        q: "1. متى تحرم أم الزوجة على الرجل؟",
+        options: [
+          "أ) بعد الدخول بابنتها فقط",
+          "ب) بمجرد العقد على ابنتها",
+          "ج) لا تحرم أبدًا",
+          "د) بعد وفاة ابنتها فقط"
+        ],
+        correct: 1,
+        explanation: "الخلط الشائع (أ) هو قياس أم الزوجة على الربيبة (بنت الزوجة) التي تحرم بعد الدخول فقط؛ بينما أم الزوجة تحرم بمجرد العقد دون اشتراط دخول، وهو فارق جوهري بين الحالتين."
+      },
+      {
+        id: "mcq2",
+        q: "2. الحد الأقصى لعدد الزوجات اللاتي يجوز الجمع بينهن للمسلم الواحد:",
+        options: [
+          "أ) ثلاث",
+          "ب) أربع",
+          "ج) خمس",
+          "د) لا حد له"
+        ],
+        correct: 1,
+        explanation: "ثلاث (أ) وخمس (ج) أرقام مقاربة يشيع الخلط بينها وبين الرقم الصحيح (أربع) المنصوص عليه صراحة في الآية ﴿مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ﴾ وحديث غيلان الديلمي."
+      },
+      {
+        id: "mcq3",
+        q: "3. تزوج رجل أختين في عقد واحد؛ فالحكم الفقهي:",
+        options: [
+          "أ) يصح نكاح الكبرى فقط",
+          "ب) يصح نكاح من دخل بها منهما",
+          "ج) فسد نكاحهما معًا",
+          "د) يصح النكاحان معًا"
+        ],
+        correct: 2,
+        explanation: "الخيارات (أ) و(ب) تحاول ترجيح إحداهما بمعيار (الكبر أو الدخول)، لكن الفقه لا يعتمد ترجيحًا لعدم وجود أولوية شرعية بينهما، فيفسد نكاحهما معًا كما في (ج)."
+      },
+      {
+        id: "mcq4",
+        q: "4. نكاح المرأة المجوسية:",
+        options: [
+          "أ) جائز كالكتابية",
+          "ب) غير جائز",
+          "ج) جائز بكراهة فقط",
+          "د) جائز إذا أسلمت أسرتها"
+        ],
+        correct: 1,
+        explanation: "الخلط الشائع (أ) هو التسوية بين المجوسية والكتابية، مع أن الحديث الشريف فرّق بينهما صراحة: «سُنُّوا بِهِمْ سُنَّةَ أَهْلِ الْكِتَابِ غَيْرَ نَاكِحِي نِسَائِهِمْ وَلَا آكِلِي ذَبَائِحِهِمْ»."
+      },
+      {
+        id: "mcq5",
+        q: "5. حكم نكاح الكتابية (كاليهودية أو النصرانية) عند الحنفية:",
+        options: [
+          "أ) محرَّم كالمجوسية",
+          "ب) جائز",
+          "ج) مكروه تحريمًا",
+          "د) جائز بشرط إسلامها لاحقًا"
+        ],
+        correct: 1,
+        explanation: "الخيار (أ) خطأ لأن الكتابية تختلف عن المجوسية بنص القرآن ﴿وَالْمُحْصَنَاتُ مِنَ الَّذِينَ أُوتُوا الْكِتَابَ مِن قَبْلِكُمْ﴾ [المائدة: ٥]."
+      },
+      {
+        id: "mcq6",
+        q: "6. المرأة المطلَّقة ثلاثًا لا تحلّ لمطلِّقها حتى:",
+        options: [
+          "أ) تنقضي عدتها منه فقط",
+          "ب) تنكح زوجًا آخر نكاحًا صحيحًا ويدخل بها ثم تفارقه",
+          "ج) يمضي عام كامل على الطلاق",
+          "د) يوافق أهلها على عودتها"
+        ],
+        correct: 1,
+        explanation: "انقضاء العدة وحدها (أ) لا يكفي؛ بل الشرط المنصوص عليه في آية البقرة (٢٣٠) هو أن تنكح زوجًا آخر نكاحًا صحيحًا ويدخل بها حقيقة ثم يفارقها."
+      },
+      {
+        id: "mcq7",
+        q: "7. زواج المُحْرِم بالحج من عقد النكاح حال إحرامه:",
+        options: [
+          "أ) باطل مطلقًا",
+          "ب) جائز، والمحظور هو الوطء ودواعيه فقط",
+          "ج) جائز بشرط أن يطأ زوجته فورًا",
+          "د) يجوز للرجل دون المرأة"
+        ],
+        correct: 1,
+        explanation: "الخيار (أ) يخلط بين حكم العقد وحكم الوطء؛ فالنهي الوارد محمول على الوطء لا العقد، بدليل زواج النبي ﷺ من ميمونة وهو مُحرِم."
+      }
+    ];
+
+    const EXAM_TF = [
+      {
+        id: "tf1",
+        statement: "١. «تحرم بنت الزوجة (الربيبة) على الرجل بمجرد العقد على أمها، دخل بها أو لم يدخل»",
+        isTrue: false,
+        explanation: "العبارة خاطئة فقهيًّا (وإن وردت سهوًا بلفظ صواب في بعض المسودات)؛ فالتصويب المقرر في المتن والشرح (س9 وجدول 2 وسؤال 2 و8 بالاختبار): أن التي تحرم بمجرد العقد هي (أم الزوجة)، أما (بنت الزوجة / الربيبة) فلا تحرم إلا بعد الدخول بالأم؛ لقوله تعالى: ﴿مِّن نِّسَائِكُمُ اللَّاتِي دَخَلْتُم بِهِنَّ﴾."
+      },
+      {
+        id: "tf2",
+        statement: "٢. «يجوز الجمع بين المرأة وابنة زوج سابق لها»",
+        isTrue: true,
+        explanation: "العبارة صحيحة؛ لعدم وجود قرابة أو مصاهرة بينهما."
+      },
+      {
+        id: "tf3",
+        statement: "٣. «يُشترط في تحريم الربيبة أن تكون في حِجْر (بيت ورعاية) الزوج»",
+        isTrue: false,
+        explanation: "العبارة خاطئة؛ والتصويب: لا يُشترط ذلك، فتحرم الربيبة بالدخول بأمها وإن لم تكن في حِجْر الزوج، وذِكر الحِجْر في الآية خرج مخرج العادة الغالبة."
+      },
+      {
+        id: "tf4",
+        statement: "٤. «الزنا والوطء بشبهة يوجبان حرمة المصاهرة عند الحنفية»",
+        isTrue: true,
+        explanation: "العبارة صحيحة؛ فمن زنى بامرأة أو وطئها بشبهة حرمت عليه أصولها وفروعها، وحرمت هي على أصوله وفروعه."
+      },
+      {
+        id: "tf5",
+        statement: "٥. «تحرم حليلة الابن المتبنَّى على الأب بالتبني كحليلة الابن الصُّلبي»",
+        isTrue: false,
+        explanation: "العبارة خاطئة؛ والتصويب: لا تحرم حليلة الابن بالتبني؛ لأن الآية قيّدت التحريم بقوله تعالى: ﴿الَّذِينَ مِنْ أَصْلَابِكُمْ﴾."
+      }
+    ];
+
+    const EXAM_ESSAY = [
+      {
+        id: "ex_e1",
+        q: "1. عدّد أسباب التحريم المؤبد في النكاح مع مثال لكل سبب.",
+        a: "نموذج الإجابة: (١) بالقرابة (كالأم والأخت)، (٢) وبالصهرية (كأم الزوجة وحليلة الابن)، (٣) وبالرضاع (كل من يحرم بالنسب والصهرية)."
+      },
+      {
+        id: "ex_e2",
+        q: "2. فرّق بين حكم تحريم أم الزوجة وحكم تحريم بنت الزوجة (الربيبة) من حيث شرط الدخول.",
+        a: "نموذج الإجابة: أم الزوجة تحرم بمجرد العقد على البنت دون اشتراط الدخول، أما بنت الزوجة (الربيبة) فلا تحرم إلا بعد الدخول بالأم؛ فإن طُلِّقت الأم قبل الدخول حلّت ابنتها."
+      },
+      {
+        id: "ex_e3",
+        q: "3. بيّن حكم الجمع بين الأختين، وما يترتب عليه في الصور المختلفة (عقد واحد / عقدان مجهولا الترتيب / معلوما الترتيب).",
+        a: "نموذج الإجابة: (أ) في عقد واحد: يفسد نكاحهما معًا. (ب) في عقدين مجهولي الترتيب: يُفرَّق بينه وبينهما ولهما نصف المهر بينهما. (ج) في عقدين معلومي الترتيب: يفسد نكاح المتأخرة (الثانية) فقط ويبقى نكاح الأولى صحيحًا."
+      },
+      {
+        id: "ex_e4",
+        q: "4. ما حكم نكاح الحامل من الزنا؟ وما الفرق بينها وبين الحامل من غير الزنا؟",
+        a: "نموذج الإجابة: يجوز نكاح الحامل من الزنا لكن لا تُوطأ حتى تضع؛ لأن حملها لا نسب محترمًا يُصان به ماء الزاني. أما الحامل من غير الزنا (كوطء بشبهة أو نكاح سابق) فلا يجوز نكاحها أصلًا حتى تضع؛ صيانةً لنسب ثابت لحق الغير."
+      },
+      {
+        id: "ex_e5",
+        q: "5. قارن بين حكم نكاح المجوسية والكتابية مع الدليل لكل منهما.",
+        a: "نموذج الإجابة: المجوسية: محرَّم نكاحها لقوله تعالى ﴿وَلَا تَنكِحُوا الْمُشْرِكَاتِ حَتَّىٰ يُؤْمِنَّ﴾ [البقرة: ٢٢١] وحديث «غير ناكحي نسائهم». الكتابية: يجوز نكاحها لقوله تعالى ﴿وَالْمُحْصَنَاتُ مِنَ الَّذِينَ أُوتُوا الْكِتَابَ﴾ [المائدة: ٥]."
+      },
+      {
+        id: "ex_e6",
+        q: "8. (تفكير عليا) علّل: لماذا فرّق الفقهاء بين حرمة أم الزوجة (تثبت بمجرد العقد) وحرمة الربيبة (تثبت بعد الدخول)، مع أن كلتيهما من قبيل المحرمات بالصهرية؟",
+        a: "نموذج الإجابة: لأن الآية جاءت بصيغة مطلقة في حق أم الزوجة ﴿وَأُمَّهَاتُ نِسَائِكُمْ﴾ دون تقييد بالدخول، بينما قيّدت حرمة الربيبة صراحة بالدخول ﴿مِّن نِّسَائِكُمُ اللَّاتِي دَخَلْتُم بِهِنَّ﴾، فاعتُبر التقييد اللفظي في الآية فارقًا شرعيًّا مقصودًا بين الحالتين، لا مجرد اتفاق في السياق."
+      }
+    ];
+
+    const SELF_EXAM_ITEMS = [
+      {
+        id: "se1", type: "mcq",
+        q: "س1 [اختيار من متعدد — ٤ درجات]: أي مما يلي ليس من المحرَّمات بالقرابة؟",
+        options: ["أ) بنت الأخت", "ب) بنت العم", "ج) العمة", "د) الخالة"],
+        correct: 1,
+        explanation: "بنت العم من القرابات غير السبع المذكورة في آية التحريم، فهي حلال لقوله تعالى: ﴿وَأُحِلَّ لَكُم مَّا وَرَاءَ ذَٰلِكُمْ﴾."
+      },
+      {
+        id: "se2", type: "mcq",
+        q: "س2 [اختيار من متعدد — ٤ درجات]: أقصى عدد من الزوجات يجوز للمسلم الجمع بينهن في وقت واحد:",
+        options: ["أ) اثنتان", "ب) ثلاث", "ج) أربع", "د) خمس"],
+        correct: 2,
+        explanation: "أربع نسوة؛ لآية النساء (٣) وحديث غيلان الديلمي."
+      },
+      {
+        id: "se4", type: "mcq",
+        q: "س4 [اختيار من متعدد — ٤ درجات]: تحرم أم الزوجة على زوج ابنتها بمجرد:",
+        options: ["أ) الدخول بالبنت", "ب) العقد الصحيح على البنت", "ج) الخلوة بالبنت", "د) ولادة البنت"],
+        correct: 1,
+        explanation: "تحرم بمجرد العقد الصحيح على البنت دخل بها أو لم يدخل؛ لإطلاق قوله تعالى: ﴿وَأُمَّهَاتُ نِسَائِكُمْ﴾."
+      },
+      {
+        id: "se5", type: "essay",
+        q: "س5 [استدلال — ٤ درجات]: اذكر دليل تحريم الجمع بين المرأة وعمتها أو خالتها من السنة.",
+        a: "قوله ﷺ: «لَا يُجْمَعُ بَيْنَ الْمَرْأَةِ وَعَمَّتِهَا، وَلَا بَيْنَ الْمَرْأَةِ وَخَالَتِهَا»، وفي رواية: «لَا تُنْكَحُ الْمَرْأَةُ عَلَى عَمَّتِهَا وَلَا عَلَى خَالَتِهَا وَلَا عَلَى بِنْتِ أَخِيهَا وَلَا عَلَى بِنْتِ أُخْتِهَا؛ فَإِنَّكُمْ إِذَا فَعَلْتُمْ ذَلِكَ فَقَدْ قَطَعْتُمْ أَرْحَامَهُنَّ»."
+      },
+      {
+        id: "se6", type: "essay",
+        q: "س6 [استدلال — ٤ درجات]: اذكر الدليل من القرآن على تحريم حليلة الأب على الابن.",
+        a: "قوله تعالى: ﴿وَلَا تَنكِحُوا مَا نَكَحَ آبَاؤُكُم مِّنَ النِّسَاءِ إِلَّا مَا قَدْ سَلَفَ ۚ إِنَّهُ كَانَ فَاحِشَةً وَمَقْتًا وَسَاءَ سَبِيلًا﴾ [النساء: ٢٢]."
+      },
+      {
+        id: "se7", type: "essay",
+        q: "س7 [تعليل — ٤ درجات]: علّل: تحرم حليلة الابن على الأب سواء دخل بها الابن أم لم يدخل.",
+        a: "لعموم قوله تعالى: ﴿وَحَلَائِلُ أَبْنَائِكُمُ الَّذِينَ مِنْ أَصْلَابِكُمْ﴾ [النساء: ٢٣] دون تقييد بالدخول، بخلاف حرمة الربيبة المقيدة بالدخول بالأم."
+      },
+      {
+        id: "se8", type: "essay",
+        q: "س8 [حكم فقهي — ٥ درجات]: تزوج رجل أختين في عقد واحد. بيّن الحكم مع التوجيه.",
+        a: "الحكم: فسد نكاحهما معًا. التوجيه: لعدم أولوية جواز نكاح إحداهما على الأخرى."
+      },
+      {
+        id: "se9", type: "essay",
+        q: "س9 [حكم فقهي — ٥ درجات]: طلّق رجل زوجته طلاقًا بائنًا وأراد أن يتزوج أختها في الحال. بيّن الحكم مع التوجيه.",
+        a: "الحكم: لا يجوز له ذلك حتى تنقضي عدة المطلَّقة. التوجيه: لبقاء أثر نكاح الأولى من وجهٍ ما دامت العدة قائمة (النفقة، السكنى، ثبوت النسب)، فيُؤخذ بالاحتياط في باب الحرمة."
+      },
+      {
+        id: "se10", type: "essay",
+        q: "س10 [تعليل — ٤ درجات]: علّل: لا يجوز نكاح الحامل من غيره (غير الزانية).",
+        a: "صيانةً للنسب الثابت وحقًّا لصاحب الماء، ولحديث: «مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلَا يَسْقِ مَاءَهُ زَرْعَ غَيْرِهِ»."
+      },
+      {
+        id: "se11", type: "essay",
+        q: "س11 [تحليل — ٥ درجات]: قارن بين المحرَّمات على التأبيد والمحرَّمات إلى أمد، ممثلًا لكلٍّ منهما ومبينًا ضابط كل قسم.",
+        a: "المحرمات على التأبيد: ضابطها أن سبب التحريم فيها وصف لازم لا يزول مدى الحياة، وتشمل ٣ أقسام: القرابة (كالأم والأخت)، والصهرية (كأم الزوجة وحليلة الابن)، والرضاع (كالأم والأخت من الرضاع). المحرمات إلى أمد (مؤقتًا): ضابطها أن سبب التحريم فيها عارض يزول بزوال العارض، وتشمل ٤ أقسام: الجمع (كأخت الزوجة)، وتعلق حق الغير (كزوجة الغير ومعتدته)، والكفر (كالمجوسية حتى تسلم)، والطلقات الثلاث (حتى تنكح زوجًا آخر نكاحًا صحيحًا ويدخل بها)."
+      },
+      {
+        id: "se12", type: "essay",
+        q: "س12 [تركيب — ٦ درجات]: اربط بين آية المحرَّمات (النساء: ٢٣) وأقسام التحريم التسعة عند الحنفية، ممثلًا لكل قسم بمثال.",
+        a: "ترجع أسباب التحريم عند الحنفية إلى ٩ أقسام، اقتصر المصنف على ٧ منها لعدم وجود التقديم والملك في زماننا: (١) القرابة: ﴿حُرِّمَتْ عَلَيْكُمْ أُمَّهَاتُكُمْ وَبَنَاتُكُمْ...﴾، (٢) الصهرية: ﴿وَأُمَّهَاتُ نِسَائِكُمْ وَرَبَائِبُكُمُ... وَحَلَائِلُ أَبْنَائِكُمُ﴾، (٣) الرضاع: ﴿وَأُمَّهَاتُكُمُ اللَّاتِي أَرْضَعْنَكُمْ وَأَخَوَاتُكُم مِّنَ الرَّضَاعَةِ﴾، (٤) الجمع: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ﴾، (٥) تعلق حق الغير: ﴿وَالْمُحْصَنَاتُ مِنَ النِّسَاءِ﴾، (٦) الكفر: المجوسية والوثنية، (٧) الطلقات الثلاث: المبانة بالثلاث."
+      },
+      {
+        id: "se13", type: "essay",
+        q: "س13 [تقويم — ٦ درجات]: قوِّم قول من أباح نكاح المجوسية قياسًا على نكاح الكتابية، مبينًا الراجح عند الحنفية ودليله.",
+        a: "هذا القياس فاسد لمصادمته النص الصريح؛ فالمجوسية تعبد النار ولا كتاب سماوي لها، والراجح المقطوع به عند الحنفية حرمة نكاحها لعموم قوله تعالى: ﴿وَلَا تَنكِحُوا الْمُشْرِكَاتِ حَتَّىٰ يُؤْمِنَّ﴾ [البقرة: ٢٢١]، وقوله ﷺ في المجوس: «سُنُّوا بِهِمْ سُنَّةَ أَهْلِ الْكِتَابِ غَيْرَ نَاكِحِي نِسَائِهِمْ وَلَا آكِلِي ذَبَائِحِهِمْ»، بينما استُثنيت الكتابية بنص سورة المائدة (٥)."
+      }
+    ];
+
+    const TEXTBOOK_DISCUSS = [
+      {
+        id: "tbd1",
+        q: "السؤال الثالث (ب-٢): بيّن الحكم فيما يأتي، مع التعليل: تزوج أختين في عقدين ولا يدري أيتهما أولى.",
+        a: "الحل النموذجي: يُفرَّق بينه وبينهما معًا؛ لأن نكاح إحداهما باطل يقينًا ولا سبيل إلى تعيين الصحيحة منهما لعدم الأولوية الشرعية، ولهما نصف المهر بينهما لجهالة المستحقة له."
+      },
+      {
+        id: "tbd2",
+        q: "السؤال الثالث (ب-٦): بيّن الحكم فيما يأتي، مع التعليل: الجمع في الزواج بين أكثر من أربع نسوة.",
+        a: "الحل النموذجي: لا يجوز؛ لقوله تعالى ﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ﴾ [النساء: ٣]، وهو نص على الأربع فلا يجوز الزيادة عليهن، كما في حديث غيلان الدَّيْلَمي."
+      },
+      {
+        id: "tbd3",
+        q: "السؤال الخامس (أ-٧): ضع علامة (✓) أو (✗) مع التصويب والتعليل: «لو تزوج أختين في عقد واحد فسد نكاحهما»",
+        a: "الحل النموذجي: ✓ صواب؛ لأن كلتا الأختين مساويتان في احتمال الأولوية، ولا مرجّح شرعي لإحداهما على الأخرى، فيفسد نكاحهما معًا."
+      },
+      {
+        id: "tbd4",
+        q: "السؤال الخامس (ب-٢): دلِّل لما يأتي: لا يحل للرجل أن يجمع بين أكثر من أربع نسوة.",
+        a: "الحل النموذجي: دليله قوله تعالى ﴿فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ﴾ [النساء: ٣]، وحديث أمر النبي ﷺ لغيلان الدَّيْلَمي أن يُمسك أربعًا من نسائه العشر ويُفارق الباقي."
+      },
+      {
+        id: "tbd5",
+        q: "السؤال الخامس (ب-٣): دلِّل لما يأتي: لا يجوز للرجل أن يتزوج زوجة الغير أو معتدته.",
+        a: "الحل النموذجي: دليله قوله ﷺ: «مَلْعُونٌ مَنْ سَقَى مَاءَهُ زَرْعَ غَيْرِهِ»، ولأن ذلك يُفضي إلى اشتباه الأنساب، ولم يُشرع الجمع بين زوجين في امرأة واحدة في أي دين."
+      },
+      {
+        id: "tbd6",
+        q: "السؤال الخامس (جـ): ما أقسام المحرمات إجمالًا؟",
+        a: "الحل النموذجي: تسعة أقسام (اقتصر المصنف على سبعة منها لعدم وجود اثنين في زماننا): بالقرابة، وبالصهرية، وبالرضاع، وبالجمع، وبتعلق حق الغير، وبالكفر، وبالطلقات الثلاث."
+      }
+    ];
+
+    const TEXTBOOK_GENERAL = [
+      {
+        id: "tbg1",
+        q: "س9 (أ): دلِّل أو علِّل: لو تزوج أختين في عقد واحد فسد نكاحهما.",
+        a: "الحل النموذجي: لعدم وجود أولوية شرعية لجواز نكاح إحداهما على الأخرى؛ فيتساقط النكاحان معًا احتياطًا في باب الحرمة."
+      },
+      {
+        id: "tbg2",
+        q: "س9 (ب): دلِّل أو علِّل: لا يجوز أن يتزوج زوجة الغير ولا معتدته.",
+        a: "الحل النموذجي: لقوله ﷺ: «ملعون من سقى ماءه زرع غيره»، ولإفضائه إلى اشتباه الأنساب."
+      },
+      {
+        id: "tbg3",
+        q: "س9 (ج): دلِّل أو علِّل: يجوز أن يتزوج المُحْرِم حالة الإحرام.",
+        a: "الحل النموذجي: لأن النبي ﷺ تزوج ميمونة وهو مُحرِم، والمحظور على المُحرِم هو الوطء ودواعيه لا نفس عقد النكاح."
+      }
+    ];
+
+    // =========================================================================
+    // 2. STATE & LOCAL STORAGE HELPERS (Safe try/catch wrapper)
+    // =========================================================================
+    const STORAGE_KEYS = {
+      THEME: "zad_3sec_nikah_u2_theme",
+      PROGRESS: "zad_3sec_nikah_u2_progress",
+      DATES: "zad_3sec_nikah_u2_dates",
+      CONFIDENCE: "zad_3sec_nikah_u2_conf"
+    };
+
+    const TOTAL_STUDY_ITEMS = 33 + 4 + 7 + 5 + 6 + 12 + 9; // 76 interactive items
+    let reviewedItems = new Set();
+    let savedDates = {};
+    let savedConf = {};
+    let mcqState = {};
+    let currentFontScale = 1;
+    let activeAxisFilter = "all";
+
+    function safeGetStorage(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function safeSetStorage(key, val) {
+      try {
+        localStorage.setItem(key, JSON.stringify(val));
+      } catch (e) {
+        // Ignore storage quota/privacy errors
+      }
+    }
+
+    // =========================================================================
+    // 3. UI RENDERING FUNCTIONS
+    // =========================================================================
+
+    function initApp() {
+      // Load Theme
+      const savedTheme = safeGetStorage(STORAGE_KEYS.THEME, "light");
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateThemeBtnLabel(savedTheme);
+
+      // Load Progress
+      const loadedProg = safeGetStorage(STORAGE_KEYS.PROGRESS, []);
+      reviewedItems = new Set(loadedProg);
+
+      // Load Dates & Confidence
+      savedDates = safeGetStorage(STORAGE_KEYS.DATES, {});
+      savedConf = safeGetStorage(STORAGE_KEYS.CONFIDENCE, {});
+
+      renderSpacedRepetition();
+      renderQaFilters();
+      renderQaBank();
+      renderAppliedCases();
+      renderMcqBank();
+      renderExamSections();
+      renderTextbookExercises();
+      updateProgressUI();
+    }
+
+    function showToast(msg, type = "info") {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast " + type;
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        setTimeout(() => toast.remove(), 250);
+      }, 2600);
+    }
+
+    function markItemReviewed(itemId) {
+      if (!reviewedItems.has(itemId)) {
+        reviewedItems.add(itemId);
+        safeSetStorage(STORAGE_KEYS.PROGRESS, Array.from(reviewedItems));
+        updateProgressUI();
+      }
+    }
+
+    function updateProgressUI() {
+      const count = reviewedItems.size;
+      const pct = Math.min(100, Math.round((count / TOTAL_STUDY_ITEMS) * 100));
+      document.getElementById("progressText").textContent =
+        `مؤشر الإنجاز الدراسي: تم استعراض ${count} من ${TOTAL_STUDY_ITEMS} عنصر مذاكرة — ${pct}%`;
+      document.getElementById("progressFill").style.width = pct + "%";
+    }
+
+    // Spaced Repetition Table
+    function renderSpacedRepetition() {
+      const tbody = document.getElementById("spacedRepBody");
+      tbody.innerHTML = SPACED_UNITS.map(u => {
+        const d1 = savedDates[`u${u.id}_d1`] || "";
+        const d2 = savedDates[`u${u.id}_d2`] || "";
+        const d3 = savedDates[`u${u.id}_d3`] || "";
+        const d4 = savedDates[`u${u.id}_d4`] || "";
+        const rowClass = u.id === 2 ? "current-unit-row" : "";
+        return `
+          <tr class="${rowClass}">
+            <td>${u.id}</td>
+            <td>${u.title}</td>
+            <td><input type="date" class="date-input" value="${d1}" onchange="saveSpacedDate('u${u.id}_d1', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d2}" onchange="saveSpacedDate('u${u.id}_d2', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d3}" onchange="saveSpacedDate('u${u.id}_d3', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d4}" onchange="saveSpacedDate('u${u.id}_d4', this.value)" /></td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function saveSpacedDate(key, val) {
+      savedDates[key] = val;
+      safeSetStorage(STORAGE_KEYS.DATES, savedDates);
+      showToast("تم حفظ تاريخ المراجعة تلقائيًّا 📅", "success");
+    }
+
+    function resetSpacedDates() {
+      savedDates = {};
+      safeSetStorage(STORAGE_KEYS.DATES, {});
+      renderSpacedRepetition();
+      showToast("تم تصفير جميع التواريخ المسجلة بنجاح 🔄", "info");
+    }
+
+    // Q&A Bank & Axis Filtering
+    function renderQaFilters() {
+      const bar = document.getElementById("qaFilterBar");
+      bar.innerHTML = QA_AXES.map(ax => `
+        <button class="filter-pill ${ax.id === activeAxisFilter ? 'active' : ''}" onclick="setAxisFilter('${ax.id}')">
+          ${ax.label}
+        </button>
+      `).join("");
+    }
+
+    function setAxisFilter(axisId) {
+      activeAxisFilter = axisId;
+      renderQaFilters();
+      renderQaBank();
+    }
+
+    function renderQaBank() {
+      const container = document.getElementById("qaListContainer");
+      const filtered = activeAxisFilter === "all"
+        ? QA_BANK
+        : QA_BANK.filter(item => item.axis === activeAxisFilter);
+
+      container.innerHTML = filtered.map(item => {
+        const isRev = reviewedItems.has("qa_" + item.num);
+        return `
+          <div class="qa-card searchable-card ${isRev ? 'reviewed' : ''}" id="card_qa_${item.num}">
+            <div class="qa-header" onclick="toggleAccordion('qa_${item.num}')">
+              <div class="qa-q-wrap">
+                <span class="q-num-badge">${item.num}</span>
+                <div>
+                  <span class="q-axis-badge">${item.axisTitle}</span>
+                  <div class="q-text">${item.q}</div>
+                </div>
+              </div>
+              <button class="toggle-ans-btn" id="btn_qa_${item.num}">إظهار الإجابة ∨</button>
+            </div>
+            <div class="qa-body" id="body_qa_${item.num}">
+              ${item.a}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function toggleAccordion(id) {
+      const body = document.getElementById("body_" + id);
+      const btn = document.getElementById("btn_" + id);
+      const card = document.getElementById("card_" + id);
+      if (!body) return;
+      const isOpen = body.classList.toggle("open");
+      if (btn) {
+        btn.textContent = isOpen ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      }
+      if (isOpen) {
+        if (card) card.classList.add("reviewed");
+        markItemReviewed(id);
+      }
+    }
+
+    // Applied Cases
+    function renderAppliedCases() {
+      const container = document.getElementById("casesContainer");
+      container.innerHTML = APPLIED_CASES.map((c, idx) => `
+        <div class="qa-card searchable-card ${reviewedItems.has(c.id) ? 'reviewed' : ''}" id="card_${c.id}">
+          <div class="qa-header" onclick="toggleAccordion('${c.id}')">
+            <div class="qa-q-wrap">
+              <span class="q-num-badge" style="background:var(--gold);">نازلة ${idx + 1}</span>
+              <div>
+                <span class="q-axis-badge">${c.title}</span>
+                <div class="q-text">${c.q}</div>
+              </div>
+            </div>
+            <button class="toggle-ans-btn" id="btn_${c.id}">إظهار الإجابة والتحليل ∨</button>
+          </div>
+          <div class="qa-body" id="body_${c.id}">
+            <div class="ans-point"><span class="ans-label">الإجابة والتحليل الفقهي:</span> ${c.a}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // Interactive MCQ Bank
+    function renderMcqBank() {
+      const container = document.getElementById("mcqContainer");
+      container.innerHTML = MCQ_BANK.map(item => `
+        <div class="card searchable-card" id="card_${item.id}">
+          <div class="q-text" style="margin-bottom:0.5rem;">${item.q}</div>
+          <div class="options-grid" id="opts_${item.id}">
+            ${item.options.map((opt, oIdx) => `
+              <button class="opt-btn" onclick="answerMcq('${item.id}', ${oIdx})">
+                <span>${opt}</span>
+                <span class="opt-mark"></span>
+              </button>
+            `).join("")}
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">💡 التوضيح والتعليل:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+      updateMcqScoreUI();
+    }
+
+    function answerMcq(mcqId, chosenIdx) {
+      if (mcqState[mcqId] !== undefined) return; // Already answered
+      const item = MCQ_BANK.find(m => m.id === mcqId);
+      if (!item) return;
+
+      const isCorrect = chosenIdx === item.correct;
+      mcqState[mcqId] = isCorrect;
+      markItemReviewed(mcqId);
+
+      const optsWrap = document.getElementById("opts_" + mcqId);
+      const buttons = optsWrap.querySelectorAll(".opt-btn");
+      buttons.forEach((btn, idx) => {
+        btn.disabled = true;
+        const mark = btn.querySelector(".opt-mark");
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          if (mark) mark.textContent = "✓";
+        } else if (idx === chosenIdx && !isCorrect) {
+          btn.classList.add("wrong");
+          if (mark) mark.textContent = "✗";
+        }
+      });
+
+      const fb = document.getElementById("fb_" + mcqId);
+      if (fb) fb.classList.add("show");
+
+      if (isCorrect) {
+        showToast("إجابة صحيحة! أحسنت 🌟", "success");
+      } else {
+        showToast("إجابة غير صحيحة، طالع التوضيح بالأسفل 💡", "error");
+      }
+      updateMcqScoreUI();
+    }
+
+    function updateMcqScoreUI() {
+      const total = MCQ_BANK.length;
+      const correctCount = Object.values(mcqState).filter(Boolean).length;
+      const pct = Math.round((correctCount / total) * 100);
+      document.getElementById("mcqScoreText").textContent = `النتيجة: ${correctCount} / ${total}`;
+      document.getElementById("mcqPercentText").textContent = `نسبة الإتقان: ${pct}%`;
+    }
+
+    function resetMcqQuiz() {
+      mcqState = {};
+      renderMcqBank();
+      showToast("تمت إعادة ضبط بنك الاختيار من متعدد 🔄", "info");
+    }
+
+    // Model Exam & Self-Assessment Exam
+    function renderExamSections() {
+      // 1. True/False Interactive
+      const tfContainer = document.getElementById("examTfContainer");
+      tfContainer.innerHTML = EXAM_TF.map(item => `
+        <div class="card searchable-card">
+          <div class="q-text">${item.statement}</div>
+          <div class="options-grid" id="tf_opts_${item.id}" style="max-width:460px;">
+            <button class="opt-btn" onclick="answerTf('${item.id}', true)">
+              <span>✓ عبارة صحيحة</span>
+              <span class="opt-mark"></span>
+            </button>
+            <button class="opt-btn" onclick="answerTf('${item.id}', false)">
+              <span>✗ عبارة خاطئة</span>
+              <span class="opt-mark"></span>
+            </button>
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">⚖️ التصويب والتعليل الفقهي:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+
+      // 2. Model Exam Essays
+      const essayContainer = document.getElementById("examEssayContainer");
+      essayContainer.innerHTML = EXAM_ESSAY.map(item => `
+        <div class="qa-card searchable-card" id="card_${item.id}">
+          <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+            <div class="q-text">${item.q}</div>
+            <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+          </div>
+          <div class="qa-body" id="body_${item.id}">
+            <div class="ans-point">${item.a}</div>
+          </div>
+        </div>
+      `).join("");
+
+      // 3. Self-Assessment Exam (13 questions, 60 marks)
+      const selfContainer = document.getElementById("selfExamContainer");
+      const matchingCardHtml = `
+        <div class="card searchable-card">
+          <div class="q-text" style="margin-bottom:0.75rem;">س3 [مزاوجة تفاعلية — ٥ درجات]: صِلْ بين عناصر المجموعة (أ) وما يناسبها من المجموعة (ب):</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>المجموعة (أ)</th>
+                  <th>اختر ما يناسبها من المجموعة (ب)</th>
+                  <th>التحقق الفوري</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${[
+                  { id: "m1", a: "١. الرَّبيبة (بنت الزوجة)", correct: "هـ", ansText: "هـ) لا تحرم إلا بالدخول بأمها" },
+                  { id: "m2", a: "٢. أم الزوجة", correct: "ج", ansText: "ج) تحرم بمجرد العقد على ابنتها" },
+                  { id: "m3", a: "٣. حليلة الابن", correct: "ب", ansText: "ب) تحرم على الأب دخل بها الابن أو لم يدخل" },
+                  { id: "m4", a: "٤. الجمع بين الأختين", correct: "أ", ansText: "أ) محرَّم بقوله تعالى: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ﴾" },
+                  { id: "m5", a: "٥. نكاح المجوسية", correct: "د", ansText: "د) لا يجوز" }
+                ].map(row => `
+                  <tr>
+                    <td><strong>${row.a}</strong></td>
+                    <td>
+                      <select class="match-select" onchange="checkMatchRow('${row.id}', '${row.correct}', this.value)">
+                        <option value="">-- اختر الإجابة --</option>
+                        <option value="أ">أ) محرَّم بقوله تعالى: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ﴾</option>
+                        <option value="ب">ب) تحرم على الأب دخل بها الابن أو لم يدخل</option>
+                        <option value="ج">ج) تحرم بمجرد العقد على ابنتها</option>
+                        <option value="د">د) لا يجوز</option>
+                        <option value="هـ">هـ) لا تحرم إلا بالدخول بأمها</option>
+                      </select>
+                    </td>
+                    <td id="match_res_${row.id}" style="font-weight:800;">—</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      const otherSelfItemsHtml = SELF_EXAM_ITEMS.map(item => {
+        if (item.type === "mcq") {
+          return `
+            <div class="card searchable-card">
+              <div class="q-text">${item.q}</div>
+              <div class="options-grid" id="se_opts_${item.id}">
+                ${item.options.map((opt, idx) => `
+                  <button class="opt-btn" onclick="answerSelfMcq('${item.id}', ${idx}, ${item.correct})">
+                    <span>${opt}</span>
+                    <span class="opt-mark"></span>
+                  </button>
+                `).join("")}
+              </div>
+              <div class="feedback-box" id="fb_${item.id}">
+                <strong style="color:var(--primary);">💡 التوضيح:</strong> ${item.explanation}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="qa-card searchable-card" id="card_${item.id}">
+              <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+                <div class="q-text">${item.q}</div>
+                <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+              </div>
+              <div class="qa-body" id="body_${item.id}">
+                <div class="ans-point"><span class="ans-label">نموذج الإجابة:</span> ${item.a}</div>
+              </div>
+            </div>
+          `;
+        }
+      });
+
+      // Insert matching card right after se2
+      otherSelfItemsHtml.splice(2, 0, matchingCardHtml);
+      selfContainer.innerHTML = otherSelfItemsHtml.join("");
+    }
+
+    function answerTf(tfId, userChoice) {
+      const item = EXAM_TF.find(t => t.id === tfId);
+      if (!item) return;
+      markItemReviewed(tfId);
+
+      const wrap = document.getElementById("tf_opts_" + tfId);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = userChoice === item.isTrue;
+
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        const btnRepresentsTrue = idx === 0;
+        if (btnRepresentsTrue === item.isTrue) {
+          btn.classList.add("correct");
+        } else if (btnRepresentsTrue === userChoice && !isCorrect) {
+          btn.classList.add("wrong");
+        }
+      });
+
+      document.getElementById("fb_" + tfId).classList.add("show");
+      if (isCorrect) {
+        showToast("أحسنت! إجابتك صائبة 🌟", "success");
+      } else {
+        showToast("انتبه! طالع التصويب الفقهي بالأسفل 💡", "error");
+      }
+    }
+
+    function checkMatchRow(rowId, correctVal, chosenVal) {
+      const cell = document.getElementById("match_res_" + rowId);
+      if (!chosenVal) {
+        cell.textContent = "—";
+        cell.style.color = "";
+        return;
+      }
+      markItemReviewed("match_" + rowId);
+      if (chosenVal === correctVal) {
+        cell.textContent = "✓ إجابة صحيحة";
+        cell.style.color = "var(--success)";
+        showToast("مطابقة صحيحة! 🌟", "success");
+      } else {
+        cell.textContent = `✗ خطأ (الصواب: ${correctVal})`;
+        cell.style.color = "var(--danger)";
+        showToast("مطابقة غير صحيحة، حاول مرة أخرى", "error");
+      }
+    }
+
+    function answerSelfMcq(id, chosenIdx, correctIdx) {
+      markItemReviewed(id);
+      const wrap = document.getElementById("se_opts_" + id);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = chosenIdx === correctIdx;
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === correctIdx) btn.classList.add("correct");
+        else if (idx === chosenIdx && !isCorrect) btn.classList.add("wrong");
+      });
+      document.getElementById("fb_" + id).classList.add("show");
+      showToast(isCorrect ? "إجابة صحيحة! 🌟" : "راجع التوضيح بالأسفل 💡", isCorrect ? "success" : "error");
+    }
+
+    // Textbook Exercises with Confidence Calibration
+    function renderTextbookExercises() {
+      const renderGroup = (list) => list.map(item => {
+        const confVal = savedConf[item.id];
+        const isRevealed = Boolean(confVal);
+        return `
+          <div class="card searchable-card" id="card_${item.id}">
+            <div class="q-text">${item.q}</div>
+            <div class="confidence-bar">
+              <span style="font-size:0.88rem; font-weight:700; color:var(--text-muted);">
+                قيّم ثقتك في إجابتك قبل الاطلاع على الحل:
+              </span>
+              <div class="conf-btns">
+                <button class="conf-btn sure ${confVal === 'sure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'sure')">
+                  [ متأكد 👍 ]
+                </button>
+                <button class="conf-btn unsure ${confVal === 'unsure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'unsure')">
+                  [ غير متأكد 🧐 ]
+                </button>
+              </div>
+            </div>
+            <div class="qa-body ${isRevealed ? 'open' : ''}" id="body_${item.id}" style="margin-top:0.75rem; border-radius:8px; background:var(--bg-quote);">
+              <div class="ans-point">${item.a}</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("tbDiscussContainer").innerHTML = renderGroup(TEXTBOOK_DISCUSS);
+      document.getElementById("tbGeneralContainer").innerHTML = renderGroup(TEXTBOOK_GENERAL);
+    }
+
+    function rateConfidence(itemId, level) {
+      savedConf[itemId] = level;
+      safeSetStorage(STORAGE_KEYS.CONFIDENCE, savedConf);
+      markItemReviewed(itemId);
+      renderTextbookExercises();
+      showToast(
+        level === "sure"
+          ? "رائع! قارن الآن إجابتك بالحل النموذجي لتأكيد إتقانك 👍"
+          : "خطوة ممتازة! راجع الحل النموذجي الآن لتثبيت المعلومة 🧐",
+        "success"
+      );
+    }
+
+    // =========================================================================
+    // 4. NAVIGATION, SEARCH, FONT & THEME CONTROLS
+    // =========================================================================
+
+    function switchTab(sectionId, btnEl) {
+      document.querySelectorAll(".tab-section").forEach(sec => sec.classList.remove("active"));
+      const target = document.getElementById(sectionId);
+      if (target) target.classList.add("active");
+
+      document.querySelectorAll("#sidebarNav .nav-btn").forEach(b => b.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function toggleAllInActiveTab(openState) {
+      const activeSec = document.querySelector(".tab-section.active");
+      if (!activeSec) return;
+
+      activeSec.querySelectorAll(".qa-body, .feedback-box").forEach(el => {
+        if (openState) {
+          el.classList.add("open", "show");
+        } else {
+          el.classList.remove("open", "show");
+        }
+      });
+
+      activeSec.querySelectorAll(".toggle-ans-btn").forEach(btn => {
+        btn.textContent = openState ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      });
+
+      showToast(openState ? "تم إظهار جميع الإجابات في هذا القسم 👁️" : "تم طيّ جميع الإجابات للمراجعة الذاتية 🔒", "info");
+    }
+
+    function handleGlobalSearch(query) {
+      const q = query.trim().toLowerCase();
+      if (q.length > 0) {
+        // Switch to Q&A tab if currently on cover so user sees immediate results
+        const activeSec = document.querySelector(".tab-section.active");
+        if (activeSec && activeSec.id === "sec1") {
+          const qaBtn = document.querySelectorAll("#sidebarNav .nav-btn")[1];
+          switchTab("sec2", qaBtn);
+        }
+      }
+
+      document.querySelectorAll(".searchable-card").forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    }
+
+    function changeFontSize(delta) {
+      if (delta === 0) {
+        currentFontScale = 1;
+      } else {
+        currentFontScale = Math.min(1.35, Math.max(0.85, +(currentFontScale + delta).toFixed(2)));
+      }
+      document.documentElement.style.setProperty("--font-scale", currentFontScale);
+    }
+
+    function toggleTheme() {
+      const curr = document.documentElement.getAttribute("data-theme") || "light";
+      const next = curr === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      safeSetStorage(STORAGE_KEYS.THEME, next);
+      updateThemeBtnLabel(next);
+    }
+
+    function updateThemeBtnLabel(theme) {
+      const btn = document.getElementById("themeToggleBtn");
+      if (btn) {
+        btn.textContent = theme === "dark" ? "☀️ الوضع النهاري" : "🌙 الوضع الليلي";
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", initApp);
+  </script>
+</body>
+</html>
