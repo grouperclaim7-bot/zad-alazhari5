@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سلسلة زاد الأزهري — الفقه الحنفي (٣ث) — كتاب النكاح: الوحدة السابعة (المهر والخَلوة الصحيحة)</title>
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-quote: #fffbeb;
+      --border-quote: #d97706;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #0f766e;
+      --primary-light: #0d9488;
+      --primary-bg: #ccfbf1;
+      --navy: #1e293b;
+      --gold: #d97706;
+      --gold-bg: #fef3c7;
+      --crimson: #b91c1c;
+      --crimson-bg: #fee2e2;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --font-scale: 1;
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-alt: #334155;
+      --bg-quote: #272014;
+      --border-quote: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --primary: #14b8a6;
+      --primary-light: #2dd4bf;
+      --primary-bg: rgba(20, 184, 166, 0.18);
+      --navy: #020617;
+      --gold: #f59e0b;
+      --gold-bg: rgba(245, 158, 11, 0.18);
+      --crimson: #f87171;
+      --crimson-bg: rgba(239, 68, 68, 0.2);
+      --success: #22c55e;
+      --success-bg: rgba(34, 197, 94, 0.2);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.2);
+      --border-color: #334155;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.75;
+      font-size: calc(1rem * var(--font-scale));
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+    }
+
+    /* Sticky Top Header */
+    .top-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-card);
+      border-bottom: 2px solid var(--primary);
+      box-shadow: var(--shadow-md);
+      padding: 0.75rem 1.25rem;
+    }
+
+    .header-row-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .zad-badge {
+      background: linear-gradient(135deg, var(--primary), #065f46);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(15, 118, 110, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-titles h1 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+
+    .brand-titles p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      max-width: 420px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.5rem 2.2rem 0.5rem 0.85rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .ctrl-btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.38rem 0.65rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.18s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .ctrl-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Progress Bar in Header */
+    .progress-bar-wrap {
+      margin-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 8px;
+      background: var(--bg-card-alt);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--gold));
+      transition: width 0.35s ease;
+      border-radius: 999px;
+    }
+
+    /* Layout Grid */
+    .app-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 1.25rem;
+      max-width: 1440px;
+      margin: 1.25rem auto;
+      padding: 0 1rem 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .app-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Right Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 118px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 960px) {
+      .sidebar {
+        position: static;
+      }
+    }
+
+    .sidebar-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      list-style: none;
+    }
+
+    .nav-btn {
+      width: 100%;
+      text-align: right;
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.6rem 0.75rem;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .nav-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(15, 118, 110, 0.3);
+    }
+
+    .nav-count {
+      font-size: 0.75rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .nav-btn.active .nav-count {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
+    .sidebar-actions {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .bulk-btn {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .bulk-btn:hover {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    /* Main Content Area */
+    .main-area {
+      min-width: 0;
+    }
+
+    .tab-section {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Banner */
+    .section-banner {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-banner::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: var(--gold);
+    }
+
+    .section-banner h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-banner p {
+      font-size: 0.92rem;
+      opacity: 0.92;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Filter Pills */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.15rem;
+      background: var(--bg-card);
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+    }
+
+    .filter-pill {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--primary);
+    }
+
+    .filter-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Q&A Accordion Cards */
+    .qa-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-right: 4px solid var(--primary);
+      border-radius: var(--radius);
+      margin-bottom: 0.9rem;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .qa-card.reviewed {
+      border-right-color: var(--gold);
+    }
+
+    .qa-header {
+      padding: 1rem 1.15rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .qa-header:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .qa-q-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      flex: 1;
+    }
+
+    .q-num-badge {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 7px;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .q-axis-badge {
+      background: var(--gold-bg);
+      color: var(--gold);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+
+    .q-text {
+      font-weight: 800;
+      font-size: 1.02rem;
+      color: var(--text-main);
+    }
+
+    .toggle-ans-btn {
+      background: var(--primary-bg);
+      color: var(--primary);
+      border: none;
+      padding: 0.38rem 0.8rem;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .toggle-ans-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .qa-body {
+      display: none;
+      padding: 1rem 1.25rem 1.15rem;
+      border-top: 1px dashed var(--border-color);
+      background: var(--bg-card);
+    }
+
+    .qa-body.open {
+      display: block;
+    }
+
+    .ans-point {
+      margin-bottom: 0.55rem;
+      position: relative;
+      padding-right: 1rem;
+    }
+
+    .ans-point::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: var(--crimson);
+      font-weight: 900;
+    }
+
+    .ans-label {
+      color: var(--crimson);
+      font-weight: 800;
+    }
+
+    .quote-box {
+      background: var(--bg-quote);
+      border-right: 4px solid var(--border-quote);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin: 0.6rem 0;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .imam-badge {
+      display: inline-block;
+      padding: 0.1rem 0.55rem;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      margin: 0 0.15rem;
+    }
+
+    .imam-hanifa { background: #dcfce7; color: #166534; }
+    .imam-yusuf { background: #dbeafe; color: #1e40af; }
+    .imam-muhammad { background: #fae8ff; color: #86198f; }
+    .imam-zufar { background: #ffedd5; color: #9a3412; }
+
+    [data-theme="dark"] .imam-hanifa { background: rgba(22, 101, 52, 0.35); color: #86efac; }
+    [data-theme="dark"] .imam-yusuf { background: rgba(30, 64, 175, 0.35); color: #93c5fd; }
+    [data-theme="dark"] .imam-muhammad { background: rgba(134, 25, 143, 0.35); color: #f0abfc; }
+    [data-theme="dark"] .imam-zufar { background: rgba(154, 52, 18, 0.35); color: #fdba74; }
+
+    /* Tables */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      margin-top: 0.5rem;
+    }
+
+    table.zad-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+      font-size: 0.92rem;
+    }
+
+    table.zad-table th {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 0.75rem 1rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    table.zad-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    table.zad-table tr:nth-child(even) td {
+      background: var(--bg-card-alt);
+    }
+
+    table.zad-table tr.current-unit-row td {
+      background: var(--gold-bg);
+      font-weight: 800;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .status-done { background: var(--success-bg); color: var(--success); }
+    .status-current { background: var(--gold); color: #fff; }
+    .status-upcoming { background: var(--bg-card-alt); color: var(--text-muted); border: 1px solid var(--border-color); }
+
+    .date-input {
+      padding: 0.35rem 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.82rem;
+    }
+
+    /* Interactive MCQ & True/False */
+    .score-board {
+      background: var(--bg-card);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .score-stats {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .score-pill {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .opt-btn {
+      text-align: right;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-bg);
+    }
+
+    .opt-btn.correct {
+      background: var(--success-bg) !important;
+      border-color: var(--success) !important;
+      color: var(--success) !important;
+    }
+
+    .opt-btn.wrong {
+      background: var(--danger-bg) !important;
+      border-color: var(--danger) !important;
+      color: var(--danger) !important;
+    }
+
+    .feedback-box {
+      display: none;
+      margin-top: 0.85rem;
+      padding: 0.85rem 1rem;
+      border-radius: 9px;
+      background: var(--bg-quote);
+      border-right: 4px solid var(--gold);
+      font-size: 0.92rem;
+    }
+
+    .feedback-box.show {
+      display: block;
+    }
+
+    /* Confidence Calibration Buttons */
+    .confidence-bar {
+      margin-top: 0.85rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-card-alt);
+      border-radius: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .conf-btns {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .conf-btn {
+      padding: 0.42rem 0.9rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 800;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .conf-btn.sure:hover, .conf-btn.sure.selected {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .conf-btn.unsure:hover, .conf-btn.unsure.selected {
+      background: var(--gold-bg);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Concept Map Tree */
+    .concept-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .root-node {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 14px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      border-bottom: 4px solid var(--gold);
+      position: relative;
+    }
+
+    .branches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .branch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-top: 5px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .branch-card.temporary {
+      border-top-color: var(--gold);
+    }
+
+    .branch-card.appendix {
+      border-top-color: var(--crimson);
+    }
+
+    .branch-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.65rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .branch-title {
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+
+    .branch-card.temporary .branch-title { color: var(--gold); }
+    .branch-card.appendix .branch-title { color: var(--crimson); }
+
+    .leaf-item {
+      background: var(--bg-card-alt);
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.45rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-md);
+      border-right: 5px solid var(--gold);
+      animation: slideUp 0.25s ease;
+    }
+
+    .toast.success { border-right-color: var(--success); }
+    .toast.error { border-right-color: var(--danger); }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Matching Select */
+    .match-select {
+      padding: 0.4rem 0.65rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    @media print {
+      .sidebar, .search-box, .header-controls { display: none !important; }
+      .app-layout { grid-template-columns: 1fr; }
+      .tab-section { display: block !important; page-break-after: always; }
+      .qa-body, .feedback-box { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="top-header">
+    <div class="header-row-1">
+      <div class="brand-box">
+        <div class="zad-badge">زاد</div>
+        <div class="brand-titles">
+          <h1>سلسلة زاد الأزهري — الفقه الحنفي (الصف الثالث الثانوي الأزهري)</h1>
+          <p>كتاب النكاح — الوحدة السابعة: المهر والخَلوة الصحيحة | إعداد أ/ محمود صلاح الخطيب (01111916649)</p>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="globalSearchInput" placeholder="ابحث في نصوص الأسئلة، الأحاديث، المسائل..." oninput="handleGlobalSearch(this.value)" />
+      </div>
+
+      <div class="header-controls">
+        <button class="ctrl-btn" onclick="changeFontSize(-0.1)" title="تصغير الخط">-أ</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0)" title="الحجم الافتراضي">افتراضي</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0.1)" title="تكبير الخط">أ+</button>
+        <button class="ctrl-btn" onclick="window.print()" title="طباعة الوحدة">🖨️ طباعة</button>
+        <button class="ctrl-btn" id="themeToggleBtn" onclick="toggleTheme()" title="تبديل الوضع الليلي/النهاري">🌙 الوضع الليلي</button>
+      </div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <span id="progressText">مؤشر الإنجاز الدراسي: تم استعراض 0 من 76 عنصر مذاكرة — 0%</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="app-layout">
+    <!-- Right Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <span>🧭 خطة الدراسة والتنقل</span>
+        <span style="font-size:0.78rem; color:var(--text-muted)">٨ أقسام</span>
+      </div>
+      <ul class="nav-list" id="sidebarNav">
+        <li>
+          <button class="nav-btn active" onclick="switchTab('sec1', this)">
+            <span>١. الغلاف وخطة المتابعة</span>
+            <span class="nav-count">خريطة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec2', this)">
+            <span>٢. أولًا: بنك الأسئلة والأجوبة</span>
+            <span class="nav-count">44 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec3', this)">
+            <span>٣. ثانيًا: الملخص والجداول</span>
+            <span class="nav-count">جدولان</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec4', this)">
+            <span>٤. ثالثًا: النوازل التطبيقية</span>
+            <span class="nav-count">4 نوازل</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec5', this)">
+            <span>٥. رابعًا: الاختيار من متعدد</span>
+            <span class="nav-count">7 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec6', this)">
+            <span>٦. خامسًا: الاختبار النموذجي</span>
+            <span class="nav-count">21 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec7', this)">
+            <span>٧. سادسًا: تدريبات الكتاب</span>
+            <span class="nav-count">6 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec8', this)">
+            <span>٨. سابعًا: خريطة المفاهيم</span>
+            <span class="nav-count">4 فروع</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-actions">
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(true)">إظهار الكل 👁️</button>
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(false)">إخفاء الكل 🔒</button>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="main-area">
+
+      <!-- SECTION 1: Cover, Scope Map & Spaced Repetition -->
+      <section id="sec1" class="tab-section active">
+        <div class="section-banner">
+          <h2>🕌 كتاب النكاح — الوحدة السابعة: المهر</h2>
+          <p>تتناول هذه الوحدة أحكام المهر: مقداره الأدنى، ومتى يلزم كاملًا ومتى يتنصف، وحكم عدم تسمية المهر (مهر المثل والمتعة)، والخَلوة الصحيحة وأثرها، ومهر النكاح الفاسد، ومسائل متفرقة كالشروط المقترنة بالمهر، وحق المرأة في منع نفسها من السفر حتى تستوفي مهرها.</p>
+        </div>
+        <div class="card searchable-card">
+          <div class="card-title">📌 بطاقة تعريف الوحدة وأهدافها التعليمية</div>
+          <div class="ans-point"><span class="ans-label">المقرر الدراسي:</span> الفقه الحنفي — الصف الثالث الثانوي الأزهري (شرح كتاب «المختار من الاختيار لتعليل المختار»).</div>
+          <div class="ans-point"><span class="ans-label">إعداد:</span> الأستاذ / محمود صلاح الخطيب (01111916649).</div>
+          <div class="ans-point"><span class="ans-label">محاور الوحدة الثمانية:</span> (١) مقدار المهر — (٢) لزوم المهر كاملًا أو نصفه — (٣) عدم تسمية المهر — (٤) المتعة وتقديرها — (٥) الخَلوة الصحيحة وأثرها — (٦) شروط وموانع الخَلوة الصحيحة — (٧) مهر النكاح الفاسد — (٨) مسائل متفرقة في المهر.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🗺️ خارطة نطاق المذكرة الكاملة — توزيع المقرر على الأبواب والوحدات الدراسية</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الباب / الوحدة الدراسية</th>
+                  <th>موضوعات الوحدة التفصيلية</th>
+                  <th>حالة الإنجاز</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>كتاب النكاح — الوحدة الأولى</td>
+                  <td>تعريف النكاح وحكمه العام وركنه وشروط الشهود على العقد</td>
+                  <td><span class="status-badge status-done">مكتمل ✓</span></td>
+                </tr>
+                <tr class="current-unit-row">
+                  <td>2</td>
+                  <td>كتاب النكاح — الوحدة الثانية</td>
+                  <td>محرمات النكاح (القرابة، الصهرية، الرضاع، الجمع، حق الغير، الكفر، الثلاث)</td>
+                  <td><span class="status-badge status-current">هذا الجزء 🌟</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>كتاب النكاح — الوحدة الثالثة</td>
+                  <td>نكاح المتعة والنكاح المؤقت والفرق بينهما ورأي زفر</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>كتاب النكاح — الوحدة الرابعة</td>
+                  <td>عبارة النساء في النكاح واستئمار البكر والثيب وصور الرضا</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>كتاب النكاح — الوحدة الخامسة</td>
+                  <td>ترتيب الأولياء، غيبة الولي الأقرب، تزويج الأب والجد، تولي طرفي العقد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>كتاب النكاح — الوحدة السادسة</td>
+                  <td>الكفاءة في النكاح وأمورها الخمسة وأثر الإخلال بها</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>كتاب النكاح — الوحدة السابعة</td>
+                  <td>المهر، مقداره، متى يجب كاملًا أو نصفه، الخلوة الصحيحة، مهر الفاسد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>كتاب النكاح — الوحدة الثامنة</td>
+                  <td>القَسْم بين الزوجات، ما يجب فيه التسوية وما لا يجب، هبة اليوم</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>كتاب الرضاع</td>
+                  <td>تعريفه، مدته عند الإمام والصاحبين، ما يحرم به، اختلاط اللبن، مسائل الشك</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>كتاب الطلاق (الوحدات ١–٣)</td>
+                  <td>صريح الطلاق، كنايات الطلاق والتفويض، وباب الرجعة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>أبواب الخلع والظهار والعدة والنفقة والحضانة</td>
+                  <td>أحكام الخلع، الظهار وكفارته، العدة والإحداد، النفقة والحضانة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title" style="justify-content:space-between; flex-wrap:wrap;">
+            <span>📅 جدول متابعة المراجعة بنظام التكرار المتباعد (Spaced Repetition)</span>
+            <button class="ctrl-btn" onclick="resetSpacedDates()">🗑️ تصفير التواريخ المسجلة</button>
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.75rem;">سجّل تاريخ مذاكرتك الأولى ومواعيد المراجعة الدورية (بعد يوم، بعد أسبوع، بعد شهر)؛ تُحفظ تواريخك تلقائيًّا على جهازك.</p>
+          <div class="table-responsive">
+            <table class="zad-table" id="spacedRepTable">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>اسم الباب / الوحدة (كتاب النكاح)</th>
+                  <th>تاريخ أول مذاكرة</th>
+                  <th>مراجعة (بعد يوم)</th>
+                  <th>مراجعة (بعد أسبوع)</th>
+                  <th>مراجعة (بعد شهر)</th>
+                </tr>
+              </thead>
+              <tbody id="spacedRepBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Q&A Bank (33 Questions across 9 Axes) -->
+      <section id="sec2" class="tab-section">
+        <div class="section-banner">
+          <h2>أولًا: بنك الأسئلة والأجوبة الشامل (٣٣ سؤالًا وجوابًا)</h2>
+          <p>جميع أسئلة وأجوبة الوحدة الثانية من كتاب النكاح موزعة على المحاور التسعة بنظام الاستدعاء النشط (Active Recall). اضغط على السؤال أو زر «إظهار الإجابة» لكشف الجواب التفصيلي.</p>
+        </div>
+
+        <div class="filter-bar" id="qaFilterBar"></div>
+        <div id="qaListContainer"></div>
+      </section>
+
+      <!-- SECTION 3: Visual Summary & Comparison Tables (3 Tables) -->
+      <section id="sec3" class="tab-section">
+        <div class="section-banner">
+          <h2>ثانيًا: الملخص البصري والتقطير المعرفي</h2>
+          <p>جداول مقارنة شاملة لحالات وجوب المهر كاملًا أو نصفه أو مهر المثل أو المتعة، وموانع الخَلوة الصحيحة.</p>
+        </div>
+        
+        <div class="card searchable-card">
+          <div class="card-title">📊 جدول «١»: متى يجب المهر كاملًا، ونصفه، ومهر المثل، والمتعة <span class="status-badge status-done">أحوال المهر</span></div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead><tr><th>م</th><th>الحالة</th><th>الواجب</th></tr></thead>
+              <tbody><tr><td>1</td><td><strong>الدخول الحقيقي أو الخَلوة الصحيحة (وقد سُمِّي مهر)</strong></td><td>المهر المسمى كاملًا</td></tr><tr><td>2</td><td><strong>الموت (وقد سُمِّي مهر)</strong></td><td>المهر المسمى كاملًا</td></tr><tr><td>3</td><td><strong>الطلاق قبل الدخول (وقد سُمِّي مهر)</strong></td><td>نصف المهر المسمى</td></tr><tr><td>4</td><td><strong>الدخول أو الموت (ولم يُسمَّ مهر)</strong></td><td>مهر المثل كاملًا</td></tr><tr><td>5</td><td><strong>الطلاق قبل الدخول (ولم يُسمَّ مهر)</strong></td><td>المتعة (درع وخمار وملحفة، لا تتجاوز نصف مهر المثل)</td></tr><tr><td>6</td><td><strong>نكاح فاسد (بعد الدخول الحقيقي فقط)</strong></td><td>مهر المثل، بشرط ألَّا يتجاوز المسمى (إن وُجد)</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="card searchable-card">
+          <div class="card-title">📊 جدول «٢»: موانع الخَلوة الصحيحة (الطبيعية والشرعية والمكانية) <span class="status-badge status-done">موانع الخَلوة</span></div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead><tr><th>م</th><th>نوع المانع</th><th>أمثلته</th></tr></thead>
+              <tbody><tr><td>1</td><td><strong>طبيعي (طبعًا)</strong></td><td>المرض المانع من الوطء من أي الجانبين، أو خوف زيادته</td></tr><tr><td>2</td><td><strong>شرعي وطبيعي معًا</strong></td><td>الحيض</td></tr><tr><td>3</td><td><strong>شرعي فقط</strong></td><td>الإحرام (لوجوب الدم)، صوم رمضان (للكفارة)، صلاة الفرض</td></tr><tr><td>4</td><td><strong>مكاني</strong></td><td>مكان لا يُؤمَن فيه اطلاع الغير (مسجد، حمام، طريق، سطح بلا حجاب)</td></tr><tr><td>5</td><td><strong>وجود ثالث</strong></td><td>أعمى، صبي يعقل، مجنون، كلب عقور، ضرة، أو أجنبية</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+</section>
+
+      <!-- SECTION 4: Applied Scenarios (4 Cases) -->
+      <section id="sec4" class="tab-section">
+        <div class="section-banner">
+          <h2>ثالثًا: النوازل والأسئلة التطبيقية («قيِّم نفسك» — ٤ نوازل فقهية)</h2>
+          <p>تطبيقات عملية ووقائع فقهية لتدريب الملكة الفقهية على تنزيل أحكام محرمات النكاح على الصور الواقعية.</p>
+        </div>
+        <div id="casesContainer"></div>
+      </section>
+
+      <!-- SECTION 5: Interactive MCQ Bank -->
+      <section id="sec5" class="tab-section">
+        <div class="section-banner">
+          <h2>رابعًا: بنك أسئلة الاختيار من متعدد التفاعلي</h2>
+          <p>اختر الإجابة الصحيحة لتظهر لك التغذية الراجعة الفورية مع صندوق «التوضيح والتعليل» لتفنيد الخلط الشائع.</p>
+        </div>
+
+        <div class="score-board">
+          <div class="score-stats">
+            <span class="score-pill" id="mcqScoreText">النتيجة: 0 / 7</span>
+            <span class="status-badge status-done" id="mcqPercentText">نسبة الإتقان: 0%</span>
+          </div>
+          <button class="ctrl-btn" onclick="resetMcqQuiz()">🔄 إعادة الاختبار</button>
+        </div>
+
+        <div id="mcqContainer"></div>
+      </section>
+
+      <!-- SECTION 6: Interactive Model Exam & Self-Assessment Exam -->
+      <section id="sec6" class="tab-section">
+        <div class="section-banner">
+          <h2>خامسًا: الاختبار النموذجي التفاعلي والاختبار الختامي الذاتي للوحدة الثانية</h2>
+          <p>يضم هذا القسم: (أ) الاختبار النموذجي للوحدة شاملاً أسئلة الصواب والخطأ التفاعلية والأسئلة المقالية والتعليلية، و(ب) الاختبار الذاتي الختامي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة) مبنيًّا على مستويات بلوم المعرفية.</p>
+        </div>
+
+        <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+          <div>
+            <strong style="color:var(--primary);">أدوات التحكم في نماذج الإجابة:</strong>
+            <span style="font-size:0.88rem; color:var(--text-muted); margin-right:0.5rem;">يمكنك كشف كل إجابة منفردة أو إظهار كافة عناصر نموذج الإجابة للمراجعة الشاملة.</span>
+          </div>
+          <button class="ctrl-btn" onclick="toggleAllInActiveTab(true)">📑 إظهار كافة عناصر نموذج الإجابة</button>
+        </div>
+
+        <h3 style="margin: 1.25rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (أ): أسئلة الصواب والخطأ التفاعلية مع التصويب والتعليل الفوري</h3>
+        <div id="examTfContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (ب): الأسئلة المقالية والتعليلية وتفكير المستويات العليا في الاختبار النموذجي</h3>
+        <div id="examEssayContainer"></div>
+
+        <h3 style="margin: 1.75rem 0 0.75rem; color:var(--crimson); font-weight:800;">القسم الثاني: الاختبار الختامي الذاتي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة — تدرج مستويات بلوم)</h3>
+        <div id="selfExamContainer"></div>
+      </section>
+
+      <!-- SECTION 7: Textbook Exercises with Metacognitive Confidence Calibration -->
+      <section id="sec7" class="tab-section">
+        <div class="section-banner">
+          <h2>سادسًا: حل تدريبات الكتاب المدرسي (بنظام تقييم الثقة الذاتية)</h2>
+          <p>شامل لجميع أسئلة «المناقشة والتدريبات» وأسئلة «تطبيق عام» الواردة في الكتاب المدرسي على الوحدة الثانية. قيّم ثقتك في إجابتك أولًا ([متأكد 👍] أو [غير متأكد 🧐]) ليفتح لك الحل النموذجي الكامل!</p>
+        </div>
+
+        <h3 style="margin: 1rem 0 0.75rem; color:var(--primary); font-weight:800;">أولًا: من «المناقشة والتدريبات» بالكتاب المدرسي (٦ مسائل)</h3>
+        <div id="tbDiscussContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">ثانيًا: من «تطبيق عام» بالكتاب المدرسي (٣ مسائل)</h3>
+        <div id="tbGeneralContainer"></div>
+      </section>
+
+      <!-- SECTION 8: Concept Map -->
+      <section id="sec8" class="tab-section">
+        <div class="section-banner">
+          <h2>سابعًا: خريطة المفاهيم الهيكلية الشاملة</h2>
+          <p>تمثيل بصري شجري لمقدار المهر وأحوال لزومه، والخَلوة الصحيحة وموانعها، ومهر النكاح الفاسد، والمسائل المتفرقة.</p>
+        </div>
+        <div class="card searchable-card">
+          <div class="concept-tree">
+            <div class="root-node">🌳 خريطة المفاهيم: أحكام المهر والخَلوة الصحيحة في النكاح</div>
+            <div class="branches-grid">
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">١. مقدار المهر ولزومه</span>
+                  <span class="status-badge status-done">أصل الباب</span>
+                </div>
+                <div class="leaf-item"><strong>أقل المهر:</strong> عشرة دراهم («لا مهر أقل من عشرة دراهم»)، فإن سمى أقل منها كملت عشرة عند الجمهور (ومهر المثل عند زفر).</div>
+                <div class="leaf-item"><strong>لزومه كاملًا أو نصفه:</strong> يلزم كاملًا بالدخول أو الخلوة الصحيحة أو الموت، ويتنصف بالطلاق قبل الدخول إن كان مسمى.</div>
+              </div>
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">٢. عدم التسمية والمتعة</span>
+                  <span class="status-badge status-done">مهر المثل والمتعة</span>
+                </div>
+                <div class="leaf-item"><strong>عند الدخول أو الموت:</strong> يجب مهر المثل كاملًا (لقضائه ﷺ في بَرْوَع بنت واشق الأشجعية).</div>
+                <div class="leaf-item"><strong>عند الطلاق قبل الدخول:</strong> تجب المتعة (درع وخمار وملحفة، لا تزيد على نصف مهر المثل)، وتُستحب لغيرها.</div>
+              </div>
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٣. الخَلوة الصحيحة وموانعها</span>
+                  <span class="status-badge status-current">كالدخول الحقيقي</span>
+                </div>
+                <div class="leaf-item"><strong>تعريفها وأثرها:</strong> اجتماع الزوجين بعد العقد الصحيح في مكان آمن بلا مانع؛ وتوجب كامل المهر والعدة.</div>
+                <div class="leaf-item"><strong>موانعها:</strong> طبيعي (مرض)، شرعي (حيض، إحرام، صوم رمضان، صلاة فرض، سنة الفجر والظهر)، مكاني (مسجد/طريق)، أو وجود ثالث.</div>
+              </div>
+              <div class="branch-card appendix">
+                <div class="branch-header">
+                  <span class="branch-title">٤. النكاح الفاسد ومسائل متفرقة</span>
+                  <span class="status-badge status-done">أحكام دقيقة</span>
+                </div>
+                <div class="leaf-item"><strong>النكاح الفاسد:</strong> يجب فيه مهر المثل فقط (لا يتجاوز المسمى) بالدخول الحقيقي وحده، ويثبت النسب، وتبدأ العدة من الدخول أو التفريق.</div>
+                <div class="leaf-item"><strong>مسائل متفرقة:</strong> الشرط المقترن بالمهر، تسمية حيوان، تقدير مهر المثل بنساء عشيرة الأب، حق منع السفر لقبض المعجل، وضمان الولي للمهر.</div>
+              </div>
+            </div>
+          </div>
+        </div></section>
+
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    // =========================================================================
+    // 1. DATA REPOSITORY (100% Verbatim Coverage of Unit 2)
+    // =========================================================================
+
+    const SPACED_UNITS = [
+      { id: 1, title: "الوحدة ١: تعريف النكاح وحكمه وركنه وشروط انعقاده" },
+      { id: 2, title: "الوحدة ٢: محرمات النكاح (الوحدة الحالية 🌟)" },
+      { id: 3, title: "الوحدة ٣: نكاح المتعة والنكاح المؤقت" },
+      { id: 4, title: "الوحدة ٤: عبارة النساء في النكاح" },
+      { id: 5, title: "الوحدة ٥: ترتيب الأولياء" },
+      { id: 6, title: "الوحدة ٦: الكفاءة في النكاح" },
+      { id: 7, title: "الوحدة ٧: المهر" },
+      { id: 8, title: "الوحدة ٨: القسم بين الزوجات" }
+    ];
+
+    const QA_AXES = [{"id": "all", "label": "الكل (44)"}, {"id": "axis1", "label": "١. مقدار المهر (س1-س5)"}, {"id": "axis2", "label": "٢. لزوم المهر أو نصفه (س6-س7)"}, {"id": "axis3", "label": "٣. عدم تسمية المهر (س8-س12)"}, {"id": "axis4", "label": "٤. المتعة وتقديرها (س13-س18)"}, {"id": "axis5", "label": "٥. الخَلوة الصحيحة (س19-س21)"}, {"id": "axis6", "label": "٦. شروط وموانع الخَلوة (س22-س31)"}, {"id": "axis7", "label": "٧. مهر النكاح الفاسد (س32-س37)"}, {"id": "axis8", "label": "٨. مسائل متفرقة (س38-س44)"}];
+
+    const QA_BANK = [{"num": "س1", "axis": "axis1", "axisTitle": "١. مقدار المهر", "q": "ما أقل مقدار للمهر في النكاح؟", "a": "<div class=\"ans-point\">عشرة دراهم، أو ما قيمته عشرة دراهم؛ ولا يجوز أن يكون المهر إلا مالًا.</div>\n<div class=\"ans-point\"><span class=\"ans-label\">المهر:</span>  اسم للمال الذي وجب على الرجل للمرأة بسبب عقد النكاح أو الوطء بشبهة، ومن أسمائه: الصداق، والصدقة، والنحلة. المقصود بالمال المعتبر مهرًا: ما له قيمة مالية معتبرة شرعًا حالة السعة والاختيار.</div>"}, {"num": "س2", "axis": "axis1", "axisTitle": "١. مقدار المهر", "q": "ما الأصل (الدليل) في مشروعية المهر؟", "a": "<div class=\"ans-point\">قوله تعالى ﴿فَمَا اسْتَمْتَعْتُم بِهِ مِنْهُنَّ فَآتُوهُنَّ أُجُورَهُنَّ﴾ [النساء: ٢٤]؛ إذ علَّقت الآية حِلَّ الاستمتاع بشرط ابتغائه بالمال، فلا يحل دونه.</div>"}, {"num": "س3", "axis": "axis1", "axisTitle": "١. مقدار المهر", "q": "الآية الكريمة ذكرت مطلق المال دون تحديد، فكيف حُدِّد أقل المهر بعشرة دراهم؟", "a": "<div class=\"ans-point\">لأن المذكور في الآية مطلق المال وهو مُجمَل، وقد فسَّره النبي ﷺ بالعشرة: «لَا مَهْرَ أَقَلَّ مِنْ عَشَرَةِ دَرَاهِمَ».</div>"}, {"num": "س4", "axis": "axis1", "axisTitle": "١. مقدار المهر", "q": "ما الحكم إن سمَّى الزوج أقل من عشرة دراهم مهرًا؟", "a": "<div class=\"quote-box\">• يجب لها عشرة دراهم كاملة رغم التسمية الناقصة. • الدليل : أن العشرة لا تتبعض في حكم العقد، فتسمية بعضها كتسمية كلها، كما لو طلَّق نصف طلقة فوقعت طلقة كاملة؛ ولأن الشرع أوجب المهر إظهارًا لخطر عقد النكاح، ولا يظهر هذا الخطر بأصل المال القليل جدًّا.</div>"}, {"num": "س5", "axis": "axis1", "axisTitle": "١. مقدار المهر", "q": "ما رأي زفر في هذه المسألة؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">خالف الجمهور فقال:</span>  يجب لها مهر المثل كاملًا؛ لأنه سمَّى ما لا يصلح مهرًا شرعًا، فصار الأمر كما لو لم تحصل تسمية أصلًا.</div>"}, {"num": "س6", "axis": "axis2", "axisTitle": "٢. متى يلزم المهر كاملًا أو نصفه", "q": "متى يلزم المهر المسمى كاملًا؟", "a": "<div class=\"ans-point\">يلزم كاملًا بالدخول أو بالموت؛ أما الدخول فلأنه تحقق به تسليم المعقود عليه (البُضع)، وأما الموت فلأن النكاح يتقرر بانتهائه فيجب البدل كاملًا.</div>"}, {"num": "س7", "axis": "axis2", "axisTitle": "٢. متى يلزم المهر كاملًا أو نصفه", "q": "متى يلزم نصف المهر المسمى فقط؟", "a": "<div class=\"quote-box\">• إذا طلَّق الزوج زوجته قبل الدخول بها. • الدليل : قوله تعالى ﴿وَإِن طَلَّقْتُمُوهُنَّ مِن قَبْلِ أَن تَمَسُّوهُنَّ وَقَدْ فَرَضْتُمْ لَهُنَّ فَرِيضَةً فَنِصْفُ مَا فَرَضْتُمْ﴾ [البقرة: ٢٣٧].</div>"}, {"num": "س8", "axis": "axis3", "axisTitle": "٣. حكم عدم تسمية المهر", "q": "ما الحكم إذا لم يُسَمِّ الزوج مهرًا عند العقد، أو شرط ألَّا مهر لها؟", "a": "<div class=\"ans-point\">لها مهر المثل إن حصل دخول أو موت، ولها المتعة إن طلَّقها قبل الدخول. المتعة: ما يعطيه الزوج لزوجته عند طلاقها تطييبًا لنفسها وتسلية لها عند الفراق.</div>"}, {"num": "س9", "axis": "axis3", "axisTitle": "٣. حكم عدم تسمية المهر", "q": "لماذا يجب مهر المثل عند عدم التسمية دون مبلغ آخر؟", "a": "<div class=\"ans-point\">لأن الواجب الأصلي في المهر هو مهر المثل (لأنه أعدل)، فيُصار إليه عند عدم التسمية، بخلاف حالة التسمية فيُعمل بما تراضيا عليه؛ لقوله ﷺ: «الْمَهْرُ مَا تَرَاضَى عَلَيْهِ الْأَهْلُونَ».</div>"}, {"num": "س10", "axis": "axis3", "axisTitle": "٣. حكم عدم تسمية المهر", "q": "ما الدليل من فعل النبي ﷺ على وجوب مهر المثل عند عدم التسمية؟", "a": "<div class=\"ans-point\">أن النبي ﷺ قضى في بَرْوَع بنت واشق الأشجعية بمهر المثل، وقد كانت تزوجت بغير تسمية مهر، ومات زوجها عنها قبل الدخول بها.</div>\n<div class=\"quote-box\">• نص الحديث كاملًا : «أَنَّ النَّبِيَّ ﷺ قَضَى فِي بَرْوَعَ بِنْتِ وَاشِقٍ الْأَشْجَعِيَّةِ بِمَهْرِ الْمِثْلِ، وَقَدْ تَزَوَّجَتْ بِغَيْرِ مَهْرٍ وَمَاتَ عَنْهَا قَبْلَ الدُّخُولِ، فَقَالَ: لَهَا مَهْرُ مِثْلِ نِسَائِهَا لَا وَكْسَ وَلَا شَطَطَ، وَعَلَيْهَا الْعِدَّةُ وَلَهَا الْمِيرَاثُ» (أخرجه الترمذي وأبو داود)</div>"}, {"num": "س11", "axis": "axis3", "axisTitle": "٣. حكم عدم تسمية المهر", "q": "ما دليل وجوب المتعة عند الطلاق قبل الدخول لمن لم يُسمَّ لها مهر؟", "a": "<div class=\"ans-point\">قوله تعالى ﴿لَّا جُنَاحَ عَلَيْكُمْ إِن طَلَّقْتُمُ النِّسَاءَ مَا لَمْ تَمَسُّوهُنَّ أَوْ تَفْرِضُوا لَهُنَّ فَرِيضَةً وَمَتِّعُوهُنَّ﴾ [البقرة: ٢٣٦].</div>"}, {"num": "س12", "axis": "axis3", "axisTitle": "٣. حكم عدم تسمية المهر", "q": "هل تجب المتعة لكل مطلَّقة؟", "a": "<div class=\"ans-point\">لا تجب إلا لمن طُلِّقت قبل الدخول ولم يُسمَّ لها مهر؛ لأن المتعة قائمة مقام نصف المهر وخلف عنه، فلا تجتمع مع الأصل (المهر المسمى) في حق غيرها. وتُستحب (دون وجوب) لكل مطلَّقة سواها.</div>"}, {"num": "س13", "axis": "axis4", "axisTitle": "٤. المتعة وتقديرها", "q": "ما مقدار المتعة الواجبة؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">دِرْع وخِمار ومِلْحفة (أي:</span>  ثوب كامل ساتر يليق بحال الزوج)، كما ذكره ابن عباس وعائشة رضي الله عنهم.</div>\n<div class=\"ans-point\"><span class=\"ans-label\">الدرع:</span>  الثوب الذي يليق بالمرأة حسب العرف،</div>\n<div class=\"ans-point\"><span class=\"ans-label\">الخمار:</span>  كل ما ستر، ومنه خمار المرأة وهو ثوب تغطي به رأسها،</div>\n<div class=\"ans-point\"><span class=\"ans-label\">الملحفة:</span>  الملاءة التي يُلتحف بها وكانت تُلبس على الدرع؛ فالمراد من المتعة إعطاء المرأة ثوبًا كاملًا ساترًا للعورة حسب العرف، على قدر حال الزوج.</div>\n<div class=\"quote-box\">• الدليل : قوله تعالى ﴿وَمَتِّعُوهُنَّ عَلَى الْمُوسِعِ قَدَرُهُ وَعَلَى الْمُقْتِرِ قَدَرُهُ﴾ [البقرة: ٢٣٦].</div>"}, {"num": "س14", "axis": "axis4", "axisTitle": "٤. المتعة وتقديرها", "q": "هل للمتعة حد أعلى لا تتجاوزه؟", "a": "<div class=\"ans-point\">نعم؛ لا تُزاد المتعة على قدر نصف مهر المثل؛ لأنه إذا لم يجب في النكاح الأقوى (المسمى فيه مهر) أكثر من نصف المهر، فلا يجب في الأضعف (غير المسمى) أكثر من ذلك بطريق الأَولى.</div>"}, {"num": "س15", "axis": "axis4", "axisTitle": "٤. المتعة وتقديرها", "q": "إذا اتفق الزوجان على تسمية مهر بعد العقد (ولم يكن مسمى فيه)، ثم طلَّقها قبل الدخول، فما الحكم؟", "a": "<div class=\"ans-point\">تجب المتعة لا نصف هذا المهر المتفق عليه لاحقًا؛ فأصل المسألة أنه لو تزوجها بلا تسمية ثم اصطلحا على مهر بعد العقد، فهذا المهر يكون لها كاملًا إن دخل بها أو مات عنها، أما إن طلَّقها قبل الدخول فالواجب المتعة فقط لا نصف هذا المتفق عليه لاحقًا.</div>"}, {"num": "س16", "axis": "axis4", "axisTitle": "٤. المتعة وتقديرها", "q": "ما رأي أبي يوسف في هذه المسألة (الاتفاق على مهر بعد العقد ثم الطلاق قبل الدخول)؟", "a": "<div class=\"ans-point\">يرى أن هذا المهر المتفق عليه بعد العقد يتنصف بالطلاق قبل الدخول؛ لأن المفروض بعد العقد عنده كالمفروض في صلب العقد نفسه.</div>\n<div class=\"quote-box\">• الدليل : قوله تعالى ﴿وَإِن طَلَّقْتُمُوهُنَّ مِن قَبْلِ أَن تَمَسُّوهُنَّ وَقَدْ فَرَضْتُمْ لَهُنَّ فَرِيضَةً فَنِصْفُ مَا فَرَضْتُمْ﴾ [البقرة: ٢٣٧].</div>"}, {"num": "س17", "axis": "axis4", "axisTitle": "٤. المتعة وتقديرها", "q": "ما ردّ الإمام وأبي حنيفة على استدلال أبي يوسف؟", "a": "<div class=\"ans-point\">أن هذا الاتفاق اللاحق تعيينٌ لما وجب أصلًا بالعقد (وهو مهر المثل)، ومهر المثل لا يتنصف بالطلاق أصلًا، فكذلك ما يقوم مقامه؛ والفرض المعروف في الآية هو المفروض حال العقد نفسه لا ما يُتفق عليه لاحقًا.</div>"}, {"num": "س18", "axis": "axis4", "axisTitle": "٤. المتعة وتقديرها", "q": "هل يجوز أن تُسقط المرأة مهرها (كله أو بعضه) بنفسها؟", "a": "<div class=\"ans-point\">نعم يجوز؛ فالحطُّ من مهرها صحيح؛ لأن المهر خالص حقها بقاءً واستيفاءً، فتملك إسقاطه كسائر حقوقها.</div>"}, {"num": "س19", "axis": "axis5", "axisTitle": "٥. الخَلوة الصحيحة وأثرها", "q": "ما تعريف الخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">اجتماع الزوجين بعد تمام العقد الصحيح في مكان يأمنان فيه اطلاعَ الغير عليهما.</div>"}, {"num": "س20", "axis": "axis5", "axisTitle": "٥. الخَلوة الصحيحة وأثرها", "q": "ما حكم الخَلوة الصحيحة في النكاح الصحيح؟", "a": "<div class=\"ans-point\">تُنزَّل منزلة الدخول الحقيقي في أثرها؛ فيجب بها كامل المهر وتلزم بها العدة.</div>\n<div class=\"quote-box\">• الدليل : حديث «مَنْ كَشَفَ خِمَارَ امْرَأَةٍ وَنَظَرَ إِلَيْهَا فَقَدْ وَجَبَ الصَّدَاقُ، دَخَلَ بِهَا أَوْ لَمْ يَدْخُلْ»، وما قضى به الخلفاء الراشدون من أنه إذا أرخى سترًا أو أغلق بابًا فلها الصداق كاملًا وعليها العدة.</div>"}, {"num": "س21", "axis": "axis5", "axisTitle": "٥. الخَلوة الصحيحة وأثرها", "q": "ما التعليل العقلي لإلحاق الخَلوة الصحيحة بالدخول الحقيقي؟", "a": "<div class=\"ans-point\">أن عقد النكاح عقد على المنافع، فيستقر وجوب بدله بمجرد التخلية والتمكين، كعقد الإجارة؛ ولأن المرأة سلَّمت المعقود عليه (نفسها) بالتخلية، فوجب لها البدل كاملًا كما في البيع إذا سلَّم البائع المبيع.</div>"}, {"num": "س22", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "ما الشرط الأساسي لتحقق الخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">ألَّا يكون هناك مانع من الوطء، سواء كان المانع طبيعيًّا (طبعًا) أو شرعيًّا.</div>"}, {"num": "س23", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "ما أمثلة الموانع الطبيعية للخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">المرض المانع من الوطء من جهة الزوج أو الزوجة؛ وكذلك إذا كان يُخشى من الوطء زيادة المرض، فإن ذلك لا يخلو من نوع فتور مانع.</div>"}, {"num": "س24", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "ما أمثلة الموانع الشرعية (والطبيعية معًا) للخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">الحيض (مانع شرعًا وطبعًا معًا؛ إذ الطباع السليمة تنفر منه)، والإحرام بالحج أو العمرة (فرضًا أو نفلًا)، وصوم رمضان، وصلاة الفرض.</div>"}, {"num": "س25", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "لماذا يكون الإحرام مانعًا شرعيًّا من الخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">لما يلزم المُحرِم من وجوب الدم (الفدية) لو وطئ في إحرامه.</div>"}, {"num": "س26", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "لماذا يكون صوم رمضان مانعًا شرعيًّا دون صيام التطوع؟", "a": "<div class=\"ans-point\">لأن الوطء في نهار رمضان يلزم منه الكفارة المغلَّظة والقضاء، بخلاف صيام التطوع فيجوز إفطاره لعذر يتعلق بحق الآدمي (كإكرام ضيف)، فلا يمنع من صحة الخَلوة.</div>"}, {"num": "س27", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "هل تُعد السنن الرواتب مانعة من الخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">لا تُعد مانعة إلا ركعتي سنة الفجر والأربع ركعات قبل الظهر؛ لشدة تأكيدهما بورود الوعيد الشديد على من تركهما، بخلاف سائر السنن.</div>"}, {"num": "س28", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "ما الشرط الثاني المتعلق بالمكان لتحقق الخَلوة الصحيحة؟", "a": "<div class=\"ans-point\">أن يأمن الزوجان في هذا المكان من اطلاع الغير عليهما.</div>"}, {"num": "س29", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "أعطِ أمثلة على أماكن لا تصح فيها الخَلوة لعدم تحقق الأمن من الاطلاع.", "a": "<div class=\"ans-point\">كأن يخلو بها في مسجد، أو حمام عام، أو طريق، أو على سطح لا حجاب له.</div>"}, {"num": "س30", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "ما حكم وجود شخص ثالث مع الزوجين أثناء الخَلوة؟", "a": "<div class=\"ans-point\">تفسد الخَلوة ولا تصح، سواء كان هذا الثالث أعمى، أو صبيًّا يعقل، أو مجنونًا، أو كلبًا عقورًا، أو زوجة أخرى للرجل، أو امرأة أجنبية عنهما.</div>"}, {"num": "س31", "axis": "axis6", "axisTitle": "٦. شروط تحقق الخَلوة الصحيحة", "q": "إذا فسدت الخَلوة لوجود مانع، فهل تجب العدة على المرأة احتياطًا؟", "a": "<div class=\"ans-point\">نعم؛ تجب عليها العدة في جميع هذه الصور احتياطًا؛ لأن العدة من حقوق الشرع التي يُحتاط فيها.</div>"}, {"num": "س32", "axis": "axis7", "axisTitle": "٧. مهر النكاح الفاسد", "q": "ما الواجب من المهر في النكاح الفاسد؟", "a": "<div class=\"ans-point\">لا يجب فيه إلا مهر المثل، ولا يجب هذا المهر إلا بالدخول الحقيقي (لا بالخَلوة ولا بالعقد وحده).</div>"}, {"num": "س33", "axis": "axis7", "axisTitle": "٧. مهر النكاح الفاسد", "q": "لماذا يجب مهر المثل في النكاح الفاسد لا المهر المسمى؟", "a": "<div class=\"ans-point\">لأنه لما فسد المسمى بفساد العقد، رجعنا إلى الموجب الأصلي (مهر المثل)،وهو الأصل عند عدم صحة التسمية.</div>"}, {"num": "س34", "axis": "axis7", "axisTitle": "٧. مهر النكاح الفاسد", "q": "هل يمكن أن يتجاوز الواجب في النكاح الفاسد المبلغَ المسمى في العقد؟", "a": "<div class=\"ans-point\">لا يتجاوز به المسمى؛ فإن كان مهر المثل أكثر من المسمى، وجب المسمى فقط لا الزيادة؛ لأن المستوفى ليس مالًا متقومًا في ذاته وإنما يتقوَّم بالتسمية، فإذا فسدت التسمية سقط اعتبار الزيادة عليها.</div>"}, {"num": "س35", "axis": "axis7", "axisTitle": "٧. مهر النكاح الفاسد", "q": "هل يثبت النسب في النكاح الفاسد؟", "a": "<div class=\"ans-point\">نعم يثبت النسب فيه؛ لأن النسب مما يُحتاط في إثباته حفظًا لحقوق الأبناء.</div>"}, {"num": "س36", "axis": "axis7", "axisTitle": "٧. مهر النكاح الفاسد", "q": "متى تبدأ عدة المرأة في النكاح الفاسد؟", "a": "<div class=\"ans-point\">تبدأ من وقت الدخول الحقيقي (لا من وقت العقد كما في النكاح الصحيح)؛ لأن النكاح الصحيح داعٍ إلى الوطء فأُقيم العقد مقام الدخول في حساب العدة، أما النكاح الفاسد فليس داعيًا إلى الوطء (لقيام الحرمة فيه) فلا يُقام العقد مقام الدخول. النكاح الفاسد: هو الذي استوفى أركانه وشروطه إلا أنه فقد شرطًا من شروط صحته.</div>"}, {"num": "س37", "axis": "axis7", "axisTitle": "٧. مهر النكاح الفاسد", "q": "متى تبدأ عدة المرأة إذا فُرِّق بينها وبين زوجها في النكاح الفاسد دون دخول؟", "a": "<div class=\"ans-point\">تبدأ من يوم التفريق؛ لأن وجوب العدة هنا لشبهة النكاح، والشبهة إنما ترتفع بالتفريق الفعلي.</div>"}, {"num": "س38", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "إذا تزوجها على ألف بشرط ألَّا يتزوج عليها، فما الحكم إن وفَّى بالشرط؟ وإن لم يفِ؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">الحكم إن وفَّى بالشرط:</span>  إن وفَّى بالشرط (لم يتزوج عليها) فلها المهر المسمى (الألف).</div>\n<div class=\"ans-point\"><span class=\"ans-label\">إن لم يفِ:</span>  وإن لم يفِ (تزوج عليها) فلها مهر المثل كاملًا؛ لأنها لم ترضَ بالألف إلا مقابل هذه المنفعة (الشرط)، فإذا فات الشرط كأنه لم يُسمَّ لها مهر أصلًا.</div>"}, {"num": "س39", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "إذا قال: (لك ألف إن أقمتُ بكِ، وألفان إن أخرجتكِ من بلدك)، فما الحكم؟", "a": "<div class=\"ans-point\">إن أقام بها فلها الألف كما اتُّفق. وإن أخرجها من بلدها فلها مهر المثل، على ألَّا يزيد على الألفين ولا ينقص عن الألف؛ لأن كلا الشرطين كان محل غرض صحيح وقد سُمِّي فيه بدل معلوم.</div>"}, {"num": "س40", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "إذا تزوجها على حيوان مسمى النوع (كفرس)، فما الحكم؟", "a": "<div class=\"ans-point\">يجوز ذلك؛ فإن لم يصف نوعه أو صفته فلها الوسط من ذلك النوع، وله الخيار بين إعطائها ذلك الوسط أو قيمته؛ لأن جهالة الوصف يسيرة يحتملها عقد النكاح لبنائه على المساهلة، بخلاف جهالة الجنس أو النوع فلا تصح لأنها تؤدي إلى المنازعة.</div>"}, {"num": "س41", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "كيف يُقدَّر مهر المثل؟", "a": "<div class=\"ans-point\">يُعتبر بنساء عشيرة أبيها، كأخواتها وعماتها وبنات عمها، دون أمها وخالتها (إلا إذا كنَّ من عشيرة أبيها أيضًا)؛ فإن لم يوجد في عشيرتها مثل حالها، اعتُبر بالأجنبيات ممن هي مثلها في السن والجمال والعقل والمال والبلد والعصر، فإن تعذر اجتماع هذه الأوصاف كلها في امرأة واحدة، اعتُبر بما وُجد منها.</div>"}, {"num": "س42", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "هل للمرأة أن تمنع نفسها من زوجها حتى يُعطيها مهرها؟", "a": "<div class=\"ans-point\">نعم؛ لها أن تمنع نفسها من السفر معه حتى يُعطيها مهرها الحالّ (المعجَّل)؛ لأن حق الزوج قد تعيَّن في المعقود عليه (البضع)، فوجب أن يتعيَّن حقها في المهر بالمقابل. أما إن كان المهر كله مؤجلًا فليس لها ذلك؛ لأنها رضيت بتأخير حقها.</div>"}, {"num": "س43", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "إذا أوفى الزوج زوجته مهرها، فهل له أن ينقلها إلى حيث شاء؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">نعم له ذلك أصلًا؛ لكن قيل:</span>  لا يُسافر بها إلى بلد غريب، وعليه الفتوى؛ لفساد أهل الزمان وكون الغريبة تُؤذى هناك.</div>\n<div class=\"quote-box\">• نص الآية كاملةً : ﴿أَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنتُم مِّن وُجْدِكُمْ وَلَا تُضَارُّوهُنَّ لِتُضَيِّقُوا عَلَيْهِنَّ وَإِن كُنَّ أُولَاتِ حَمْلٍ فَأَنفِقُوا عَلَيْهِنَّ حَتَّى يَضَعْنَ حَمْلَهُنَّ فَإِنْ أَرْضَعْنَ لَكُمْ فََٔاتُوهُنَّ أُجُورَهُنَّ وَأْتَمِرُوا بَيْنَكُم بِمَعْرُوفٍ وَإِن تَعَاسَرْتُمْ فَسَتُرْضِعُ لَهُ أُخْرَى﴾ [الطلاق: ٦]</div>"}, {"num": "س44", "axis": "axis8", "axisTitle": "٨. مسائل متفرقة في المهر", "q": "ما حكم ضمان الولي للمهر عن الزوج؟", "a": "<div class=\"ans-point\">يصح ضمانه كسائر الديون، وللمرأة أن تطالب أيهما شاءت (الزوج الأصيل أو الولي الضامن) بالمهر، كما في سائر الكفالات.</div>"}];
+
+    const APPLIED_CASES = [{"id": "case1", "title": "النازلة التطبيقية (1)", "q": "تزوج رجل امرأة وسمَّى لها مهرًا خمسة دراهم فقط. طالبته بإكمال المهر إلى عشرة، فرفض بحجة أن ما تراضيا عليه هو الواجب. ما الحكم الفقهي في هذا النزاع؟", "a": "يجب لها عشرة دراهم كاملة رغم التسمية الناقصة برضاهما؛ لأن العشرة هي الحد الأدنى الذي أوجبه الشرع ولا يتبعض حكمها، فتسمية بعضها كتسمية كلها إلزامًا. فرفضه غير معتبر شرعًا، ويلزمه إكمال الخمسة الباقية."}, {"id": "case2", "title": "النازلة التطبيقية (2)", "q": "أغلق زوجان بابهما بعد العقد مباشرة لكن الزوجة كانت حائضًا في تلك اللحظة، ثم طلَّقها الزوج بعد ذلك دون أن يطأها فعليًّا في أي وقت. هل تُعد هذه خلوة صحيحة توجب كامل المهر؟", "a": "لا تُعد خلوة صحيحة؛ لأن الحيض مانع من الوطء طبعًا وشرعًا معًا، فلا تتحقق به الخَلوة الصحيحة رغم اجتماعهما في مكان مغلق آمن؛ فلا يجب لها كامل المهر بهذا الاجتماع، بل يُنظر إلى ما إذا كان قد سمَّى لها مهرًا فيجب نصفه (لوقوع الطلاق قبل دخول حقيقي أو خلوة صحيحة)."}, {"id": "case3", "title": "النازلة التطبيقية (3)", "q": "تزوجت امرأة دون أن يُسمَّى لها مهر عند العقد، ثم طلَّقها زوجها بعد الدخول بها بأسبوع. ما الذي تستحقه من المهر؟ وما الفرق لو كان الطلاق قبل الدخول؟", "a": "بعد الدخول: تستحق مهر المثل كاملًا؛ لأن الدخول الحقيقي يُوجب مهر المثل عند عدم التسمية. لو كان الطلاق قبل الدخول: تستحق المتعة فقط (درع وخمار وملحفة، لا تتجاوز نصف مهر مثلها)، ولا تستحق مهر المثل ولا نصفه؛ لأن المتعة هي الواجب البديل في هذه الحالة تحديدًا."}, {"id": "case4", "title": "النازلة التطبيقية (4)", "q": "امرأة لم يدفع لها زوجها شيئًا من مهرها المعجَّل (الحالّ)، وأراد السفر بها إلى بلد آخر بعيد. منعت المرأة نفسها من مرافقته حتى يدفع لها المهر. هل يحق لها ذلك؟", "a": "نعم يحق لها ذلك؛ لأن حق الزوج قد تعيَّن في المعقود عليه (وهو الاستمتاع ببضعها)، فوجب أن يتعيَّن حقها بالمقابل في قبض مهرها المعجَّل قبل تمكينه من نقلها، وهذا ما دام المهر معجَّلًا لا مؤجَّلًا؛ فلو كان مؤجَّلًا بالكامل لما كان لها هذا الحق؛ لأنها تكون قد رضيت بتأخيره."}];
+
+    const MCQ_BANK = [{"id": "mcq1", "q": "1. أقل مقدار للمهر في النكاح:", "options": ["أ) خمسة دراهم", "ب) عشرة دراهم", "ج) لا حد أدنى له", "د) مهر المثل دائمًا"], "correct": 1, "explanation": "الخيار (أ) نصف المقدار الصحيح ويشيع الخلط به لأنه أحد المقادير المذكورة في مسائل أخرى (كحد المتعة الأعلى نصف مهر المثل)، لكنه ليس أقل المهر."}, {"id": "mcq2", "q": "2. إن سمَّى الزوج للزوجة مهرًا أقل من عشرة دراهم:", "options": ["أ) يبطل النكاح", "ب) يجب لها المسمى فقط", "ج) يجب لها عشرة دراهم كاملة", "د) يجب لها مهر المثل عند الجميع"], "correct": 2, "explanation": "الخيار (د) هو رأي زفر المخالف لا رأي الجمهور؛ فالجمهور (الإمام وصاحباه) يوجبون العشرة كاملة لعدم تبعض حكم العدد الشرعي، لا مهر المثل."}, {"id": "mcq3", "q": "3. إذا طُلِّقت المرأة قبل الدخول وقد سُمِّي لها مهر:", "options": ["أ) تستحق كامل المهر", "ب) تستحق نصف المهر المسمى", "ج) تستحق المتعة فقط", "د) لا تستحق شيئًا"], "correct": 1, "explanation": "المتعة (ج) إنما تجب لمن لم يُسمَّ لها مهر أصلًا، أما من سُمِّي لها مهر فتستحق نصفه بنص القرآن، ولا تجتمع مع المتعة؛ لأن المتعة خلف عن نصف المهر لا تجتمع معه."}, {"id": "mcq4", "q": "4. الخَلوة الصحيحة في النكاح الصحيح تُعامَل معاملة:", "options": ["أ) العقد المجرد فقط", "ب) الدخول الحقيقي", "ج) الطلاق قبل الدخول", "د) لا أثر لها البتة"], "correct": 1, "explanation": "الخَلوة الصحيحة تُنزَّل منزلة الدخول الحقيقي في إيجاب كامل المهر ولزوم العدة؛ لتحقق التمكين والتخلية الكاملة بينهما ولو لم يقع وطء فعلي."}, {"id": "mcq5", "q": "5. من موانع الخَلوة الصحيحة (شرعًا) الآتي ما عدا:", "options": ["أ) الحيض", "ب) الإحرام بالحج", "ج) صيام التطوع", "د) صلاة الفرض"], "correct": 2, "explanation": "صيام التطوع (ج) ليس مانعًا؛ لجواز إفطاره لعذر يتعلق بحق الآدمي، بخلاف الحيض والإحرام وصلاة الفرض التي تمنع الوطء لأسباب شرعية أو طبيعية أقوى."}, {"id": "mcq6", "q": "6. الواجب من المهر في النكاح الفاسد بعد الدخول الحقيقي:", "options": ["أ) المهر المسمى كاملًا مهما بلغ", "ب) مهر المثل دون تجاوز المسمى", "ج) لا يجب شيء أصلًا", "د) نصف مهر المثل فقط"], "correct": 1, "explanation": "الخيار (أ) خطأ لأن التسمية في العقد الفاسد فاسدة فلا يُعمل بها إن زادت، وإنما يُصار إلى مهر المثل بحد أقصى هو المسمى (إن كان أقل منه)، لا المسمى نفسه إن كان أكثر."}, {"id": "mcq7", "q": "7. يبدأ حساب عدة المرأة في النكاح الفاسد (بعد الدخول) من:", "options": ["أ) وقت العقد", "ب) وقت الدخول الحقيقي", "ج) وقت التفريق دائمًا", "د) لا عدة عليها أصلًا"], "correct": 1, "explanation": "وقت العقد (أ) هو الحكم في النكاح الصحيح لا الفاسد؛ لأن العقد الصحيح داعٍ إلى الوطء فأُقيم مقامه، أما الفاسد فليس داعيًا لقيام الحرمة فيه، فتُحسب العدة من الدخول الفعلي لا من العقد."}];
+
+    const EXAM_TF = [{"id": "tf1", "statement": "7. صواب / خطأ مع التصويب: «تُستحق المتعة لكل مطلَّقة دون استثناء»", "isTrue": false, "explanation": "فتجب المتعة وجوبًا فقط لمن طُلِّقت قبل الدخول ولم يُسمَّ لها مهر، وتُستحب استحبابًا (لا وجوبًا) لكل مطلَّقة سواها."}];
+
+    const EXAM_ESSAY = [{"id": "essay1", "q": "س1: ما أقل مقدار للمهر؟ وما الحكم إن سُمِّي أقل منه؟", "a": "عشرة دراهم. إن سُمِّي أقل منها وجب لها عشرة كاملة عند الجمهور (وعند زفر: مهر المثل)."}, {"id": "essay2", "q": "س2: متى يجب المهر المسمى كاملًا؟ ومتى يجب نصفه؟", "a": "يجب كاملًا بالدخول أو الموت. يجب نصفه إذا طلَّقها قبل الدخول."}, {"id": "essay3", "q": "س3: ما الحكم إن لم يُسمَّ للمرأة مهر؟ فصِّل الحالات الثلاث (الدخول، الموت، الطلاق قبل الدخول).", "a": "الدخول: مهر المثل كاملًا. الموت: مهر المثل كاملًا. الطلاق قبل الدخول: المتعة (درع وخمار وملحفة) لا مهر المثل ولا نصفه."}, {"id": "essay4", "q": "س4: عرِّف الخَلوة الصحيحة، واذكر أثرها في وجوب المهر ولزوم العدة.", "a": "الخَلوة الصحيحة: اجتماع الزوجين بعد العقد الصحيح في مكان يأمنان فيه اطلاع الغير، بلا مانع من الوطء. أثرها: توجب كامل المهر وتُلزم بالعدة كالدخول الحقيقي تمامًا."}, {"id": "essay5", "q": "س5: عدِّد موانع الخَلوة الصحيحة (الطبيعية والشرعية والمكانية) مع مثال لكل نوع.", "a": "طبيعية: المرض المانع من الوطء. شرعية: الحيض، الإحرام، صوم رمضان، صلاة الفرض. مكانية: مكان لا يُؤمَن فيه الاطلاع، أو وجود شخص ثالث (أعمى، صبي يعقل، مجنون، ضرة، أجنبية)."}, {"id": "essay6", "q": "س6: ما الواجب من المهر في النكاح الفاسد؟ ومتى يجب؟", "a": "مهر المثل فقط، بشرط ألَّا يتجاوز المسمى إن وُجد، ولا يجب إلا بالدخول الحقيقي (لا بالخَلوة ولا بالعقد)."}, {"id": "essay7", "q": "س7: لماذا اعتُبرت الخَلوة الصحيحة بمنزلة الدخول الحقيقي في أحكام المهر والعدة رغم عدم وقوع وطء فعلي بالضرورة؟", "a": "لأن عقد النكاح عقد على المنافع يستقر وجوب بدله بمجرد التمكين والتخلية الكاملة (كالإجارة)، فإذا خلا الزوجان في مكان آمن دون مانع، فقد تحقق التمكين التام من الاستمتاع، وهذا هو المقصود الأصلي من العقد، فاستحقت المرأة بدله كاملًا احتياطًا وصيانةً لحقها، سواء وقع الوطء الفعلي أو لم يقع؛ لأن إثبات وقوعه أو عدمه أمر يتعذر الاطلاع عليه غالبًا."}];
+
+    const SELF_EXAM_ITEMS = [{"id": "se1", "type": "mcq", "q": "س1 [اختيار من متعدد — ٥ درجات]: أقل المهر عند الحنفية:", "options": ["أ) ربع دينار", "ب) عشرة دراهم", "ج) خمسة دراهم", "د) ما تراضى عليه الزوجان مهما قلّ"], "correct": 1, "explanation": "أقل المهر عند الحنفية عشرة دراهم أو ما قيمته عشرة دراهم؛ لقوله ﷺ: «لا مهر أقل من عشرة دراهم»."}, {"id": "se2", "type": "mcq", "q": "س2 [اختيار من متعدد — ٥ درجات]: إذا طلّق الزوج قبل الدخول بعد تسمية المهر:", "options": ["أ) يجب كله", "ب) يجب نصفه", "ج) لا يجب شيء", "د) تجب المتعة فقط"], "correct": 1, "explanation": "لقوله تعالى: ﴿وَإِن طَلَّقْتُمُوهُنَّ مِن قَبْلِ أَن تَمَسُّوهُنَّ وَقَدْ فَرَضْتُمْ لَهُنَّ فَرِيضَةً فَنِصْفُ مَا فَرَضْتُمْ﴾ [البقرة: ٢٣٧]."}, {"id": "se4", "type": "mcq", "q": "س4 [اختيار من متعدد — ٥ درجات]: تجب المتعة للمطلقة:", "options": ["أ) بعد الدخول", "ب) قبل الدخول ولم يُسمَّ لها مهر", "ج) قبل الدخول وقد سُمي لها مهر", "د) بعد الخلوة الصحيحة"], "correct": 1, "explanation": "تجب المتعة وجوبًا فقط لمن طُلِّقت قبل الدخول ولم يُسمَّ لها مهر؛ لأنها قائمة مقام نصف المهر، وتُستحب لغيرها."}, {"id": "se5", "type": "essay", "q": "س5 [استدلال — ٤ درجات]: اذكر دليل وجوب المتعة من القرآن الكريم.", "a": "قوله تعالى: ﴿لَّا جُنَاحَ عَلَيْكُمْ إِن طَلَّقْتُمُ النِّسَاءَ مَا لَمْ تَمَسُّوهُنَّ أَوْ تَفْرِضُوا لَهُنَّ فَرِيضَةً وَمَتِّعُوهُنَّ عَلَى الْمُوسِعِ قَدَرُهُ وَعَلَى الْمُقْتِرِ قَدَرُهُ﴾ [البقرة: ٢٣٦]."}, {"id": "se6", "type": "essay", "q": "س6 [استدلال — ٤ درجات]: اذكر دليل تحديد أقل المهر بعشرة دراهم.", "a": "أن الآية الكريمة ﴿فَمَا اسْتَمْتَعْتُم بِهِ مِنْهُنَّ فَآتُوهُنَّ أُجُورَهُنَّ﴾ ذكرت مطلق المال وهو مُجمَل، وفسَّره النبي ﷺ بقوله: «لَا مَهْرَ أَقَلَّ مِنْ عَشَرَةِ دَرَاهِمَ»."}, {"id": "se7", "type": "essay", "q": "س7 [تعليل — ٤ درجات]: علّل: وجوب مهر المثل عند عدم تسمية المهر.", "a": "لأن الواجب الأصلي في المهر هو مهر المثل (لأنه أعدل)، فيُصار إليه عند عدم التسمية، بخلاف حالة التسمية فيُعمل بما تراضيا عليه؛ ولقضاء النبي ﷺ في بَرْوَع بنت واشق الأشجعية بمهر المثل."}, {"id": "se8", "type": "essay", "q": "س8 [حكم فقهي — ٥ درجات]: عقد رجل على امرأة بشرط ألا مهر لها. بيّن حكم العقد والمهر الواجب.", "a": "العقد صحيح والشرط باطل؛ ويجب لها مهر المثل كاملًا إن حصل دخول أو موت، وتجب لها المتعة إن طلَّقها قبل الدخول."}, {"id": "se9", "type": "essay", "q": "س9 [حكم فقهي — ٥ درجات]: سمّى رجل لامرأته عند العقد خمسة دراهم مهرًا. بيّن المهر الواجب مع التوجيه.", "a": "يجب لها عشرة دراهم كاملة عند الجمهور؛ لأن العشرة لا تتبعض في حكم العقد فتسمية بعضها كتسمية كلها، ولإظهار خطر عقد النكاح (وعند زفر يجب لها مهر المثل)."}, {"id": "se10", "type": "essay", "q": "س10 [تعليل — ٤ درجات]: علّل: إلحاق الخلوة الصحيحة بالدخول في كمال المهر.", "a": "لأن عقد النكاح عقد على المنافع يستقر وجوب بدله بمجرد التخلية والتمكين (كالإجارة)، ولأن المرأة قد سلَّمت المعقود عليه (نفسها) بالتخلية فوجب لها البدل كاملًا، ولقضاء الخلفاء الراشدين بذلك."}, {"id": "se11", "type": "essay", "q": "س11 [تحليل — ٥ درجات]: حلّل الفروق بين المهر المسمَّى ومهر المثل والمتعة من حيث السبب والمقدار.", "a": "١) المهر المسمى: ما تراضى عليه الزوجان عند العقد بشرط ألا يقل عن عشرة دراهم، ويلزم كله بالدخول/الخلوة/الموت ونصفه بالطلاق قبل الدخول. ٢) مهر المثل: يُصار إليه عند عدم التسمية أو فسادها (فيجب بالدخول/الموت) وفي النكاح الفاسد بعد الدخول، ويُقدَّر بنساء عشيرة أبيها. ٣) المتعة: تجب بالطلاق قبل الدخول بلا تسمية، ومقدارها درع وخمار وملحفة لا تزيد على نصف مهر المثل."}, {"id": "se12", "type": "essay", "q": "س12 [تركيب — ٥ درجات]: صمِّم جدولًا يبيّن متى يجب المهر كاملًا، ومتى نصفه، ومتى مهر المثل، ومتى المتعة.", "a": "١) المهر المسمى كاملًا: بالدخول الحقيقي أو الخلوة الصحيحة أو الموت (مع التسمية). ٢) نصف المهر المسمى: بالطلاق قبل الدخول (مع التسمية). ٣) مهر المثل: بالدخول أو الموت (بلا تسمية)، وفي النكاح الفاسد بعد الدخول الحقيقي (بشرط ألا يتجاوز المسمى). ٤) المتعة: بالطلاق قبل الدخول (بلا تسمية)."}, {"id": "se13", "type": "essay", "q": "س13 [تقويم — ٤ درجات]: ناقش قول من لا يحدد أقل المهر (كالشافعي) في مقابل قول الحنفية بعشرة دراهم، مبينًا حجة الحنفية.", "a": "مَن لم يحدد أقل المهر تمسَّك بعموم الآية ﴿أَن تَبْتَغُوا بِأَمْوَالِكُم﴾، وحجة الحنفية أقوى وأحوط؛ لأن مطلق المال في الآية مُجمَل بيَّنته السنة بحديث «لا مهر أقل من عشرة دراهم»، ولأن الشرع أوجب المهر إظهارًا لخطر محل النكاح وشرفه، ولا يظهر هذا الخطر بالشيء التافه القليل جدًّا."}];
+
+    const TEXTBOOK_DISCUSS = [{"id": "tbd1", "q": "السؤال الثالث (ب-١): ما المقصود بالعبارة: اجتماع الزوجين بعد تمام العقد في مكان يأمنان فيه اطلاع الغير عليهما؟", "a": "<span class=\"ans-label\">الحل النموذجي:</span> هذا تعريف (الخَلوة الصحيحة)، وحكمها أنها تُنزَّل منزلة الدخول الحقيقي، فتوجب كامل المهر وتُلزم بالعدة."}, {"id": "tbd2", "q": "السؤال الثالث (ب-١٠): بيّن الحكم فيما يأتي، مع التعليل: تزوجها على ألف على ألَّا يتزوج عليها.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> إن وفَّى بالشرط فلها الألف المسمى. وإن أخلَّ به (تزوج عليها) فلها مهر المثل كاملًا؛ لأنها لم ترضَ بالألف إلا مقابل هذا الشرط، فإذا فات كأن لا تسمية حصلت أصلًا."}, {"id": "tbd3", "q": "السؤال الثالث (ب-١١): بيّن الحكم فيما يأتي، مع التعليل: منعت المرأة نفسها أن يسافر بها زوجها حتى يعطيها مهرها.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> لها ذلك ما دام مهرها المعجَّل لم يُدفع بعد؛ لأن حقه تعيَّن في البضع فوجب أن يتعيَّن حقها في المهر المقابل له. أما لو كان المهر كله مؤجلًا فليس لها هذا الحق؛ لأنها رضيت بتأخيره."}, {"id": "tbd4", "q": "السؤال الرابع (جـ-٢): علّل: لا يجب في النكاح الفاسد إلا مهر المثل.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> لأنه لما فسدت التسمية بفساد العقد، رجعنا إلى الموجب الأصلي وهو مهر المثل؛ إذ هو الأصل عند عدم صحة التسمية، ولا يتجاوز به المسمى إن وُجد؛ لأن المستوفى لا يتقوَّم إلا بتسمية صحيحة."}, {"id": "tbd5", "q": "السؤال الرابع (د): ما مقدار المهر؟ وما الأصل فيه؟ ومتى يلزم؟", "a": "<span class=\"ans-label\">الحل النموذجي:</span> المقدار: أقله عشرة دراهم أو ما قيمته كذلك. الأصل فيه: قوله تعالى ﴿فَمَا اسْتَمْتَعْتُم بِهِ مِنْهُنَّ فَآتُوهُنَّ أُجُورَهُنَّ﴾. يلزم كاملًا بالدخول أو الموت، ونصفه بالطلاق قبل الدخول إن كان مسمى."}];
+
+    const TEXTBOOK_GENERAL = [{"id": "tbg1", "q": "س12: ما أقل المهر؟ وما الحكم إن لم يُسَمِّ لها مهرًا، أو شرط أن لا مهر لها؟ وبمَ تتحقق الخَلوة الصحيحة؟", "a": "<span class=\"ans-label\">الحل النموذجي:</span> أقل المهر عشرة دراهم. وإن لم يُسمَّ لها مهر أو شُرط عدمه: فلها مهر المثل بالدخول والموت، والمتعة بالطلاق قبل الدخول. وتتحقق الخَلوة الصحيحة باجتماع الزوجين بعد تمام عقد صحيح في مكان مأمون من اطلاع الغير، دون وجود مانع من الوطء طبعًا أو شرعًا."}];
+
+    // =========================================================================
+    // 2. STATE & LOCAL STORAGE HELPERS (Safe try/catch wrapper)
+    // =========================================================================
+    const MATCHING_ROWS = [{"id": "m1", "a": "١. عدم تسمية المهر عند العقد (مع الدخول أو الموت)", "correct": "هـ"}, {"id": "m2", "a": "٢. الطلاق قبل الدخول دون تسمية", "correct": "ج"}, {"id": "m3", "a": "٣. الخلوة الصحيحة", "correct": "د"}, {"id": "m4", "a": "٤. قضاؤه ﷺ في بَرْوَع بنت واشق", "correct": "أ"}, {"id": "m5", "a": "٥. مقدار المتعة الواجبة", "correct": "ب"}];
+
+    const MATCHING_OPTIONS = [{"val": "أ", "text": "أ) وجوب مهر المثل بعد موت الزوج قبل الدخول"}, {"val": "ب", "text": "ب) درع وخمار وملحفة"}, {"val": "ج", "text": "ج) تجب المتعة"}, {"val": "د", "text": "د) تلحق بالدخول في وجوب كمال المهر"}, {"val": "هـ", "text": "هـ) يجب مهر المثل"}];
+
+    const STORAGE_KEYS = {
+      THEME: "zad_3sec_nikah_u7_theme",
+      PROGRESS: "zad_3sec_nikah_u7_progress",
+      DATES: "zad_3sec_nikah_u7_dates",
+      CONFIDENCE: "zad_3sec_nikah_u7_conf"
+    };
+
+    const TOTAL_STUDY_ITEMS = 33 + 4 + 7 + 5 + 6 + 12 + 9; // 76 interactive items
+    let reviewedItems = new Set();
+    let savedDates = {};
+    let savedConf = {};
+    let mcqState = {};
+    let currentFontScale = 1;
+    let activeAxisFilter = "all";
+
+    function safeGetStorage(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function safeSetStorage(key, val) {
+      try {
+        localStorage.setItem(key, JSON.stringify(val));
+      } catch (e) {
+        // Ignore storage quota/privacy errors
+      }
+    }
+
+    // =========================================================================
+    // 3. UI RENDERING FUNCTIONS
+    // =========================================================================
+
+    function initApp() {
+      // Load Theme
+      const savedTheme = safeGetStorage(STORAGE_KEYS.THEME, "light");
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateThemeBtnLabel(savedTheme);
+
+      // Load Progress
+      const loadedProg = safeGetStorage(STORAGE_KEYS.PROGRESS, []);
+      reviewedItems = new Set(loadedProg);
+
+      // Load Dates & Confidence
+      savedDates = safeGetStorage(STORAGE_KEYS.DATES, {});
+      savedConf = safeGetStorage(STORAGE_KEYS.CONFIDENCE, {});
+
+      renderSpacedRepetition();
+      renderQaFilters();
+      renderQaBank();
+      renderAppliedCases();
+      renderMcqBank();
+      renderExamSections();
+      renderTextbookExercises();
+      updateProgressUI();
+    }
+
+    function showToast(msg, type = "info") {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast " + type;
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        setTimeout(() => toast.remove(), 250);
+      }, 2600);
+    }
+
+    function markItemReviewed(itemId) {
+      if (!reviewedItems.has(itemId)) {
+        reviewedItems.add(itemId);
+        safeSetStorage(STORAGE_KEYS.PROGRESS, Array.from(reviewedItems));
+        updateProgressUI();
+      }
+    }
+
+    function updateProgressUI() {
+      const count = reviewedItems.size;
+      const pct = Math.min(100, Math.round((count / TOTAL_STUDY_ITEMS) * 100));
+      document.getElementById("progressText").textContent =
+        `مؤشر الإنجاز الدراسي: تم استعراض ${count} من ${TOTAL_STUDY_ITEMS} عنصر مذاكرة — ${pct}%`;
+      document.getElementById("progressFill").style.width = pct + "%";
+    }
+
+    // Spaced Repetition Table
+    function renderSpacedRepetition() {
+      const tbody = document.getElementById("spacedRepBody");
+      tbody.innerHTML = SPACED_UNITS.map(u => {
+        const d1 = savedDates[`u${u.id}_d1`] || "";
+        const d2 = savedDates[`u${u.id}_d2`] || "";
+        const d3 = savedDates[`u${u.id}_d3`] || "";
+        const d4 = savedDates[`u${u.id}_d4`] || "";
+        const rowClass = u.id === 7 ? "current-unit-row" : "";
+        return `
+          <tr class="${rowClass}">
+            <td>${u.id}</td>
+            <td>${u.title}</td>
+            <td><input type="date" class="date-input" value="${d1}" onchange="saveSpacedDate('u${u.id}_d1', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d2}" onchange="saveSpacedDate('u${u.id}_d2', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d3}" onchange="saveSpacedDate('u${u.id}_d3', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d4}" onchange="saveSpacedDate('u${u.id}_d4', this.value)" /></td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function saveSpacedDate(key, val) {
+      savedDates[key] = val;
+      safeSetStorage(STORAGE_KEYS.DATES, savedDates);
+      showToast("تم حفظ تاريخ المراجعة تلقائيًّا 📅", "success");
+    }
+
+    function resetSpacedDates() {
+      savedDates = {};
+      safeSetStorage(STORAGE_KEYS.DATES, {});
+      renderSpacedRepetition();
+      showToast("تم تصفير جميع التواريخ المسجلة بنجاح 🔄", "info");
+    }
+
+    // Q&A Bank & Axis Filtering
+    function renderQaFilters() {
+      const bar = document.getElementById("qaFilterBar");
+      bar.innerHTML = QA_AXES.map(ax => `
+        <button class="filter-pill ${ax.id === activeAxisFilter ? 'active' : ''}" onclick="setAxisFilter('${ax.id}')">
+          ${ax.label}
+        </button>
+      `).join("");
+    }
+
+    function setAxisFilter(axisId) {
+      activeAxisFilter = axisId;
+      renderQaFilters();
+      renderQaBank();
+    }
+
+    function renderQaBank() {
+      const container = document.getElementById("qaListContainer");
+      const filtered = activeAxisFilter === "all"
+        ? QA_BANK
+        : QA_BANK.filter(item => item.axis === activeAxisFilter);
+
+      container.innerHTML = filtered.map(item => {
+        const isRev = reviewedItems.has("qa_" + item.num);
+        return `
+          <div class="qa-card searchable-card ${isRev ? 'reviewed' : ''}" id="card_qa_${item.num}">
+            <div class="qa-header" onclick="toggleAccordion('qa_${item.num}')">
+              <div class="qa-q-wrap">
+                <span class="q-num-badge">${item.num}</span>
+                <div>
+                  <span class="q-axis-badge">${item.axisTitle}</span>
+                  <div class="q-text">${item.q}</div>
+                </div>
+              </div>
+              <button class="toggle-ans-btn" id="btn_qa_${item.num}">إظهار الإجابة ∨</button>
+            </div>
+            <div class="qa-body" id="body_qa_${item.num}">
+              ${item.a}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function toggleAccordion(id) {
+      const body = document.getElementById("body_" + id);
+      const btn = document.getElementById("btn_" + id);
+      const card = document.getElementById("card_" + id);
+      if (!body) return;
+      const isOpen = body.classList.toggle("open");
+      if (btn) {
+        btn.textContent = isOpen ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      }
+      if (isOpen) {
+        if (card) card.classList.add("reviewed");
+        markItemReviewed(id);
+      }
+    }
+
+    // Applied Cases
+    function renderAppliedCases() {
+      const container = document.getElementById("casesContainer");
+      container.innerHTML = APPLIED_CASES.map((c, idx) => `
+        <div class="qa-card searchable-card ${reviewedItems.has(c.id) ? 'reviewed' : ''}" id="card_${c.id}">
+          <div class="qa-header" onclick="toggleAccordion('${c.id}')">
+            <div class="qa-q-wrap">
+              <span class="q-num-badge" style="background:var(--gold);">نازلة ${idx + 1}</span>
+              <div>
+                <span class="q-axis-badge">${c.title}</span>
+                <div class="q-text">${c.q}</div>
+              </div>
+            </div>
+            <button class="toggle-ans-btn" id="btn_${c.id}">إظهار الإجابة والتحليل ∨</button>
+          </div>
+          <div class="qa-body" id="body_${c.id}">
+            <div class="ans-point"><span class="ans-label">الإجابة والتحليل الفقهي:</span> ${c.a}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // Interactive MCQ Bank
+    function renderMcqBank() {
+      const container = document.getElementById("mcqContainer");
+      container.innerHTML = MCQ_BANK.map(item => `
+        <div class="card searchable-card" id="card_${item.id}">
+          <div class="q-text" style="margin-bottom:0.5rem;">${item.q}</div>
+          <div class="options-grid" id="opts_${item.id}">
+            ${item.options.map((opt, oIdx) => `
+              <button class="opt-btn" onclick="answerMcq('${item.id}', ${oIdx})">
+                <span>${opt}</span>
+                <span class="opt-mark"></span>
+              </button>
+            `).join("")}
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">💡 التوضيح والتعليل:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+      updateMcqScoreUI();
+    }
+
+    function answerMcq(mcqId, chosenIdx) {
+      if (mcqState[mcqId] !== undefined) return; // Already answered
+      const item = MCQ_BANK.find(m => m.id === mcqId);
+      if (!item) return;
+
+      const isCorrect = chosenIdx === item.correct;
+      mcqState[mcqId] = isCorrect;
+      markItemReviewed(mcqId);
+
+      const optsWrap = document.getElementById("opts_" + mcqId);
+      const buttons = optsWrap.querySelectorAll(".opt-btn");
+      buttons.forEach((btn, idx) => {
+        btn.disabled = true;
+        const mark = btn.querySelector(".opt-mark");
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          if (mark) mark.textContent = "✓";
+        } else if (idx === chosenIdx && !isCorrect) {
+          btn.classList.add("wrong");
+          if (mark) mark.textContent = "✗";
+        }
+      });
+
+      const fb = document.getElementById("fb_" + mcqId);
+      if (fb) fb.classList.add("show");
+
+      if (isCorrect) {
+        showToast("إجابة صحيحة! أحسنت 🌟", "success");
+      } else {
+        showToast("إجابة غير صحيحة، طالع التوضيح بالأسفل 💡", "error");
+      }
+      updateMcqScoreUI();
+    }
+
+    function updateMcqScoreUI() {
+      const total = MCQ_BANK.length;
+      const correctCount = Object.values(mcqState).filter(Boolean).length;
+      const pct = Math.round((correctCount / total) * 100);
+      document.getElementById("mcqScoreText").textContent = `النتيجة: ${correctCount} / ${total}`;
+      document.getElementById("mcqPercentText").textContent = `نسبة الإتقان: ${pct}%`;
+    }
+
+    function resetMcqQuiz() {
+      mcqState = {};
+      renderMcqBank();
+      showToast("تمت إعادة ضبط بنك الاختيار من متعدد 🔄", "info");
+    }
+
+    // Model Exam & Self-Assessment Exam
+    function renderExamSections() {
+      // 1. True/False Interactive
+      const tfContainer = document.getElementById("examTfContainer");
+      tfContainer.innerHTML = EXAM_TF.map(item => `
+        <div class="card searchable-card">
+          <div class="q-text">${item.statement}</div>
+          <div class="options-grid" id="tf_opts_${item.id}" style="max-width:460px;">
+            <button class="opt-btn" onclick="answerTf('${item.id}', true)">
+              <span>✓ عبارة صحيحة</span>
+              <span class="opt-mark"></span>
+            </button>
+            <button class="opt-btn" onclick="answerTf('${item.id}', false)">
+              <span>✗ عبارة خاطئة</span>
+              <span class="opt-mark"></span>
+            </button>
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">⚖️ التصويب والتعليل الفقهي:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+
+      // 2. Model Exam Essays
+      const essayContainer = document.getElementById("examEssayContainer");
+      essayContainer.innerHTML = EXAM_ESSAY.map(item => `
+        <div class="qa-card searchable-card" id="card_${item.id}">
+          <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+            <div class="q-text">${item.q}</div>
+            <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+          </div>
+          <div class="qa-body" id="body_${item.id}">
+            <div class="ans-point">${item.a}</div>
+          </div>
+        </div>
+      `).join("");
+
+      // 3. Self-Assessment Exam (13 questions, 60 marks)
+      const selfContainer = document.getElementById("selfExamContainer");
+      const optsHtml = MATCHING_OPTIONS.map(o => `<option value="${o.val}">${o.text}</option>`).join("");
+      const matchingCardHtml = `
+        <div class="card searchable-card">
+          <div class="q-text" style="margin-bottom:0.75rem;">س3 [مزاوجة تفاعلية — ٥ درجات]: صِلْ بين عناصر المجموعة (أ) وما يناسبها من المجموعة (ب):</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>المجموعة (أ)</th>
+                  <th>اختر ما يناسبها من المجموعة (ب)</th>
+                  <th>التحقق الفوري</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${MATCHING_ROWS.map(row => `
+                  <tr>
+                    <td><strong>${row.a}</strong></td>
+                    <td>
+                      <select class="match-select" onchange="checkMatchRow('${row.id}', '${row.correct}', this.value)">
+                        <option value="">-- اختر الإجابة --</option>
+                        ${optsHtml}
+                      </select>
+                    </td>
+                    <td id="match_res_${row.id}" style="font-weight:800;">—</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      const otherSelfItemsHtml = SELF_EXAM_ITEMS.map(item => {
+        if (item.type === "mcq") {
+          return `
+            <div class="card searchable-card">
+              <div class="q-text">${item.q}</div>
+              <div class="options-grid" id="se_opts_${item.id}">
+                ${item.options.map((opt, idx) => `
+                  <button class="opt-btn" onclick="answerSelfMcq('${item.id}', ${idx}, ${item.correct})">
+                    <span>${opt}</span>
+                    <span class="opt-mark"></span>
+                  </button>
+                `).join("")}
+              </div>
+              <div class="feedback-box" id="fb_${item.id}">
+                <strong style="color:var(--primary);">💡 التوضيح:</strong> ${item.explanation}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="qa-card searchable-card" id="card_${item.id}">
+              <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+                <div class="q-text">${item.q}</div>
+                <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+              </div>
+              <div class="qa-body" id="body_${item.id}">
+                <div class="ans-point"><span class="ans-label">نموذج الإجابة:</span> ${item.a}</div>
+              </div>
+            </div>
+          `;
+        }
+      });
+
+      // Insert matching card right after se2
+      otherSelfItemsHtml.splice(2, 0, matchingCardHtml);
+      selfContainer.innerHTML = otherSelfItemsHtml.join("");
+    }
+
+    function answerTf(tfId, userChoice) {
+      const item = EXAM_TF.find(t => t.id === tfId);
+      if (!item) return;
+      markItemReviewed(tfId);
+
+      const wrap = document.getElementById("tf_opts_" + tfId);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = userChoice === item.isTrue;
+
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        const btnRepresentsTrue = idx === 0;
+        if (btnRepresentsTrue === item.isTrue) {
+          btn.classList.add("correct");
+        } else if (btnRepresentsTrue === userChoice && !isCorrect) {
+          btn.classList.add("wrong");
+        }
+      });
+
+      document.getElementById("fb_" + tfId).classList.add("show");
+      if (isCorrect) {
+        showToast("أحسنت! إجابتك صائبة 🌟", "success");
+      } else {
+        showToast("انتبه! طالع التصويب الفقهي بالأسفل 💡", "error");
+      }
+    }
+
+    function checkMatchRow(rowId, correctVal, chosenVal) {
+      const cell = document.getElementById("match_res_" + rowId);
+      if (!chosenVal) {
+        cell.textContent = "—";
+        cell.style.color = "";
+        return;
+      }
+      markItemReviewed("match_" + rowId);
+      if (chosenVal === correctVal) {
+        cell.textContent = "✓ إجابة صحيحة";
+        cell.style.color = "var(--success)";
+        showToast("مطابقة صحيحة! 🌟", "success");
+      } else {
+        cell.textContent = `✗ خطأ (الصواب: ${correctVal})`;
+        cell.style.color = "var(--danger)";
+        showToast("مطابقة غير صحيحة، حاول مرة أخرى", "error");
+      }
+    }
+
+    function answerSelfMcq(id, chosenIdx, correctIdx) {
+      markItemReviewed(id);
+      const wrap = document.getElementById("se_opts_" + id);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = chosenIdx === correctIdx;
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === correctIdx) btn.classList.add("correct");
+        else if (idx === chosenIdx && !isCorrect) btn.classList.add("wrong");
+      });
+      document.getElementById("fb_" + id).classList.add("show");
+      showToast(isCorrect ? "إجابة صحيحة! 🌟" : "راجع التوضيح بالأسفل 💡", isCorrect ? "success" : "error");
+    }
+
+    // Textbook Exercises with Confidence Calibration
+    function renderTextbookExercises() {
+      const renderGroup = (list) => list.map(item => {
+        const confVal = savedConf[item.id];
+        const isRevealed = Boolean(confVal);
+        return `
+          <div class="card searchable-card" id="card_${item.id}">
+            <div class="q-text">${item.q}</div>
+            <div class="confidence-bar">
+              <span style="font-size:0.88rem; font-weight:700; color:var(--text-muted);">
+                قيّم ثقتك في إجابتك قبل الاطلاع على الحل:
+              </span>
+              <div class="conf-btns">
+                <button class="conf-btn sure ${confVal === 'sure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'sure')">
+                  [ متأكد 👍 ]
+                </button>
+                <button class="conf-btn unsure ${confVal === 'unsure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'unsure')">
+                  [ غير متأكد 🧐 ]
+                </button>
+              </div>
+            </div>
+            <div class="qa-body ${isRevealed ? 'open' : ''}" id="body_${item.id}" style="margin-top:0.75rem; border-radius:8px; background:var(--bg-quote);">
+              <div class="ans-point">${item.a}</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("tbDiscussContainer").innerHTML = renderGroup(TEXTBOOK_DISCUSS);
+      document.getElementById("tbGeneralContainer").innerHTML = renderGroup(TEXTBOOK_GENERAL);
+    }
+
+    function rateConfidence(itemId, level) {
+      savedConf[itemId] = level;
+      safeSetStorage(STORAGE_KEYS.CONFIDENCE, savedConf);
+      markItemReviewed(itemId);
+      renderTextbookExercises();
+      showToast(
+        level === "sure"
+          ? "رائع! قارن الآن إجابتك بالحل النموذجي لتأكيد إتقانك 👍"
+          : "خطوة ممتازة! راجع الحل النموذجي الآن لتثبيت المعلومة 🧐",
+        "success"
+      );
+    }
+
+    // =========================================================================
+    // 4. NAVIGATION, SEARCH, FONT & THEME CONTROLS
+    // =========================================================================
+
+    function switchTab(sectionId, btnEl) {
+      document.querySelectorAll(".tab-section").forEach(sec => sec.classList.remove("active"));
+      const target = document.getElementById(sectionId);
+      if (target) target.classList.add("active");
+
+      document.querySelectorAll("#sidebarNav .nav-btn").forEach(b => b.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function toggleAllInActiveTab(openState) {
+      const activeSec = document.querySelector(".tab-section.active");
+      if (!activeSec) return;
+
+      activeSec.querySelectorAll(".qa-body, .feedback-box").forEach(el => {
+        if (openState) {
+          el.classList.add("open", "show");
+        } else {
+          el.classList.remove("open", "show");
+        }
+      });
+
+      activeSec.querySelectorAll(".toggle-ans-btn").forEach(btn => {
+        btn.textContent = openState ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      });
+
+      showToast(openState ? "تم إظهار جميع الإجابات في هذا القسم 👁️" : "تم طيّ جميع الإجابات للمراجعة الذاتية 🔒", "info");
+    }
+
+    function handleGlobalSearch(query) {
+      const q = query.trim().toLowerCase();
+      if (q.length > 0) {
+        // Switch to Q&A tab if currently on cover so user sees immediate results
+        const activeSec = document.querySelector(".tab-section.active");
+        if (activeSec && activeSec.id === "sec1") {
+          const qaBtn = document.querySelectorAll("#sidebarNav .nav-btn")[1];
+          switchTab("sec2", qaBtn);
+        }
+      }
+
+      document.querySelectorAll(".searchable-card").forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    }
+
+    function changeFontSize(delta) {
+      if (delta === 0) {
+        currentFontScale = 1;
+      } else {
+        currentFontScale = Math.min(1.35, Math.max(0.85, +(currentFontScale + delta).toFixed(2)));
+      }
+      document.documentElement.style.setProperty("--font-scale", currentFontScale);
+    }
+
+    function toggleTheme() {
+      const curr = document.documentElement.getAttribute("data-theme") || "light";
+      const next = curr === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      safeSetStorage(STORAGE_KEYS.THEME, next);
+      updateThemeBtnLabel(next);
+    }
+
+    function updateThemeBtnLabel(theme) {
+      const btn = document.getElementById("themeToggleBtn");
+      if (btn) {
+        btn.textContent = theme === "dark" ? "☀️ الوضع النهاري" : "🌙 الوضع الليلي";
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", initApp);
+  </script>
+</body>
+</html>

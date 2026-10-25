@@ -2046,6 +2046,22 @@
     // =========================================================================
     // 2. STATE & LOCAL STORAGE HELPERS (Safe try/catch wrapper)
     // =========================================================================
+    const MATCHING_ROWS = [
+      {"id": "m1", "a": "١. الرَّبيبة (بنت الزوجة)", "correct": "هـ"},
+      {"id": "m2", "a": "٢. أم الزوجة", "correct": "ج"},
+      {"id": "m3", "a": "٣. حليلة الابن", "correct": "ب"},
+      {"id": "m4", "a": "٤. الجمع بين الأختين", "correct": "أ"},
+      {"id": "m5", "a": "٥. نكاح المجوسية", "correct": "د"}
+    ];
+
+    const MATCHING_OPTIONS = [
+      {"val": "أ", "text": "أ) محرَّم بقوله تعالى: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ﴾"},
+      {"val": "ب", "text": "ب) تحرم على الأب دخل بها الابن أو لم يدخل"},
+      {"val": "ج", "text": "ج) تحرم بمجرد العقد على ابنتها"},
+      {"val": "د", "text": "د) لا يجوز"},
+      {"val": "هـ", "text": "هـ) لا تحرم إلا بالدخول بأمها"}
+    ];
+
     const STORAGE_KEYS = {
       THEME: "zad_3sec_nikah_u2_theme",
       PROGRESS: "zad_3sec_nikah_u2_progress",
@@ -2359,6 +2375,7 @@
 
       // 3. Self-Assessment Exam (13 questions, 60 marks)
       const selfContainer = document.getElementById("selfExamContainer");
+      const optsHtml = MATCHING_OPTIONS.map(o => `<option value="${o.val}">${o.text}</option>`).join("");
       const matchingCardHtml = `
         <div class="card searchable-card">
           <div class="q-text" style="margin-bottom:0.75rem;">س3 [مزاوجة تفاعلية — ٥ درجات]: صِلْ بين عناصر المجموعة (أ) وما يناسبها من المجموعة (ب):</div>
@@ -2372,23 +2389,13 @@
                 </tr>
               </thead>
               <tbody>
-                ${[
-                  { id: "m1", a: "١. الرَّبيبة (بنت الزوجة)", correct: "هـ", ansText: "هـ) لا تحرم إلا بالدخول بأمها" },
-                  { id: "m2", a: "٢. أم الزوجة", correct: "ج", ansText: "ج) تحرم بمجرد العقد على ابنتها" },
-                  { id: "m3", a: "٣. حليلة الابن", correct: "ب", ansText: "ب) تحرم على الأب دخل بها الابن أو لم يدخل" },
-                  { id: "m4", a: "٤. الجمع بين الأختين", correct: "أ", ansText: "أ) محرَّم بقوله تعالى: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ﴾" },
-                  { id: "m5", a: "٥. نكاح المجوسية", correct: "د", ansText: "د) لا يجوز" }
-                ].map(row => `
+                ${MATCHING_ROWS.map(row => `
                   <tr>
                     <td><strong>${row.a}</strong></td>
                     <td>
                       <select class="match-select" onchange="checkMatchRow('${row.id}', '${row.correct}', this.value)">
                         <option value="">-- اختر الإجابة --</option>
-                        <option value="أ">أ) محرَّم بقوله تعالى: ﴿وَأَن تَجْمَعُوا بَيْنَ الْأُخْتَيْنِ﴾</option>
-                        <option value="ب">ب) تحرم على الأب دخل بها الابن أو لم يدخل</option>
-                        <option value="ج">ج) تحرم بمجرد العقد على ابنتها</option>
-                        <option value="د">د) لا يجوز</option>
-                        <option value="هـ">هـ) لا تحرم إلا بالدخول بأمها</option>
+                        ${optsHtml}
                       </select>
                     </td>
                     <td id="match_res_${row.id}" style="font-weight:800;">—</td>

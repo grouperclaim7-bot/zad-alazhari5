@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سلسلة زاد الأزهري — الفقه الحنفي (٣ث) — كتاب النكاح: الوحدة الخامسة (ترتيب الأولياء في النكاح)</title>
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f1f5f9;
+      --bg-quote: #fffbeb;
+      --border-quote: #d97706;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #0f766e;
+      --primary-light: #0d9488;
+      --primary-bg: #ccfbf1;
+      --navy: #1e293b;
+      --gold: #d97706;
+      --gold-bg: #fef3c7;
+      --crimson: #b91c1c;
+      --crimson-bg: #fee2e2;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --font-scale: 1;
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-alt: #334155;
+      --bg-quote: #272014;
+      --border-quote: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --primary: #14b8a6;
+      --primary-light: #2dd4bf;
+      --primary-bg: rgba(20, 184, 166, 0.18);
+      --navy: #020617;
+      --gold: #f59e0b;
+      --gold-bg: rgba(245, 158, 11, 0.18);
+      --crimson: #f87171;
+      --crimson-bg: rgba(239, 68, 68, 0.2);
+      --success: #22c55e;
+      --success-bg: rgba(34, 197, 94, 0.2);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.2);
+      --border-color: #334155;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.75;
+      font-size: calc(1rem * var(--font-scale));
+      transition: background-color 0.25s ease, color 0.25s ease;
+      overflow-x: hidden;
+    }
+
+    /* Sticky Top Header */
+    .top-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-card);
+      border-bottom: 2px solid var(--primary);
+      box-shadow: var(--shadow-md);
+      padding: 0.75rem 1.25rem;
+    }
+
+    .header-row-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .zad-badge {
+      background: linear-gradient(135deg, var(--primary), #065f46);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(15, 118, 110, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-titles h1 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+
+    .brand-titles p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      max-width: 420px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.5rem 2.2rem 0.5rem 0.85rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .ctrl-btn {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.38rem 0.65rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.18s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .ctrl-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Progress Bar in Header */
+    .progress-bar-wrap {
+      margin-top: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 8px;
+      background: var(--bg-card-alt);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--gold));
+      transition: width 0.35s ease;
+      border-radius: 999px;
+    }
+
+    /* Layout Grid */
+    .app-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 1.25rem;
+      max-width: 1440px;
+      margin: 1.25rem auto;
+      padding: 0 1rem 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .app-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Right Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 118px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 960px) {
+      .sidebar {
+        position: static;
+      }
+    }
+
+    .sidebar-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      list-style: none;
+    }
+
+    .nav-btn {
+      width: 100%;
+      text-align: right;
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.6rem 0.75rem;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .nav-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(15, 118, 110, 0.3);
+    }
+
+    .nav-count {
+      font-size: 0.75rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      background: var(--bg-card-alt);
+      color: var(--text-muted);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .nav-btn.active .nav-count {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
+    .sidebar-actions {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .bulk-btn {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .bulk-btn:hover {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    /* Main Content Area */
+    .main-area {
+      min-width: 0;
+    }
+
+    .tab-section {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Banner */
+    .section-banner {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-banner::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      background: var(--gold);
+    }
+
+    .section-banner h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-banner p {
+      font-size: 0.92rem;
+      opacity: 0.92;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Filter Pills */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.15rem;
+      background: var(--bg-card);
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+    }
+
+    .filter-pill {
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--primary);
+    }
+
+    .filter-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Q&A Accordion Cards */
+    .qa-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-right: 4px solid var(--primary);
+      border-radius: var(--radius);
+      margin-bottom: 0.9rem;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .qa-card.reviewed {
+      border-right-color: var(--gold);
+    }
+
+    .qa-header {
+      padding: 1rem 1.15rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .qa-header:hover {
+      background: var(--bg-card-alt);
+    }
+
+    .qa-q-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      flex: 1;
+    }
+
+    .q-num-badge {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 7px;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .q-axis-badge {
+      background: var(--gold-bg);
+      color: var(--gold);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+
+    .q-text {
+      font-weight: 800;
+      font-size: 1.02rem;
+      color: var(--text-main);
+    }
+
+    .toggle-ans-btn {
+      background: var(--primary-bg);
+      color: var(--primary);
+      border: none;
+      padding: 0.38rem 0.8rem;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .toggle-ans-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .qa-body {
+      display: none;
+      padding: 1rem 1.25rem 1.15rem;
+      border-top: 1px dashed var(--border-color);
+      background: var(--bg-card);
+    }
+
+    .qa-body.open {
+      display: block;
+    }
+
+    .ans-point {
+      margin-bottom: 0.55rem;
+      position: relative;
+      padding-right: 1rem;
+    }
+
+    .ans-point::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: var(--crimson);
+      font-weight: 900;
+    }
+
+    .ans-label {
+      color: var(--crimson);
+      font-weight: 800;
+    }
+
+    .quote-box {
+      background: var(--bg-quote);
+      border-right: 4px solid var(--border-quote);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin: 0.6rem 0;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .imam-badge {
+      display: inline-block;
+      padding: 0.1rem 0.55rem;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      margin: 0 0.15rem;
+    }
+
+    .imam-hanifa { background: #dcfce7; color: #166534; }
+    .imam-yusuf { background: #dbeafe; color: #1e40af; }
+    .imam-muhammad { background: #fae8ff; color: #86198f; }
+    .imam-zufar { background: #ffedd5; color: #9a3412; }
+
+    [data-theme="dark"] .imam-hanifa { background: rgba(22, 101, 52, 0.35); color: #86efac; }
+    [data-theme="dark"] .imam-yusuf { background: rgba(30, 64, 175, 0.35); color: #93c5fd; }
+    [data-theme="dark"] .imam-muhammad { background: rgba(134, 25, 143, 0.35); color: #f0abfc; }
+    [data-theme="dark"] .imam-zufar { background: rgba(154, 52, 18, 0.35); color: #fdba74; }
+
+    /* Tables */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      margin-top: 0.5rem;
+    }
+
+    table.zad-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+      font-size: 0.92rem;
+    }
+
+    table.zad-table th {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 0.75rem 1rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    table.zad-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    table.zad-table tr:nth-child(even) td {
+      background: var(--bg-card-alt);
+    }
+
+    table.zad-table tr.current-unit-row td {
+      background: var(--gold-bg);
+      font-weight: 800;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .status-done { background: var(--success-bg); color: var(--success); }
+    .status-current { background: var(--gold); color: #fff; }
+    .status-upcoming { background: var(--bg-card-alt); color: var(--text-muted); border: 1px solid var(--border-color); }
+
+    .date-input {
+      padding: 0.35rem 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.82rem;
+    }
+
+    /* Interactive MCQ & True/False */
+    .score-board {
+      background: var(--bg-card);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .score-stats {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .score-pill {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .opt-btn {
+      text-align: right;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card-alt);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-bg);
+    }
+
+    .opt-btn.correct {
+      background: var(--success-bg) !important;
+      border-color: var(--success) !important;
+      color: var(--success) !important;
+    }
+
+    .opt-btn.wrong {
+      background: var(--danger-bg) !important;
+      border-color: var(--danger) !important;
+      color: var(--danger) !important;
+    }
+
+    .feedback-box {
+      display: none;
+      margin-top: 0.85rem;
+      padding: 0.85rem 1rem;
+      border-radius: 9px;
+      background: var(--bg-quote);
+      border-right: 4px solid var(--gold);
+      font-size: 0.92rem;
+    }
+
+    .feedback-box.show {
+      display: block;
+    }
+
+    /* Confidence Calibration Buttons */
+    .confidence-bar {
+      margin-top: 0.85rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-card-alt);
+      border-radius: 9px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .conf-btns {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .conf-btn {
+      padding: 0.42rem 0.9rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 800;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .conf-btn.sure:hover, .conf-btn.sure.selected {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .conf-btn.unsure:hover, .conf-btn.unsure.selected {
+      background: var(--gold-bg);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Concept Map Tree */
+    .concept-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .root-node {
+      background: linear-gradient(135deg, var(--navy), var(--primary));
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 14px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      border-bottom: 4px solid var(--gold);
+      position: relative;
+    }
+
+    .branches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .branch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-top: 5px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .branch-card.temporary {
+      border-top-color: var(--gold);
+    }
+
+    .branch-card.appendix {
+      border-top-color: var(--crimson);
+    }
+
+    .branch-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.65rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .branch-title {
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+
+    .branch-card.temporary .branch-title { color: var(--gold); }
+    .branch-card.appendix .branch-title { color: var(--crimson); }
+
+    .leaf-item {
+      background: var(--bg-card-alt);
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.45rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-md);
+      border-right: 5px solid var(--gold);
+      animation: slideUp 0.25s ease;
+    }
+
+    .toast.success { border-right-color: var(--success); }
+    .toast.error { border-right-color: var(--danger); }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Matching Select */
+    .match-select {
+      padding: 0.4rem 0.65rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    @media print {
+      .sidebar, .search-box, .header-controls { display: none !important; }
+      .app-layout { grid-template-columns: 1fr; }
+      .tab-section { display: block !important; page-break-after: always; }
+      .qa-body, .feedback-box { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="top-header">
+    <div class="header-row-1">
+      <div class="brand-box">
+        <div class="zad-badge">زاد</div>
+        <div class="brand-titles">
+          <h1>سلسلة زاد الأزهري — الفقه الحنفي (الصف الثالث الثانوي الأزهري)</h1>
+          <p>كتاب النكاح — الوحدة الخامسة: ترتيب الأولياء في النكاح | إعداد أ/ محمود صلاح الخطيب (01111916649)</p>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="globalSearchInput" placeholder="ابحث في نصوص الأسئلة، الأحاديث، المسائل..." oninput="handleGlobalSearch(this.value)" />
+      </div>
+
+      <div class="header-controls">
+        <button class="ctrl-btn" onclick="changeFontSize(-0.1)" title="تصغير الخط">-أ</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0)" title="الحجم الافتراضي">افتراضي</button>
+        <button class="ctrl-btn" onclick="changeFontSize(0.1)" title="تكبير الخط">أ+</button>
+        <button class="ctrl-btn" onclick="window.print()" title="طباعة الوحدة">🖨️ طباعة</button>
+        <button class="ctrl-btn" id="themeToggleBtn" onclick="toggleTheme()" title="تبديل الوضع الليلي/النهاري">🌙 الوضع الليلي</button>
+      </div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <span id="progressText">مؤشر الإنجاز الدراسي: تم استعراض 0 من 76 عنصر مذاكرة — 0%</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="app-layout">
+    <!-- Right Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <span>🧭 خطة الدراسة والتنقل</span>
+        <span style="font-size:0.78rem; color:var(--text-muted)">٨ أقسام</span>
+      </div>
+      <ul class="nav-list" id="sidebarNav">
+        <li>
+          <button class="nav-btn active" onclick="switchTab('sec1', this)">
+            <span>١. الغلاف وخطة المتابعة</span>
+            <span class="nav-count">خريطة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec2', this)">
+            <span>٢. أولًا: بنك الأسئلة والأجوبة</span>
+            <span class="nav-count">30 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec3', this)">
+            <span>٣. ثانيًا: الملخص والجداول</span>
+            <span class="nav-count">جدولان</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec4', this)">
+            <span>٤. ثالثًا: النوازل التطبيقية</span>
+            <span class="nav-count">4 نوازل</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec5', this)">
+            <span>٥. رابعًا: الاختيار من متعدد</span>
+            <span class="nav-count">7 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec6', this)">
+            <span>٦. خامسًا: الاختبار النموذجي</span>
+            <span class="nav-count">22 س</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec7', this)">
+            <span>٧. سادسًا: تدريبات الكتاب</span>
+            <span class="nav-count">9 أسئلة</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="switchTab('sec8', this)">
+            <span>٨. سابعًا: خريطة المفاهيم</span>
+            <span class="nav-count">4 فروع</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-actions">
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(true)">إظهار الكل 👁️</button>
+        <button class="bulk-btn" onclick="toggleAllInActiveTab(false)">إخفاء الكل 🔒</button>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="main-area">
+
+      <!-- SECTION 1: Cover, Scope Map & Spaced Repetition -->
+      <section id="sec1" class="tab-section active">
+        <div class="section-banner">
+          <h2>🕌 كتاب النكاح — الوحدة الخامسة: ترتيب الأولياء في النكاح</h2>
+          <p>تتناول هذه الوحدة ترتيب مَن يملك تزويج المرأة من الأولياء (العصبة، ثم الأم وأقاربها، ثم القاضي)، وحكم غيبة الولي الأقرب غيبةً منقطعة، وحكم تزويج وليَّين للمرأة، وحكم تزويج الأب والجد بغبن، واعتراض الأولياء على تنقيص المرأة مهرها، وأخيرًا مسألة تولي الشخص الواحد طرفي عقد النكاح.</p>
+        </div>
+        <div class="card searchable-card">
+          <div class="card-title">📌 بطاقة تعريف الوحدة وأهدافها التعليمية</div>
+          <div class="ans-point"><span class="ans-label">المقرر الدراسي:</span> الفقه الحنفي — الصف الثالث الثانوي الأزهري (شرح كتاب «المختار من الاختيار لتعليل المختار»).</div>
+          <div class="ans-point"><span class="ans-label">إعداد:</span> الأستاذ / محمود صلاح الخطيب (01111916649).</div>
+          <div class="ans-point"><span class="ans-label">محاور الوحدة الخمسة:</span> (١) ترتيب الأولياء في النكاح — (٢) غيبة الولي الأقرب غيبة منقطعة — (٣) تزويج المرأة بوليَّين — (٤) تزويج الأب والجد بغبن واعتراض الأولياء — (٥) تولي الشخص الواحد طرفي عقد النكاح.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🗺️ خارطة نطاق المذكرة الكاملة — توزيع المقرر على الأبواب والوحدات الدراسية</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>الباب / الوحدة الدراسية</th>
+                  <th>موضوعات الوحدة التفصيلية</th>
+                  <th>حالة الإنجاز</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>كتاب النكاح — الوحدة الأولى</td>
+                  <td>تعريف النكاح وحكمه العام وركنه وشروط الشهود على العقد</td>
+                  <td><span class="status-badge status-done">مكتمل ✓</span></td>
+                </tr>
+                <tr class="current-unit-row">
+                  <td>2</td>
+                  <td>كتاب النكاح — الوحدة الثانية</td>
+                  <td>محرمات النكاح (القرابة، الصهرية، الرضاع، الجمع، حق الغير، الكفر، الثلاث)</td>
+                  <td><span class="status-badge status-current">هذا الجزء 🌟</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>كتاب النكاح — الوحدة الثالثة</td>
+                  <td>نكاح المتعة والنكاح المؤقت والفرق بينهما ورأي زفر</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>كتاب النكاح — الوحدة الرابعة</td>
+                  <td>عبارة النساء في النكاح واستئمار البكر والثيب وصور الرضا</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>كتاب النكاح — الوحدة الخامسة</td>
+                  <td>ترتيب الأولياء، غيبة الولي الأقرب، تزويج الأب والجد، تولي طرفي العقد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>كتاب النكاح — الوحدة السادسة</td>
+                  <td>الكفاءة في النكاح وأمورها الخمسة وأثر الإخلال بها</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>كتاب النكاح — الوحدة السابعة</td>
+                  <td>المهر، مقداره، متى يجب كاملًا أو نصفه، الخلوة الصحيحة، مهر الفاسد</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>كتاب النكاح — الوحدة الثامنة</td>
+                  <td>القَسْم بين الزوجات، ما يجب فيه التسوية وما لا يجب، هبة اليوم</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>كتاب الرضاع</td>
+                  <td>تعريفه، مدته عند الإمام والصاحبين، ما يحرم به، اختلاط اللبن، مسائل الشك</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>كتاب الطلاق (الوحدات ١–٣)</td>
+                  <td>صريح الطلاق، كنايات الطلاق والتفويض، وباب الرجعة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>أبواب الخلع والظهار والعدة والنفقة والحضانة</td>
+                  <td>أحكام الخلع، الظهار وكفارته، العدة والإحداد، النفقة والحضانة</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title" style="justify-content:space-between; flex-wrap:wrap;">
+            <span>📅 جدول متابعة المراجعة بنظام التكرار المتباعد (Spaced Repetition)</span>
+            <button class="ctrl-btn" onclick="resetSpacedDates()">🗑️ تصفير التواريخ المسجلة</button>
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.75rem;">سجّل تاريخ مذاكرتك الأولى ومواعيد المراجعة الدورية (بعد يوم، بعد أسبوع، بعد شهر)؛ تُحفظ تواريخك تلقائيًّا على جهازك.</p>
+          <div class="table-responsive">
+            <table class="zad-table" id="spacedRepTable">
+              <thead>
+                <tr>
+                  <th>م</th>
+                  <th>اسم الباب / الوحدة (كتاب النكاح)</th>
+                  <th>تاريخ أول مذاكرة</th>
+                  <th>مراجعة (بعد يوم)</th>
+                  <th>مراجعة (بعد أسبوع)</th>
+                  <th>مراجعة (بعد شهر)</th>
+                </tr>
+              </thead>
+              <tbody id="spacedRepBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Q&A Bank (33 Questions across 9 Axes) -->
+      <section id="sec2" class="tab-section">
+        <div class="section-banner">
+          <h2>أولًا: بنك الأسئلة والأجوبة الشامل (٣٣ سؤالًا وجوابًا)</h2>
+          <p>جميع أسئلة وأجوبة الوحدة الثانية من كتاب النكاح موزعة على المحاور التسعة بنظام الاستدعاء النشط (Active Recall). اضغط على السؤال أو زر «إظهار الإجابة» لكشف الجواب التفصيلي.</p>
+        </div>
+
+        <div class="filter-bar" id="qaFilterBar"></div>
+        <div id="qaListContainer"></div>
+      </section>
+
+      <!-- SECTION 3: Visual Summary & Comparison Tables (3 Tables) -->
+      <section id="sec3" class="tab-section">
+        <div class="section-banner">
+          <h2>ثانيًا: الملخص البصري والتقطير المعرفي</h2>
+          <p>جداول مقارنة شاملة لترتيب الأولياء في التزويج ومسائل الولاية الخاصة عند الحنفية.</p>
+        </div>
+        
+        <div class="card searchable-card">
+          <div class="card-title">📊 جدول «١»: ترتيب الأولياء في التزويج <span class="status-badge status-done">ترتيب الولاية</span></div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead><tr><th>الترتيب</th><th>الولي</th><th>الشرط</th></tr></thead>
+              <tbody><tr><td><strong></strong></td><td>العصبة (على ترتيبهم في الإرث والحجب)</td><td>عند وجودهم يبدأ بهم دون غيرهم</td></tr><tr><td><strong></strong></td><td>الأم وأقاربها</td><td>عند عدم العصبات (عند أبي حنيفة فقط؛ الصاحبان يمنعان)</td></tr><tr><td><strong></strong></td><td>القاضي</td><td>عند عدم وجود جميع الأولياء</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="card searchable-card">
+          <div class="card-title">📊 جدول «٢»: مسائل الولاية الخاصة وأحكامها <span class="status-badge status-done">مقارنة الأحكام</span></div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead><tr><th>م</th><th>المسألة</th><th>الحكم</th><th>الدليل / العلة</th></tr></thead>
+              <tbody><tr><td>1</td><td><strong>غيبة الولي الأقرب المنقطعة</strong></td><td>يُزوِّجها الولي الأبعد (خلافًا لزفر)</td><td>دفع الضرر بفوات الكفء؛ الغائب عاجز عن تحقيق مصلحة النظر</td></tr><tr><td>2</td><td><strong>تزويج وليَّين على التعاقب</strong></td><td>الأول أولى ويصح، ويبطل نكاح الثاني</td><td>حديث «إذا أنكح الوليان فالأول أولى»</td></tr><tr><td>3</td><td><strong>تزويج وليَّين معًا (في وقت واحد)</strong></td><td>يبطل النكاحان معًا</td><td>تعذر الجمع وعدم الأولوية</td></tr><tr><td>4</td><td><strong>تزويج الأب/الجد الابنَ بغبن (زيادة مهر) أو البنت (نقصان مهر أو غير كفء)</strong></td><td>يجوز لهما خاصة دون سائر الأولياء</td><td>شفقتهما الكاملة تجعل الظاهر أن للتصرف مصلحة راجحة خفية</td></tr><tr><td>5</td><td><strong>اعتراض الأولياء على تنقيص المرأة مهرها بنفسها</strong></td><td>لهم الاعتراض حتى تمام مهر المثل أو المفارقة (عند أبي حنيفة)</td><td>ضعف رأيها في هذا الباب تحديدًا، وتعييرهم بالنقص</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+</section>
+
+      <!-- SECTION 4: Applied Scenarios (4 Cases) -->
+      <section id="sec4" class="tab-section">
+        <div class="section-banner">
+          <h2>ثالثًا: النوازل والأسئلة التطبيقية («قيِّم نفسك» — ٤ نوازل فقهية)</h2>
+          <p>تطبيقات عملية ووقائع فقهية لتدريب الملكة الفقهية على تنزيل أحكام محرمات النكاح على الصور الواقعية.</p>
+        </div>
+        <div id="casesContainer"></div>
+      </section>
+
+      <!-- SECTION 5: Interactive MCQ Bank -->
+      <section id="sec5" class="tab-section">
+        <div class="section-banner">
+          <h2>رابعًا: بنك أسئلة الاختيار من متعدد التفاعلي</h2>
+          <p>اختر الإجابة الصحيحة لتظهر لك التغذية الراجعة الفورية مع صندوق «التوضيح والتعليل» لتفنيد الخلط الشائع.</p>
+        </div>
+
+        <div class="score-board">
+          <div class="score-stats">
+            <span class="score-pill" id="mcqScoreText">النتيجة: 0 / 7</span>
+            <span class="status-badge status-done" id="mcqPercentText">نسبة الإتقان: 0%</span>
+          </div>
+          <button class="ctrl-btn" onclick="resetMcqQuiz()">🔄 إعادة الاختبار</button>
+        </div>
+
+        <div id="mcqContainer"></div>
+      </section>
+
+      <!-- SECTION 6: Interactive Model Exam & Self-Assessment Exam -->
+      <section id="sec6" class="tab-section">
+        <div class="section-banner">
+          <h2>خامسًا: الاختبار النموذجي التفاعلي والاختبار الختامي الذاتي للوحدة الثانية</h2>
+          <p>يضم هذا القسم: (أ) الاختبار النموذجي للوحدة شاملاً أسئلة الصواب والخطأ التفاعلية والأسئلة المقالية والتعليلية، و(ب) الاختبار الذاتي الختامي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة) مبنيًّا على مستويات بلوم المعرفية.</p>
+        </div>
+
+        <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+          <div>
+            <strong style="color:var(--primary);">أدوات التحكم في نماذج الإجابة:</strong>
+            <span style="font-size:0.88rem; color:var(--text-muted); margin-right:0.5rem;">يمكنك كشف كل إجابة منفردة أو إظهار كافة عناصر نموذج الإجابة للمراجعة الشاملة.</span>
+          </div>
+          <button class="ctrl-btn" onclick="toggleAllInActiveTab(true)">📑 إظهار كافة عناصر نموذج الإجابة</button>
+        </div>
+
+        <h3 style="margin: 1.25rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (أ): أسئلة الصواب والخطأ التفاعلية مع التصويب والتعليل الفوري</h3>
+        <div id="examTfContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (ب): الأسئلة المقالية والتعليلية وتفكير المستويات العليا في الاختبار النموذجي</h3>
+        <div id="examEssayContainer"></div>
+
+        <h3 style="margin: 1.75rem 0 0.75rem; color:var(--crimson); font-weight:800;">القسم الثاني: الاختبار الختامي الذاتي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة — تدرج مستويات بلوم)</h3>
+        <div id="selfExamContainer"></div>
+      </section>
+
+      <!-- SECTION 7: Textbook Exercises with Metacognitive Confidence Calibration -->
+      <section id="sec7" class="tab-section">
+        <div class="section-banner">
+          <h2>سادسًا: حل تدريبات الكتاب المدرسي (بنظام تقييم الثقة الذاتية)</h2>
+          <p>شامل لجميع أسئلة «المناقشة والتدريبات» وأسئلة «تطبيق عام» الواردة في الكتاب المدرسي على الوحدة الثانية. قيّم ثقتك في إجابتك أولًا ([متأكد 👍] أو [غير متأكد 🧐]) ليفتح لك الحل النموذجي الكامل!</p>
+        </div>
+
+        <h3 style="margin: 1rem 0 0.75rem; color:var(--primary); font-weight:800;">أولًا: من «المناقشة والتدريبات» بالكتاب المدرسي (٦ مسائل)</h3>
+        <div id="tbDiscussContainer"></div>
+
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">ثانيًا: من «تطبيق عام» بالكتاب المدرسي (٣ مسائل)</h3>
+        <div id="tbGeneralContainer"></div>
+      </section>
+
+      <!-- SECTION 8: Concept Map -->
+      <section id="sec8" class="tab-section">
+        <div class="section-banner">
+          <h2>سابعًا: خريطة المفاهيم الهيكلية الشاملة</h2>
+          <p>تمثيل بصري شجري لترتيب الأولياء ومسائل الولاية الخاصة وتولي الواحد طرفي عقد النكاح.</p>
+        </div>
+        <div class="card searchable-card">
+          <div class="concept-tree">
+            <div class="root-node">🌳 خريطة المفاهيم: ترتيب الأولياء ومسائل الولاية في النكاح</div>
+            <div class="branches-grid">
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">١. العصبة (المرتبة الأولى)</span>
+                  <span class="status-badge status-done">مقدَّمون بالنص</span>
+                </div>
+                <div class="leaf-item"><strong>ترتيبهم:</strong> على ترتيب الإرث والحجب (الابن وابن الابن، ثم الأب والجد، ثم الأخ وابن الأخ، ثم العم وابن العم).</div>
+                <div class="leaf-item"><strong>الدليل:</strong> قوله ﷺ: «النِّكَاحُ إِلَى الْعَصَبَاتِ».</div>
+              </div>
+              <div class="branch-card temporary">
+                <div class="branch-header">
+                  <span class="branch-title">٢. الأم وأقاربها ثم القاضي</span>
+                  <span class="status-badge status-current">خلاف الصاحبين</span>
+                </div>
+                <div class="leaf-item"><strong>الأم وأقاربها (عند عدم العصبة):</strong> تثبت لهم الولاية عند أبي حنيفة لوفور الشفقة، ومنعها الصاحبان.</div>
+                <div class="leaf-item"><strong>القاضي (عند عدم الجميع):</strong> تثبت له الولاية لقوله ﷺ: «السُّلْطَانُ وَلِيُّ مَنْ لَا وَلِيَّ لَهُ».</div>
+              </div>
+              <div class="branch-card">
+                <div class="branch-header">
+                  <span class="branch-title">٣. مسائل الولاية الخاصة</span>
+                  <span class="status-badge status-done">٤ مسائل دقيقة</span>
+                </div>
+                <div class="leaf-item"><strong>غيبة الأقرب المنقطعة:</strong> يُزوِّجها الأبعد دفعًا لضرر فوات الكفء (خلافًا لزفر).</div>
+                <div class="leaf-item"><strong>تزويج وليَّين متساويين:</strong> إن تعاقبا صح عقد الأول («فالأول أولى»)، وإن عقدا معًا في وقت واحد بطل النكاحان.</div>
+                <div class="leaf-item"><strong>تزويج الأب والجد بغبن:</strong> يصح لهما خاصة لوفور شفقتهما (خلافًا للصاحبين)، وللأولياء الاعتراض إن نقصت المرأة مهرها عن مهر المثل عند أبي حنيفة.</div>
+              </div>
+              <div class="branch-card appendix">
+                <div class="branch-header">
+                  <span class="branch-title">٤. تولي الواحد طرفي العقد</span>
+                  <span class="status-badge status-done">جائز خلافًا لزفر</span>
+                </div>
+                <div class="leaf-item"><strong>الحكم والعلة:</strong> يجوز خلافًا لزفر؛ لأن حقوق النكاح تعود للزوجين لا للعاقد نفسه فلا يقع تمانع كالبيع.</div>
+                <div class="leaf-item"><strong>صوره الخمس:</strong> ولي من الجانبين، وكيل من الجانبين، ولي ووكيل، وكيل وأصيل، ولي وأصيل.</div>
+              </div>
+            </div>
+          </div>
+        </div></section>
+
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    // =========================================================================
+    // 1. DATA REPOSITORY (100% Verbatim Coverage of Unit 2)
+    // =========================================================================
+
+    const SPACED_UNITS = [
+      { id: 1, title: "الوحدة ١: تعريف النكاح وحكمه وركنه وشروط انعقاده" },
+      { id: 2, title: "الوحدة ٢: محرمات النكاح (الوحدة الحالية 🌟)" },
+      { id: 3, title: "الوحدة ٣: نكاح المتعة والنكاح المؤقت" },
+      { id: 4, title: "الوحدة ٤: عبارة النساء في النكاح" },
+      { id: 5, title: "الوحدة ٥: ترتيب الأولياء" },
+      { id: 6, title: "الوحدة ٦: الكفاءة في النكاح" },
+      { id: 7, title: "الوحدة ٧: المهر" },
+      { id: 8, title: "الوحدة ٨: القسم بين الزوجات" }
+    ];
+
+    const QA_AXES = [{"id": "all", "label": "الكل (30)"}, {"id": "axis1", "label": "١. ترتيب الأولياء (س1-س10)"}, {"id": "axis2", "label": "٢. غيبة الولي الأقرب (س11-س13)"}, {"id": "axis3", "label": "٣. تزويج وليَّين (س14-س16)"}, {"id": "axis4", "label": "٤. تزويج الأب والجد بغبن (س17-س22)"}, {"id": "axis5", "label": "٥. تولي الواحد طرفي العقد (س23-س30)"}];
+
+    const QA_BANK = [{"num": "س1", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "مَن الأولى بولاية تزويج المرأة على الترتيب؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">أولًا:</span>  العصبة على ترتيبهم في الإرث والحجب. ثانيًا: الأم وأقاربها عند عدم وجود العصبات (عند <span class=\"imam-badge imam-hanifa\">أبي حنيفة</span>). ثالثًا: القاضي عند عدم وجود الجميع. العَصَبة: من يأخذ كل المال إذا انفرد، ويأخذ الباقي مع ذي السهم كالابن والأب؛ المراد هنا: العاصب بنفسه.</div>"}, {"num": "س2", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما دليل تقديم العصبة في ولاية التزويج؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">قوله ﷺ:</span>  «النِّكَاحُ إِلَى الْعَصَبَاتِ».</div>"}, {"num": "س3", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما ترتيب العصبات أنفسهم في هذه الولاية؟", "a": "<div class=\"ans-point\">جزء الإنسان (الابن وابن الابن وإن نزل)، ثم أصله (الأب، والجد وإن علا)، ثم جزء أبيه (الأخ وابن الأخ وإن نزل)، ثم جزء جده (العم وابن العم وإن نزل)؛ وهو نفس ترتيبهم في الميراث والحَجْب.</div>"}, {"num": "س4", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما رأي أبي حنيفة في ولاية الأم وأقاربها عند عدم وجود العصبة؟", "a": "<div class=\"ans-point\">يثبت لهم حق التزويج عند عدم العصبات، ثم ينتقل الأمر بعدهم إلى القاضي.</div>"}, {"num": "س5", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما رأي أبي يوسف ومحمد (الصاحبين) في ولاية الأم وأقاربها؟", "a": "<div class=\"ans-point\">ليس لهم ذلك؛ فلا تثبت الولاية إلا للعصبات، وعند عدمهم تنتقل مباشرة إلى القاضي.</div>"}, {"num": "س6", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما دليل الصاحبين على منع ولاية الأم وأقاربها؟", "a": "<div class=\"ans-point\">حديث «النكاح إلى العصبات»، ولأن الولاية شُرعت دفعًا للعار الحاصل بعدم الكفء، وهذا العار إنما يلحق العصبات؛ لأنهم هم الذين يُعيَّرون به دون غيرهم.</div>"}, {"num": "س7", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما دليل أبي حنيفة على إثبات ولاية الأم وأقاربها؟", "a": "<div class=\"ans-point\">أن الأصل في هذه الولاية هو القرابة الداعية إلى الشفقة والنظر في حق المُوَلَّى عليه، وهذا المعنى يتحقق في كل من له اختصاص بالقرابة، بل شفقة الأم أكثر من شفقة الأباعد من أبناء الأعمام، وكذا شفقة الجد لأم والأخوال؛ ولأن الأم أحد الأبوين فتثبت لها الولاية كالأب. وهو مروي عن علي وابن مسعود رضي الله عنهما.</div>"}, {"num": "س8", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما الأصل الذي بنى عليه أبو حنيفة قوله في هذه المسألة؟", "a": "<div class=\"ans-point\">أن كل قرابة يتعلق بها الإرث يتعلق بها ثبوت الولاية؛ لأنها داعية إلى الشفقة والنظر كالعصبات، إلا أنهم يتأخرون عن العصبات؛ لضعف رأيهم وبُعد قرابتهم، كما هو الحال في الميراث.</div>"}, {"num": "س9", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "كيف أجاب أبو حنيفة عن استدلال الصاحبين بحديث (النكاح إلى العصبات)؟", "a": "<div class=\"ans-point\">بأن الحديث يقتضي كون النكاح إلى العصبات عند وجودهم، أما عند عدمهم فالحديث ساكت عن الحكم، فيُقال حينئذ: ينتقل الأمر إلى مَن هو في معنى العصبات من حيث الشفقة، فلا يكون الحديث حجة على <span class=\"imam-badge imam-hanifa\">أبي حنيفة</span> بل هو حجة له.</div>"}, {"num": "س10", "axis": "axis1", "axisTitle": "١. ترتيب الأولياء في النكاح", "q": "ما دليل ثبوت الولاية للقاضي عند عدم وجود الأولياء؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">قوله ﷺ:</span>  «السُّلْطَانُ وَلِيُّ مَنْ لَا وَلِيَّ لَهُ».</div>"}, {"num": "س11", "axis": "axis2", "axisTitle": "٢. غيبة الولي الأقرب", "q": "ما الحكم إذا غاب الولي الأقرب غيبة منقطعة وتقدَّم كفء للخِطبة؟", "a": "<div class=\"ans-point\">لا يُنتظر حضور الولي الغائب؛ بل يُزوِّجها الولي الأبعد.</div>"}, {"num": "س12", "axis": "axis2", "axisTitle": "٢. غيبة الولي الأقرب", "q": "ما علة الانتقال إلى الولي الأبعد عند الغيبة المنقطعة؟", "a": "<div class=\"ans-point\">أنه لو لم ينتقل الحق إلى الأبعد لتضررت المرأة بفوات الكفء الحاضر، وقد لا يتفق كفء آخر مرة ثانية، فوجب الانتقال دفعًا لهذا الضرر؛ ولأن الولي الغائب عاجز عن تدبير مصالح النكاح فعليًّا، فيفوت مقصود الولاية (وهو النظر والمصلحة).</div>\n<div class=\"ans-point\"><span class=\"ans-label\">وفي الغيبة المنقطعة أقوال أخرى، منها:</span>  أن تكون في مكان لا تصل إليه القوافل إلا مرة واحدة في السنة، وصحح هذا القول الإمام القدوري، لكن اقتُصر على أقرب الأقوال إلى واقعنا المعاصر؛ فقد سهَّل التقدم في وسائل الاتصال الكثير في هذا الشأن.</div>"}, {"num": "س13", "axis": "axis2", "axisTitle": "٢. غيبة الولي الأقرب", "q": "ما رأي زفر في هذه المسألة؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">خالف الجمهور، فقال:</span>  لا يُزوِّجها الأبعد؛ لأن ولاية الأقرب لا تزال قائمة ما دام حيًّا، حتى إنه لو تيسَّر له تزويجها من مكانه البعيد صح ذلك ونفذ.</div>"}, {"num": "س14", "axis": "axis3", "axisTitle": "٣. تزويج المرأة بوليَّين", "q": "إذا زوَّج المرأةَ وليَّان في درجة واحدة على التعاقب، فما الحكم؟", "a": "<div class=\"ans-point\">الأول أولى، ويصح نكاحه، ولا يجوز نكاح الثاني.</div>\n<div class=\"quote-box\">• الدليل : قوله ﷺ: «إِذَا أَنْكَحَ الْوَلِيَّانِ فَالْأَوَّلُ أَوْلَى (أَحَقُّ)».</div>"}, {"num": "س15", "axis": "axis3", "axisTitle": "٣. تزويج المرأة بوليَّين", "q": "لماذا صح نكاح الأول دون الثاني مع أن ولايتهما واحدة؟", "a": "<div class=\"ans-point\">لأن سبب الولاية هو القرابة، وهي لا تتجزأ، والحكم الثابت بها كذلك لا يتجزأ؛ فصار كل واحد من الوليَّين كأنه المنفرد بها، فأيهما عقد أولًا جاز عقده، كما لو تعدد الأمان من جماعة على قوم فأيهم أمَّن أولًا صح أمانه.</div>"}, {"num": "س16", "axis": "axis3", "axisTitle": "٣. تزويج المرأة بوليَّين", "q": "إذا زوَّج الوليَّان المرأةَ في وقت واحد معًا (بلا سبق)، فما الحكم؟", "a": "<div class=\"ans-point\">بطل النكاحان معًا؛ لتعذر الجمع بينهما، ولعدم وجود أولوية شرعية لأحدهما على الآخر.</div>"}, {"num": "س17", "axis": "axis4", "axisTitle": "٤. تزويج الأب والجد بغبن وتنقيص المهر", "q": "ما الحكم الخاص الذي يملكه الأب والجد دون سائر الأولياء؟", "a": "<div class=\"ans-point\">يجوز لهما أن يُزوِّجا الابن الصغير بأكثر من مهر مثله، وأن يُزوِّجا البنت الصغيرة بأقل من مهر مثلها، وأن يُزوِّجاها من غير كفء؛ ولا يجوز شيء من ذلك لغير الأب والجد من سائر الأولياء.</div>"}, {"num": "س18", "axis": "axis4", "axisTitle": "٤. تزويج الأب والجد بغبن وتنقيص المهر", "q": "ما رأي أبي يوسف ومحمد في هذه المسألة؟", "a": "<div class=\"ans-point\">لا يجوز ذلك حتى للأب والجد، إلا أن يكون النقصان يسيرًا يتغابن الناس في مثله؛ ولا ينعقد العقد فيما زاد على ذلك عندهما؛ لأن هذه الولاية نظرية (مبنية على تحقيق المصلحة والنظر) ولا نظر في هذا التصرف المُجحف، ولهذا لا يجوز مثله في التصرف بمال الصغير.</div>"}, {"num": "س19", "axis": "axis4", "axisTitle": "٤. تزويج الأب والجد بغبن وتنقيص المهر", "q": "ما دليل أبي حنيفة على تخصيص الأب والجد بهذا الحكم؟", "a": "<div class=\"ans-point\">أن النكاح عقد عُمر يشتمل على مقاصد وأغراض ومصالح باطنة غير ظاهرة؛ فالظاهر أن الأب مع وفور شفقته وكمال رأيه ما أقدم على هذا النقص الظاهر إلا لمصلحة أخرى تربو عليه وتزيد، وهي أنفع من القدر الفائت من المال أو الكفاءة؛ بخلاف المال المحض، وبخلاف غير الأب والجد؛ لأنهم أنقص شفقة منهما.</div>"}, {"num": "س20", "axis": "axis4", "axisTitle": "٤. تزويج الأب والجد بغبن وتنقيص المهر", "q": "هل للأولياء الاعتراض إذا زوَّجت المرأة نفسها بأقل من مهر مثلها؟", "a": "<div class=\"ans-point\">نعم عند <span class=\"imam-badge imam-hanifa\">أبي حنيفة</span>؛ فلهم الاعتراض عليها حتى يتم لها مهر مثلها، أو تُفارَق (يُفرَّق بينها وبين الزوج)؛ لأنها سريعة الانخداع ضعيفة الرأي في مثل هذا الأمر، فقد تُنقص مهرها متابعة لهواها لا لتحصيل مصلحة حقيقية، والنساء غالبًا لا ينظرن في عواقب الأمور ومصالحها بنفس القدر.</div>"}, {"num": "س21", "axis": "axis4", "axisTitle": "٤. تزويج الأب والجد بغبن وتنقيص المهر", "q": "ما رأي أبي يوسف ومحمد في اعتراض الأولياء على تنقيص المرأة مهرها؟", "a": "<div class=\"ans-point\">لا اعتراض لهم عليها في ذلك؛ لأن المهر حقها الخالص، ولهذا كان لها أن تهبه لزوجها كاملًا، فلأن يكون لها الحق في تنقيصه ابتداءً أولى.</div>"}, {"num": "س22", "axis": "axis4", "axisTitle": "٤. تزويج الأب والجد بغبن وتنقيص المهر", "q": "ما تفصيل رأي أبي حنيفة في القدر الذي لا يجوز التنقيص عنه من المهر؟", "a": "<div class=\"ans-point\">المهر إلى عشرة دراهم هو حق الشرع، فلا يجوز التنقيص منه بحال، حتى لو سمَّت أقل من عشرة وجب لها عشرة كاملة. أما ما زاد على العشرة حتى مهر المثل فهو حق الأولياء (لأنهم يُعيَّرون بنقصانه)، فلهم مخاصمتها حتى يتم لها مهر المثل. وأما الاستيفاء فحقها وحدها؛ فإن شاءت قبضت المهر، وإن شاءت وهبته لزوجها بعد ثبوته.</div>"}, {"num": "س23", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "هل يجوز أن يتولى شخص واحد طرفي عقد النكاح (الإيجاب والقبول معًا)؟", "a": "<div class=\"ans-point\">نعم يجوز، سواء كان وليًّا للطرفين، أو وكيلًا عنهما، أو وليًّا من جهة ووكيلًا من جهة أخرى، أو أصيلًا (عاقدًا عن نفسه) ووكيلًا عن الطرف الآخر، أو وليًّا من جهة وأصيلًا عن نفسه من الجهة الأخرى.</div>"}, {"num": "س24", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "مثِّل لحالة (الولي من الجانبين).", "a": "<div class=\"ans-point\">كمن يُزوِّج ابنَ ابنه من بنت ابنٍ آخر له، أو يُزوِّج بنت أخيه من ابن أخٍ آخر له، فهو وليٌّ على كلا الطرفين في وقت واحد.</div>"}, {"num": "س25", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "مثِّل لحالة (الولي والوكيل معًا).", "a": "<div class=\"ans-point\">بأن يُوكِّله رجل أن يُزوِّجه ابنته الصغيرة (فيكون وليًّا عليها ووكيلًا عن الزوج)، أو تُوكِّله امرأة أن يُزوِّجها من ابنه الصغير (فيكون وليًّا على ابنه ووكيلًا عنها).</div>"}, {"num": "س26", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "مثِّل لحالة (الوكيل والأصيل معًا).", "a": "<div class=\"ans-point\">بأن تُوكِّله امرأة أن يُزوِّجها من نفسه هو.</div>"}, {"num": "س27", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "مثِّل لحالة (الولي والأصيل معًا).", "a": "<div class=\"ans-point\">بأن يُزوِّج ابنةَ عمه الصغيرة من نفسه هو (فهو وليٌّ عليها وأصيل عن نفسه في آن واحد).</div>"}, {"num": "س28", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "ما صورة صيغة العقد إذا تولى الشخص طرفيه بنفسه؟", "a": "<div class=\"ans-point\"><span class=\"ans-label\">أن يقول:</span>  (اشهدوا أني زوَّجتُ فلانة من فلان)، أو (فلانة مني)، أو (تزوَّجتُ فلانة)، ولا يحتاج العقد بعدها إلى قبول منفصل؛ لأن هذه الصيغة الواحدة تضمنت شطري العقد (الإيجاب والقبول) معًا.</div>"}, {"num": "س29", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "ما رأي زفر في تولي الواحد طرفي عقد النكاح؟", "a": "<div class=\"ans-point\">لا يجوز ذلك عنده؛ لأنه لا يمكن أن يكون الشخص الواحد مُملِّكًا ومُتملِّكًا في آن واحد، قياسًا على عقد البيع.</div>"}, {"num": "س30", "axis": "axis5", "axisTitle": "٥. تولي الواحد طرفي عقد النكاح", "q": "ما الرد على قياس زفر النكاح على البيع؟", "a": "<div class=\"ans-point\">أن المانع في البيع هو أن الحقوق (كالمطالبة بالثمن أو تسليم المبيع) تعود إلى نفس العاقد، فيقع فيه التمانع؛ إذ لا يُعقل أن يكون الشخص الواحد مُطالِبًا ومُطالَبًا في حق واحد بنفسه. أما في النكاح فإن الحقوق لا تعود إلى العاقد بصفته عاقدًا (بل إلى الزوجين أنفسهما)، فلا يقع التمانع، ويكون العاقد الواحد بمنزلة معبِّر وسفير بين الطرفين لا خصمًا لنفسه.</div>"}];
+
+    const APPLIED_CASES = [{"id": "case1", "title": "النازلة التطبيقية (1)", "q": "توفي والد فتاة ولا يوجد لها من العصبة أحد على قيد الحياة، فتقدَّمت أمها لتزويجها من رجل كفء. اعترض بعض الأقارب البعيدين بحجة أن الولاية لا تكون إلا للعصبة. ناقش هذا الاعتراض.", "a": "الاعتراض مردود على رأي أبي حنيفة؛ فعند عدم وجود العصبة تنتقل الولاية إلى الأم وأقاربها؛ لأن الأصل في الولاية هو القرابة الداعية إلى الشفقة، وهذا المعنى متحقق فيهم، بل شفقة الأم أكثر من شفقة الأباعد من العصبة. أما على رأي الصاحبين (أبي يوسف ومحمد) فالاعتراض صحيح، وتنتقل الولاية مباشرة إلى القاضي دون الأم وأقاربها."}, {"id": "case2", "title": "النازلة التطبيقية (2)", "q": "سافر الأخ الأكبر (وهو الولي الأقرب) لبنت أخيه اليتيمة إلى بلد مجهول ولم يُعرف مكانه، وتقدَّم لها خاطب كفء لا يريد الانتظار طويلًا. ماذا يفعل الولي الأبعد؟", "a": "له أن يُزوِّجها من هذا الكفء دون انتظار حضور الأخ الغائب؛ لأن هذه غيبة منقطعة (لا يُعرف مكانه)، ولا يُنتظر فيها الكفء الخاطب، دفعًا لضياع فرصة الزواج المناسبة التي قد لا تتكرر، ولأن الغائب عاجز فعليًّا عن تحقيق مقصود ولايته (وهو النظر في المصلحة)."}, {"id": "case3", "title": "النازلة التطبيقية (3)", "q": "زوَّج عمَّان (في درجة واحدة) ابنةَ أخيهما من رجلين مختلفين في وقتين متتاليين دون علم أحدهما بفعل الآخر. ما الحكم في هذين العقدين؟", "a": "يصح نكاح مَن عقد أولًا منهما، ويبطل نكاح مَن عقد ثانيًا؛ لحديث «إذا أنكح الوليان فالأول أولى»؛ فحكم الولاية لا يتجزأ، وكل من الوليَّين بمنزلة المنفرد بها، فأيهما سبق نفذ عقده. أما لو كان العقدان في وقت واحد تمامًا دون سبق أحدهما، فيبطل النكاحان معًا."}, {"id": "case4", "title": "النازلة التطبيقية (4)", "q": "زوَّج أبٌ ابنته الصغيرة من رجل ليس كفئًا لها، وبمهر أقل من مهر مثلها بكثير، بحجة أن هذا الرجل صالح دَيِّن رغم عدم كفاءته النسبية. اعترضت أمها على هذا التزويج. فما الحكم؟", "a": "العقد صحيح نافذ ولا اعتراض لأحد عليه؛ لأن هذا حق خاص بالأب والجد دون سائر الأولياء، فيجوز لهما تزويج البنت الصغيرة من غير كفء وبأقل من مهر مثلها؛ لأن الظاهر أن الأب بوفور شفقته وكمال رأيه ما أقدم على هذا إلا لمصلحة خفية تربو على القدر الفائت من المال أو الكفاءة الظاهرة."}];
+
+    const MCQ_BANK = [{"id": "mcq1", "q": "1. الترتيب الصحيح للأولياء في التزويج عند أبي حنيفة:", "options": ["أ) القاضي، ثم العصبة، ثم الأم", "ب) العصبة، ثم الأم وأقاربها، ثم القاضي", "ج) الأم، ثم العصبة، ثم القاضي", "د) العصبة والقاضي معًا في مرتبة واحدة"], "correct": 1, "explanation": "الخيار (أ) يقلب الترتيب الصحيح تمامًا. الخيار (ج) يقدّم الأم على العصبة وهذا خطأ؛ فالعصبة مقدَّمون دائمًا بالنص. الخيار (د) يخلط بين مرتبتين منفصلتين تمامًا."}, {"id": "mcq2", "q": "2. من يخالف الجمهور في مسألة تزويج الولي الأبعد عند غيبة الأقرب غيبة منقطعة؟", "options": ["أ) أبو يوسف", "ب) محمد بن الحسن", "ج) زفر", "د) الشافعي"], "correct": 2, "explanation": "زفر معروف بمخالفته لجمهور الحنفية في مسائل دقيقة كهذه؛ وقد خالفهم هنا بقوله إن ولاية الأقرب تبقى قائمة ما دام حيًّا ولو غاب."}, {"id": "mcq3", "q": "3. إذا زوَّج المرأة وليّان في درجة واحدة على التعاقب (أحدهما بعد الآخر):", "options": ["أ) يبطل النكاحان معًا", "ب) يصح نكاح الأول ويبطل نكاح الثاني", "ج) يصح نكاح الأخير منهما", "د) يُخيَّر القاضي بينهما"], "correct": 1, "explanation": "الخلط الشائع (أ) هو تطبيق حكم (العقدين معًا في وقت واحد) على حالة التعاقب المرتب، مع أن الحكمين مختلفان تمامًا: التعاقب يُرجَّح فيه السابق، بينما التزامن يُبطل العقدين معًا."}, {"id": "mcq4", "q": "4. يجوز تزويج البنت الصغيرة من غير كفء وبأقل من مهر مثلها لـ:", "options": ["أ) أي ولي من الأولياء", "ب) الأب والجد فقط", "ج) الأم فقط", "د) القاضي فقط"], "correct": 1, "explanation": "هذا الحق الاستثنائي مقصور على الأب والجد فقط دون سائر الأولياء (ومنهم الأم والقاضي)؛ لأن شفقتهما الكاملة ورأيهما التام يجعل الظاهر أن تصرفهما لمصلحة خفية راجحة."}, {"id": "mcq5", "q": "5. اعتراض الأولياء على تنقيص المرأة مهرها بنفسها دون رضاهم:", "options": ["أ) ثابت لهم مطلقًا عند جميع الحنفية", "ب) ثابت عند أبي حنيفة، ومنتفٍ عند الصاحبين", "ج) منتفٍ عند الجميع", "د) ثابت عند الصاحبين فقط"], "correct": 1, "explanation": "التفصيل الدقيق هو الفارق بين أبي حنيفة (يثبت الاعتراض لضعف رأيها في هذا الباب) والصاحبين (لا اعتراض لأن المهر حقها الخالص القابل للهبة)؛ فالخيارات المطلقة (أ) و(ج) تتجاهل هذا الخلاف."}, {"id": "mcq6", "q": "6. تولي الشخص الواحد طرفي عقد النكاح (كوكيل عن الطرفين مثلًا):", "options": ["أ) لا يجوز مطلقًا كالبيع", "ب) يجوز؛ لأن الحقوق لا تعود إلى العاقد نفسه", "ج) يجوز في حالة واحدة فقط (الوكيل والأصيل)", "د) يجوز بشرط إذن القاضي"], "correct": 1, "explanation": "الخيار (أ) هو رأي زفر المخالف القائم على قياس النكاح بالبيع، وهو قياس مع الفارق مردود؛ لأن علة المنع في البيع (عود الحقوق إلى العاقد) غير متحققة في النكاح."}, {"id": "mcq7", "q": "7. زوَّج رجل ابنَ ابنه من بنت ابنٍ آخر له، فهذه صورة:", "options": ["أ) الوكيل والأصيل", "ب) الولي من الجانبين", "ج) الولي والوكيل", "د) الولي والأصيل"], "correct": 1, "explanation": "هو جدّ الطرفين معًا، فولايته على كليهما (لا وكالة ولا أصالة عن نفسه في العقد)؛ فهذه الصورة هي (الولي من الجانبين) بعينها، بخلاف الصور الأخرى التي تتضمن وكالة أو أصالة شخصية."}];
+
+    const EXAM_TF = [{"id": "tf1", "statement": "7. صواب / خطأ مع التصويب: «لا يجوز للواحد تولي طرفي العقد في النكاح»", "isTrue": false, "explanation": "خطأ؛ والتصويب: يجوز للواحد تولي طرفي عقد النكاح خلافًا لزفر؛ لأن الحقوق في النكاح لا تعود إلى العاقد نفسه فلا تمانع فيه بخلاف البيع."}, {"id": "tf2", "statement": "السؤال الخامس (أ-٩): ضع علامة (✓) أو (✗) مع التصويب والتعليل: «لا يجوز للواحد تولي طرفي العقد»", "isTrue": false, "explanation": "✗ خطأ؛ والتصويب: يجوز للواحد تولي طرفي عقد النكاح خلافًا لزفر؛ لأن الحقوق في النكاح لا تعود إلى العاقد نفسه، بخلاف البيع الذي يمتنع فيه ذلك."}];
+
+    const EXAM_ESSAY = [{"id": "essay1", "q": "س1: رتِّب الأولياء في التزويج عند أبي حنيفة، مع بيان دليل الترتيب.", "a": "العصبة على ترتيبهم في الإرث، ثم الأم وأقاربها، ثم القاضي. الدليل: حديث «النكاح إلى العصبات»، وقياس الأم وأقاربها على العصبات في معنى الشفقة."}, {"id": "essay2", "q": "س2: ما الحكم لو غاب الولي الأقرب غيبة منقطعة؟ وما رأي زفر المخالف؟", "a": "يُزوِّجها الولي الأبعد دون انتظار حضوره؛ دفعًا للضرر. رأي زفر: لا يُزوِّجها الأبعد؛ لأن ولاية الأقرب باقية ما دام حيًّا."}, {"id": "essay3", "q": "س3: فرِّق بين حكم تزويج وليَّين على التعاقب وحكم تزويجهما معًا في وقت واحد.", "a": "التعاقب: يصح نكاح الأول ويبطل نكاح الثاني. التزامن (وقت واحد): يبطل النكاحان معًا لتعذر الجمع وعدم الأولوية."}, {"id": "essay4", "q": "س4: ما الحق الخاص الذي ينفرد به الأب والجد في تزويج أولادهما الصغار؟ وما دليله؟", "a": "يجوز لهما تزويج الابن بأكثر من مهر مثله، والبنت بأقل من مهر مثلها ومن غير كفء؛ لأن النكاح عقد عمر ذو مصالح باطنة، وشفقتهما الكاملة تجعل الظاهر أن تصرفهما لمصلحة راجحة."}, {"id": "essay5", "q": "س5: هل للأولياء الاعتراض إذا نقصت المرأة مهر نفسها؟ اذكر الخلاف في المسألة.", "a": "عند أبي حنيفة: نعم لهم الاعتراض حتى يتم مهر المثل أو تُفارَق؛ لضعف رأيها في هذا الباب. عند الصاحبين: لا اعتراض؛ لأن المهر حقها الخالص القابل للهبة."}, {"id": "essay6", "q": "س6: عدِّد صور تولي الشخص الواحد طرفي عقد النكاح مع مثال لكل صورة.", "a": "الولي من الجانبين (كتزويج ابن ابنه من بنت ابن آخر له)، الوكيل من الجانبين، الولي والوكيل معًا، الوكيل والأصيل معًا، الولي والأصيل معًا."}, {"id": "essay7", "q": "س7: (تفكير عليا) ما وجه الفارق الفقهي بين منع تولي الواحد طرفي عقد البيع وجواز توليه طرفي عقد النكاح، رغم تشابه العقدين ظاهرًا؟", "a": "الفارق أن المانع من تولي الواحد طرفي البيع هو عود حقوق المطالبة (كالثمن والتسليم) إلى نفس العاقد، فيقع تمانع بين كونه مطالِبًا ومطالَبًا في آن واحد؛ أما في النكاح فإن الحقوق المترتبة على العقد تعود إلى الزوجين أنفسهما لا إلى العاقد بصفته عاقدًا، فينتفي التمانع، ويكون العاقد الواحد بمنزلة سفير ومعبِّر بين الطرفين لا خصمًا لنفسه."}];
+
+    const SELF_EXAM_ITEMS = [{"id": "se1", "type": "mcq", "q": "س1 [اختيار من متعدد — ٥ درجات]: أول الأولياء ترتيبًا في تزويج المرأة عند الحنفية:", "options": ["أ) الأب", "ب) الأخ", "ج) الابن (جزء المرأة)", "د) العم"], "correct": 2, "explanation": "ترتيب العصبات في الولاية كترتيبهم في الميراث والحجب: يبدأ بجزء الإنسان (الابن وابن الابن وإن نزل)، ثم أصله (الأب والجد)، ثم جزء أبيه (الأخ)، ثم جزء جده (العم)."}, {"id": "se2", "type": "mcq", "q": "س2 [اختيار من متعدد — ٥ درجات]: رأي أبي حنيفة في ولاية الأم وأقاربها عند عدم العصبة:", "options": ["أ) لا ولاية لهم", "ب) تثبت لهم الولاية قبل القاضي", "ج) تثبت للأم فقط دون أقاربها", "د) تثبت للقاضي فقط"], "correct": 1, "explanation": "يثبت للأم وأقاربها حق التزويج عند عدم العصبات عند أبي حنيفة لوفور شفقتهم، ثم ينتقل الأمر بعدهم إلى القاضي."}, {"id": "se4", "type": "mcq", "q": "س4 [اختيار من متعدد — ٥ درجات]: إذا زوّج الوليان المتساويان المرأة من رجلين على التعاقب:", "options": ["أ) يبطلان معًا", "ب) يصح نكاح الأول ويبطل الثاني", "ج) يصح نكاح الثاني", "د) يخيَّر القاضي"], "correct": 1, "explanation": "لقوله ﷺ: «إذا أنكح الوليان فالأول أولى (أحق)»؛ لأن الولاية لا تتجزأ فأيهما سبق بالعقد نفذ عقده."}, {"id": "se5", "type": "essay", "q": "س5 [استدلال — ٤ درجات]: اذكر دليل تقديم العصبة في ولاية التزويج.", "a": "قوله ﷺ: «النِّكَاحُ إِلَى الْعَصَبَاتِ»."}, {"id": "se6", "type": "essay", "q": "س6 [استدلال — ٤ درجات]: اذكر دليل ثبوت ولاية القاضي عند عدم الأولياء.", "a": "قوله ﷺ: «السُّلْطَانُ وَلِيُّ مَنْ لَا وَلِيَّ لَهُ»."}, {"id": "se7", "type": "essay", "q": "س7 [تعليل — ٤ درجات]: علّل: الانتقال إلى الولي الأبعد عند غيبة الأقرب غيبة منقطعة.", "a": "لأنه لو لم ينتقل الحق إلى الأبعد لتضررت المرأة بفوات الكفء الحاضر، وقد لا يتفق كفء آخر مرة ثانية، ولأن الغائب عاجز فعليًّا عن تدبير مصالح النكاح فيفوت مقصود الولاية."}, {"id": "se8", "type": "essay", "q": "س8 [حكم فقهي — ٥ درجات]: زوّج عمّا صغيرة كلٌّ منهما رجلًا مختلفًا على التعاقب. بيّن أي العقدين يصح مع التوجيه.", "a": "يصح نكاح العم الذي عقد أولًا، ويبطل نكاح الثاني؛ لحديث «إذا أنكح الوليان فالأول أولى»، ولأن سبب الولاية (القرابة) لا يتجزأ فصار كل منهما كالمنفرد بها."}, {"id": "se9", "type": "essay", "q": "س9 [حكم فقهي — ٥ درجات]: زوّج أبٌ صغيرته من غير كفء وبمهر دون مهر مثلها. بيّن الحكم عند أبي حنيفة.", "a": "العقد صحيح نافذ عند أبي حنيفة (وخاص بالأب والجد دون سائر الأولياء)؛ لأن الظاهر أن الأب بوفور شفقته وكمال رأيه ما أقدم على هذا النقص الظاهر إلا لمصلحة أخرى باطنة تربو عليه وتزيد."}, {"id": "se10", "type": "essay", "q": "س10 [تعليل — ٤ درجات]: علّل: صحة نكاح الأول من الوليين المتساويين دون الثاني.", "a": "لأن سبب الولاية هو القرابة وهي لا تتجزأ، والحكم الثابت بها لا يتجزأ، فصار كل واحد من الوليين كأنه المنفرد بالولاية، فأيهما عقد أولًا صح عقده وصادف محله."}, {"id": "se11", "type": "essay", "q": "س11 [تحليل — ٥ درجات]: قارن بين مذهب أبي حنيفة ومذهب الصاحبين في ولاية الأم وأقاربها، ذاكرًا دليل كل فريق.", "a": "أبو حنيفة: تثبت لهم الولاية عند عدم العصبات؛ لأن مبنى الولاية على القرابة الداعية للشفقة والنظر، وشفقة الأم أكثر من شفقة أباعد العصبة. الصاحبان: لا ولاية لهم وتنتقل مباشرة للقاضي؛ لحديث «النكاح إلى العصبات» ولأن الولاية لدفع العار وهو يلحق العصبات خاصة."}, {"id": "se12", "type": "essay", "q": "س12 [تركيب — ٥ درجات]: أعد بناء ترتيب الأولياء في النكاح كاملًا من الأول إلى الأخير مع الاستدلال لكل رتبة.", "a": "١) العصبة على ترتيب الإرث والحجب (الابن فالأب فالأخ فالعم)؛ لحديث «النكاح إلى العصبات». ٢) الأم وأقاربها عند عدم العصبة (عند أبي حنيفة)؛ لتحقق القرابة الداعية للشفقة. ٣) القاضي عند عدم الأولياء جميعًا؛ لحديث «السلطان ولي من لا ولي له»."}, {"id": "se13", "type": "essay", "q": "س13 [تقويم — ٤ درجات]: قوِّم استدلال الصاحبين بحديث «النكاح إلى العصبات»، وبيّن جواب أبي حنيفة عنه.", "a": "أجاب أبو حنيفة بأن الحديث يقتضي كون النكاح إلى العصبات عند وجودهم، أما عند عدمهم فالحديث ساكت عن الحكم، فينتقل الأمر حينئذ إلى من هو في معناهم من حيث القرابة والشفقة (الأم وأقاربها)، فلا يكون الحديث حجة عليه."}];
+
+    const TEXTBOOK_DISCUSS = [{"id": "tbd1", "q": "السؤال الثالث (أ-٢): ما المقصود بالعبارة الفقهية: قال الجد: اشهدوا أني زوجت بنت ابني من ابن ابني؟", "a": "<span class=\"ans-label\">الحل النموذجي:</span> هذا مثال على (تولي الواحد طرفي عقد النكاح) بصفته وليًّا من الجانبين معًا؛ فالجد وليّ على بنت ابنه ووليّ على ابن ابنه الآخر في آن واحد، فيصح منه أن يعقد النكاح بينهما بصيغة واحدة دون حاجة لقبول منفصل."}, {"id": "tbd2", "q": "السؤال الثالث (ب-٨): بيّن الحكم فيما يأتي، مع التعليل: زوَّج الأب ابنته بأقل من مهر المثل ومن غير كفء.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> العقد صحيح نافذ؛ لأن هذا حق خاص بالأب (والجد) دون سائر الأولياء؛ فالظاهر أن الأب بوفور شفقته وكمال رأيه ما أقدم على هذا النقص إلا لمصلحة خفية راجحة تربو على القدر الفائت من المال أو الكفاءة."}, {"id": "tbd3", "q": "السؤال الرابع (جـ-٩): علّل: للأم وأقاربها التزويج عند أبي حنيفة.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> لأن الأصل في الولاية هو القرابة الداعية إلى الشفقة والنظر، وهذا يتحقق فيهم كما يتحقق في العصبات، بل شفقة الأم أكثر من شفقة الأباعد من العصبة؛ ولأن الأم أحد الأبوين فتثبت لها الولاية كالأب."}, {"id": "tbd4", "q": "السؤال الرابع (جـ-١٠): علّل: لو زوَّج المرأة وليان فالأول أولى.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> لحديث «إذا أنكح الوليان فالأول أولى»؛ ولأن سبب الولاية (القرابة) لا يتجزأ، فكل من الوليين بمنزلة المنفرد بها، فأيهما سبق بالعقد صح ونفذ."}, {"id": "tbd5", "q": "السؤال الخامس (أ-٩): ضع علامة (✓) أو (✗) مع التصويب والتعليل: «لا يجوز للواحد تولي طرفي العقد»", "a": "<span class=\"ans-label\">الحل النموذجي:</span> ✗ خطأ؛ والتصويب: يجوز للواحد تولي طرفي عقد النكاح خلافًا لزفر؛ لأن الحقوق في النكاح لا تعود إلى العاقد نفسه، بخلاف البيع الذي يمتنع فيه ذلك."}, {"id": "tbd6", "q": "السؤال الخامس (ب-٦): دلِّل لما يأتي: لو زوَّج المرأة وليان في درجة واحدة فالأول أولى.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> دليله قوله ﷺ: «إذا أنكح الوليان فالأول أولى»، ولأن ولاية القرابة لا تتجزأ فيصح عقد من سبق منهما."}];
+
+    const TEXTBOOK_GENERAL = [{"id": "tbg1", "q": "س11 (الأول): بيّن الحكم فيما يأتي: غاب الولي الأقرب غيبة منقطعة.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> يُزوِّجها الولي الأبعد دون انتظار حضوره؛ دفعًا لضياع مصلحتها بفوات الكفء الحاضر، ولعجز الغائب عن تحقيق مقصود الولاية."}, {"id": "tbg2", "q": "س11 (الثاني): بيّن الحكم فيما يأتي: زوَّجت المرأة نفسها بأقل من مهر المثل.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> عند أبي حنيفة: للأولياء الاعتراض حتى يتم لها مهر المثل أو تُفارَق. عند الصاحبين: لا اعتراض لهم؛ لأن المهر حقها الخالص."}, {"id": "tbg3", "q": "س11 (الثالث): بيّن الحكم فيما يأتي: تولى الواحد طرفي العقد في النكاح.", "a": "<span class=\"ans-label\">الحل النموذجي:</span> يجوز ذلك عند الجمهور خلافًا لزفر؛ لأن الحقوق المترتبة على عقد النكاح لا تعود إلى العاقد نفسه فينتفي التمانع الموجود في البيع."}];
+
+    // =========================================================================
+    // 2. STATE & LOCAL STORAGE HELPERS (Safe try/catch wrapper)
+    // =========================================================================
+    const MATCHING_ROWS = [{"id": "m1", "a": "١. العصبة", "correct": "هـ"}, {"id": "m2", "a": "٢. القاضي (السلطان)", "correct": "أ"}, {"id": "m3", "a": "٣. الغيبة المنقطعة للولي الأقرب", "correct": "د"}, {"id": "m4", "a": "٤. تزويج وليين لها في وقت واحد", "correct": "ج"}, {"id": "m5", "a": "٥. تزويج الصغيرة من غير كفء أو بغبن فاحش", "correct": "ب"}];
+
+    const MATCHING_OPTIONS = [{"val": "أ", "text": "أ) ولي من لا ولي له"}, {"val": "ب", "text": "ب) ينفذ من الأب والجد عند أبي حنيفة"}, {"val": "ج", "text": "ج) يبطل العقدان"}, {"val": "د", "text": "د) تنتقل الولاية إلى الأبعد"}, {"val": "هـ", "text": "هـ) من يأخذ كل المال إذا انفرد"}];
+
+    const STORAGE_KEYS = {
+      THEME: "zad_3sec_nikah_u5_theme",
+      PROGRESS: "zad_3sec_nikah_u5_progress",
+      DATES: "zad_3sec_nikah_u5_dates",
+      CONFIDENCE: "zad_3sec_nikah_u5_conf"
+    };
+
+    const TOTAL_STUDY_ITEMS = 33 + 4 + 7 + 5 + 6 + 12 + 9; // 76 interactive items
+    let reviewedItems = new Set();
+    let savedDates = {};
+    let savedConf = {};
+    let mcqState = {};
+    let currentFontScale = 1;
+    let activeAxisFilter = "all";
+
+    function safeGetStorage(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function safeSetStorage(key, val) {
+      try {
+        localStorage.setItem(key, JSON.stringify(val));
+      } catch (e) {
+        // Ignore storage quota/privacy errors
+      }
+    }
+
+    // =========================================================================
+    // 3. UI RENDERING FUNCTIONS
+    // =========================================================================
+
+    function initApp() {
+      // Load Theme
+      const savedTheme = safeGetStorage(STORAGE_KEYS.THEME, "light");
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateThemeBtnLabel(savedTheme);
+
+      // Load Progress
+      const loadedProg = safeGetStorage(STORAGE_KEYS.PROGRESS, []);
+      reviewedItems = new Set(loadedProg);
+
+      // Load Dates & Confidence
+      savedDates = safeGetStorage(STORAGE_KEYS.DATES, {});
+      savedConf = safeGetStorage(STORAGE_KEYS.CONFIDENCE, {});
+
+      renderSpacedRepetition();
+      renderQaFilters();
+      renderQaBank();
+      renderAppliedCases();
+      renderMcqBank();
+      renderExamSections();
+      renderTextbookExercises();
+      updateProgressUI();
+    }
+
+    function showToast(msg, type = "info") {
+      const container = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = "toast " + type;
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        setTimeout(() => toast.remove(), 250);
+      }, 2600);
+    }
+
+    function markItemReviewed(itemId) {
+      if (!reviewedItems.has(itemId)) {
+        reviewedItems.add(itemId);
+        safeSetStorage(STORAGE_KEYS.PROGRESS, Array.from(reviewedItems));
+        updateProgressUI();
+      }
+    }
+
+    function updateProgressUI() {
+      const count = reviewedItems.size;
+      const pct = Math.min(100, Math.round((count / TOTAL_STUDY_ITEMS) * 100));
+      document.getElementById("progressText").textContent =
+        `مؤشر الإنجاز الدراسي: تم استعراض ${count} من ${TOTAL_STUDY_ITEMS} عنصر مذاكرة — ${pct}%`;
+      document.getElementById("progressFill").style.width = pct + "%";
+    }
+
+    // Spaced Repetition Table
+    function renderSpacedRepetition() {
+      const tbody = document.getElementById("spacedRepBody");
+      tbody.innerHTML = SPACED_UNITS.map(u => {
+        const d1 = savedDates[`u${u.id}_d1`] || "";
+        const d2 = savedDates[`u${u.id}_d2`] || "";
+        const d3 = savedDates[`u${u.id}_d3`] || "";
+        const d4 = savedDates[`u${u.id}_d4`] || "";
+        const rowClass = u.id === 5 ? "current-unit-row" : "";
+        return `
+          <tr class="${rowClass}">
+            <td>${u.id}</td>
+            <td>${u.title}</td>
+            <td><input type="date" class="date-input" value="${d1}" onchange="saveSpacedDate('u${u.id}_d1', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d2}" onchange="saveSpacedDate('u${u.id}_d2', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d3}" onchange="saveSpacedDate('u${u.id}_d3', this.value)" /></td>
+            <td><input type="date" class="date-input" value="${d4}" onchange="saveSpacedDate('u${u.id}_d4', this.value)" /></td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function saveSpacedDate(key, val) {
+      savedDates[key] = val;
+      safeSetStorage(STORAGE_KEYS.DATES, savedDates);
+      showToast("تم حفظ تاريخ المراجعة تلقائيًّا 📅", "success");
+    }
+
+    function resetSpacedDates() {
+      savedDates = {};
+      safeSetStorage(STORAGE_KEYS.DATES, {});
+      renderSpacedRepetition();
+      showToast("تم تصفير جميع التواريخ المسجلة بنجاح 🔄", "info");
+    }
+
+    // Q&A Bank & Axis Filtering
+    function renderQaFilters() {
+      const bar = document.getElementById("qaFilterBar");
+      bar.innerHTML = QA_AXES.map(ax => `
+        <button class="filter-pill ${ax.id === activeAxisFilter ? 'active' : ''}" onclick="setAxisFilter('${ax.id}')">
+          ${ax.label}
+        </button>
+      `).join("");
+    }
+
+    function setAxisFilter(axisId) {
+      activeAxisFilter = axisId;
+      renderQaFilters();
+      renderQaBank();
+    }
+
+    function renderQaBank() {
+      const container = document.getElementById("qaListContainer");
+      const filtered = activeAxisFilter === "all"
+        ? QA_BANK
+        : QA_BANK.filter(item => item.axis === activeAxisFilter);
+
+      container.innerHTML = filtered.map(item => {
+        const isRev = reviewedItems.has("qa_" + item.num);
+        return `
+          <div class="qa-card searchable-card ${isRev ? 'reviewed' : ''}" id="card_qa_${item.num}">
+            <div class="qa-header" onclick="toggleAccordion('qa_${item.num}')">
+              <div class="qa-q-wrap">
+                <span class="q-num-badge">${item.num}</span>
+                <div>
+                  <span class="q-axis-badge">${item.axisTitle}</span>
+                  <div class="q-text">${item.q}</div>
+                </div>
+              </div>
+              <button class="toggle-ans-btn" id="btn_qa_${item.num}">إظهار الإجابة ∨</button>
+            </div>
+            <div class="qa-body" id="body_qa_${item.num}">
+              ${item.a}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function toggleAccordion(id) {
+      const body = document.getElementById("body_" + id);
+      const btn = document.getElementById("btn_" + id);
+      const card = document.getElementById("card_" + id);
+      if (!body) return;
+      const isOpen = body.classList.toggle("open");
+      if (btn) {
+        btn.textContent = isOpen ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      }
+      if (isOpen) {
+        if (card) card.classList.add("reviewed");
+        markItemReviewed(id);
+      }
+    }
+
+    // Applied Cases
+    function renderAppliedCases() {
+      const container = document.getElementById("casesContainer");
+      container.innerHTML = APPLIED_CASES.map((c, idx) => `
+        <div class="qa-card searchable-card ${reviewedItems.has(c.id) ? 'reviewed' : ''}" id="card_${c.id}">
+          <div class="qa-header" onclick="toggleAccordion('${c.id}')">
+            <div class="qa-q-wrap">
+              <span class="q-num-badge" style="background:var(--gold);">نازلة ${idx + 1}</span>
+              <div>
+                <span class="q-axis-badge">${c.title}</span>
+                <div class="q-text">${c.q}</div>
+              </div>
+            </div>
+            <button class="toggle-ans-btn" id="btn_${c.id}">إظهار الإجابة والتحليل ∨</button>
+          </div>
+          <div class="qa-body" id="body_${c.id}">
+            <div class="ans-point"><span class="ans-label">الإجابة والتحليل الفقهي:</span> ${c.a}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // Interactive MCQ Bank
+    function renderMcqBank() {
+      const container = document.getElementById("mcqContainer");
+      container.innerHTML = MCQ_BANK.map(item => `
+        <div class="card searchable-card" id="card_${item.id}">
+          <div class="q-text" style="margin-bottom:0.5rem;">${item.q}</div>
+          <div class="options-grid" id="opts_${item.id}">
+            ${item.options.map((opt, oIdx) => `
+              <button class="opt-btn" onclick="answerMcq('${item.id}', ${oIdx})">
+                <span>${opt}</span>
+                <span class="opt-mark"></span>
+              </button>
+            `).join("")}
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">💡 التوضيح والتعليل:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+      updateMcqScoreUI();
+    }
+
+    function answerMcq(mcqId, chosenIdx) {
+      if (mcqState[mcqId] !== undefined) return; // Already answered
+      const item = MCQ_BANK.find(m => m.id === mcqId);
+      if (!item) return;
+
+      const isCorrect = chosenIdx === item.correct;
+      mcqState[mcqId] = isCorrect;
+      markItemReviewed(mcqId);
+
+      const optsWrap = document.getElementById("opts_" + mcqId);
+      const buttons = optsWrap.querySelectorAll(".opt-btn");
+      buttons.forEach((btn, idx) => {
+        btn.disabled = true;
+        const mark = btn.querySelector(".opt-mark");
+        if (idx === item.correct) {
+          btn.classList.add("correct");
+          if (mark) mark.textContent = "✓";
+        } else if (idx === chosenIdx && !isCorrect) {
+          btn.classList.add("wrong");
+          if (mark) mark.textContent = "✗";
+        }
+      });
+
+      const fb = document.getElementById("fb_" + mcqId);
+      if (fb) fb.classList.add("show");
+
+      if (isCorrect) {
+        showToast("إجابة صحيحة! أحسنت 🌟", "success");
+      } else {
+        showToast("إجابة غير صحيحة، طالع التوضيح بالأسفل 💡", "error");
+      }
+      updateMcqScoreUI();
+    }
+
+    function updateMcqScoreUI() {
+      const total = MCQ_BANK.length;
+      const correctCount = Object.values(mcqState).filter(Boolean).length;
+      const pct = Math.round((correctCount / total) * 100);
+      document.getElementById("mcqScoreText").textContent = `النتيجة: ${correctCount} / ${total}`;
+      document.getElementById("mcqPercentText").textContent = `نسبة الإتقان: ${pct}%`;
+    }
+
+    function resetMcqQuiz() {
+      mcqState = {};
+      renderMcqBank();
+      showToast("تمت إعادة ضبط بنك الاختيار من متعدد 🔄", "info");
+    }
+
+    // Model Exam & Self-Assessment Exam
+    function renderExamSections() {
+      // 1. True/False Interactive
+      const tfContainer = document.getElementById("examTfContainer");
+      tfContainer.innerHTML = EXAM_TF.map(item => `
+        <div class="card searchable-card">
+          <div class="q-text">${item.statement}</div>
+          <div class="options-grid" id="tf_opts_${item.id}" style="max-width:460px;">
+            <button class="opt-btn" onclick="answerTf('${item.id}', true)">
+              <span>✓ عبارة صحيحة</span>
+              <span class="opt-mark"></span>
+            </button>
+            <button class="opt-btn" onclick="answerTf('${item.id}', false)">
+              <span>✗ عبارة خاطئة</span>
+              <span class="opt-mark"></span>
+            </button>
+          </div>
+          <div class="feedback-box" id="fb_${item.id}">
+            <strong style="color:var(--primary);">⚖️ التصويب والتعليل الفقهي:</strong> ${item.explanation}
+          </div>
+        </div>
+      `).join("");
+
+      // 2. Model Exam Essays
+      const essayContainer = document.getElementById("examEssayContainer");
+      essayContainer.innerHTML = EXAM_ESSAY.map(item => `
+        <div class="qa-card searchable-card" id="card_${item.id}">
+          <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+            <div class="q-text">${item.q}</div>
+            <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+          </div>
+          <div class="qa-body" id="body_${item.id}">
+            <div class="ans-point">${item.a}</div>
+          </div>
+        </div>
+      `).join("");
+
+      // 3. Self-Assessment Exam (13 questions, 60 marks)
+      const selfContainer = document.getElementById("selfExamContainer");
+      const optsHtml = MATCHING_OPTIONS.map(o => `<option value="${o.val}">${o.text}</option>`).join("");
+      const matchingCardHtml = `
+        <div class="card searchable-card">
+          <div class="q-text" style="margin-bottom:0.75rem;">س3 [مزاوجة تفاعلية — ٥ درجات]: صِلْ بين عناصر المجموعة (أ) وما يناسبها من المجموعة (ب):</div>
+          <div class="table-responsive">
+            <table class="zad-table">
+              <thead>
+                <tr>
+                  <th>المجموعة (أ)</th>
+                  <th>اختر ما يناسبها من المجموعة (ب)</th>
+                  <th>التحقق الفوري</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${MATCHING_ROWS.map(row => `
+                  <tr>
+                    <td><strong>${row.a}</strong></td>
+                    <td>
+                      <select class="match-select" onchange="checkMatchRow('${row.id}', '${row.correct}', this.value)">
+                        <option value="">-- اختر الإجابة --</option>
+                        ${optsHtml}
+                      </select>
+                    </td>
+                    <td id="match_res_${row.id}" style="font-weight:800;">—</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      const otherSelfItemsHtml = SELF_EXAM_ITEMS.map(item => {
+        if (item.type === "mcq") {
+          return `
+            <div class="card searchable-card">
+              <div class="q-text">${item.q}</div>
+              <div class="options-grid" id="se_opts_${item.id}">
+                ${item.options.map((opt, idx) => `
+                  <button class="opt-btn" onclick="answerSelfMcq('${item.id}', ${idx}, ${item.correct})">
+                    <span>${opt}</span>
+                    <span class="opt-mark"></span>
+                  </button>
+                `).join("")}
+              </div>
+              <div class="feedback-box" id="fb_${item.id}">
+                <strong style="color:var(--primary);">💡 التوضيح:</strong> ${item.explanation}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="qa-card searchable-card" id="card_${item.id}">
+              <div class="qa-header" onclick="toggleAccordion('${item.id}')">
+                <div class="q-text">${item.q}</div>
+                <button class="toggle-ans-btn" id="btn_${item.id}">كشف الإجابة ∨</button>
+              </div>
+              <div class="qa-body" id="body_${item.id}">
+                <div class="ans-point"><span class="ans-label">نموذج الإجابة:</span> ${item.a}</div>
+              </div>
+            </div>
+          `;
+        }
+      });
+
+      // Insert matching card right after se2
+      otherSelfItemsHtml.splice(2, 0, matchingCardHtml);
+      selfContainer.innerHTML = otherSelfItemsHtml.join("");
+    }
+
+    function answerTf(tfId, userChoice) {
+      const item = EXAM_TF.find(t => t.id === tfId);
+      if (!item) return;
+      markItemReviewed(tfId);
+
+      const wrap = document.getElementById("tf_opts_" + tfId);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = userChoice === item.isTrue;
+
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        const btnRepresentsTrue = idx === 0;
+        if (btnRepresentsTrue === item.isTrue) {
+          btn.classList.add("correct");
+        } else if (btnRepresentsTrue === userChoice && !isCorrect) {
+          btn.classList.add("wrong");
+        }
+      });
+
+      document.getElementById("fb_" + tfId).classList.add("show");
+      if (isCorrect) {
+        showToast("أحسنت! إجابتك صائبة 🌟", "success");
+      } else {
+        showToast("انتبه! طالع التصويب الفقهي بالأسفل 💡", "error");
+      }
+    }
+
+    function checkMatchRow(rowId, correctVal, chosenVal) {
+      const cell = document.getElementById("match_res_" + rowId);
+      if (!chosenVal) {
+        cell.textContent = "—";
+        cell.style.color = "";
+        return;
+      }
+      markItemReviewed("match_" + rowId);
+      if (chosenVal === correctVal) {
+        cell.textContent = "✓ إجابة صحيحة";
+        cell.style.color = "var(--success)";
+        showToast("مطابقة صحيحة! 🌟", "success");
+      } else {
+        cell.textContent = `✗ خطأ (الصواب: ${correctVal})`;
+        cell.style.color = "var(--danger)";
+        showToast("مطابقة غير صحيحة، حاول مرة أخرى", "error");
+      }
+    }
+
+    function answerSelfMcq(id, chosenIdx, correctIdx) {
+      markItemReviewed(id);
+      const wrap = document.getElementById("se_opts_" + id);
+      const btns = wrap.querySelectorAll(".opt-btn");
+      const isCorrect = chosenIdx === correctIdx;
+      btns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === correctIdx) btn.classList.add("correct");
+        else if (idx === chosenIdx && !isCorrect) btn.classList.add("wrong");
+      });
+      document.getElementById("fb_" + id).classList.add("show");
+      showToast(isCorrect ? "إجابة صحيحة! 🌟" : "راجع التوضيح بالأسفل 💡", isCorrect ? "success" : "error");
+    }
+
+    // Textbook Exercises with Confidence Calibration
+    function renderTextbookExercises() {
+      const renderGroup = (list) => list.map(item => {
+        const confVal = savedConf[item.id];
+        const isRevealed = Boolean(confVal);
+        return `
+          <div class="card searchable-card" id="card_${item.id}">
+            <div class="q-text">${item.q}</div>
+            <div class="confidence-bar">
+              <span style="font-size:0.88rem; font-weight:700; color:var(--text-muted);">
+                قيّم ثقتك في إجابتك قبل الاطلاع على الحل:
+              </span>
+              <div class="conf-btns">
+                <button class="conf-btn sure ${confVal === 'sure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'sure')">
+                  [ متأكد 👍 ]
+                </button>
+                <button class="conf-btn unsure ${confVal === 'unsure' ? 'selected' : ''}" onclick="rateConfidence('${item.id}', 'unsure')">
+                  [ غير متأكد 🧐 ]
+                </button>
+              </div>
+            </div>
+            <div class="qa-body ${isRevealed ? 'open' : ''}" id="body_${item.id}" style="margin-top:0.75rem; border-radius:8px; background:var(--bg-quote);">
+              <div class="ans-point">${item.a}</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("tbDiscussContainer").innerHTML = renderGroup(TEXTBOOK_DISCUSS);
+      document.getElementById("tbGeneralContainer").innerHTML = renderGroup(TEXTBOOK_GENERAL);
+    }
+
+    function rateConfidence(itemId, level) {
+      savedConf[itemId] = level;
+      safeSetStorage(STORAGE_KEYS.CONFIDENCE, savedConf);
+      markItemReviewed(itemId);
+      renderTextbookExercises();
+      showToast(
+        level === "sure"
+          ? "رائع! قارن الآن إجابتك بالحل النموذجي لتأكيد إتقانك 👍"
+          : "خطوة ممتازة! راجع الحل النموذجي الآن لتثبيت المعلومة 🧐",
+        "success"
+      );
+    }
+
+    // =========================================================================
+    // 4. NAVIGATION, SEARCH, FONT & THEME CONTROLS
+    // =========================================================================
+
+    function switchTab(sectionId, btnEl) {
+      document.querySelectorAll(".tab-section").forEach(sec => sec.classList.remove("active"));
+      const target = document.getElementById(sectionId);
+      if (target) target.classList.add("active");
+
+      document.querySelectorAll("#sidebarNav .nav-btn").forEach(b => b.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function toggleAllInActiveTab(openState) {
+      const activeSec = document.querySelector(".tab-section.active");
+      if (!activeSec) return;
+
+      activeSec.querySelectorAll(".qa-body, .feedback-box").forEach(el => {
+        if (openState) {
+          el.classList.add("open", "show");
+        } else {
+          el.classList.remove("open", "show");
+        }
+      });
+
+      activeSec.querySelectorAll(".toggle-ans-btn").forEach(btn => {
+        btn.textContent = openState ? "إخفاء الإجابة ∧" : "إظهار الإجابة ∨";
+      });
+
+      showToast(openState ? "تم إظهار جميع الإجابات في هذا القسم 👁️" : "تم طيّ جميع الإجابات للمراجعة الذاتية 🔒", "info");
+    }
+
+    function handleGlobalSearch(query) {
+      const q = query.trim().toLowerCase();
+      if (q.length > 0) {
+        // Switch to Q&A tab if currently on cover so user sees immediate results
+        const activeSec = document.querySelector(".tab-section.active");
+        if (activeSec && activeSec.id === "sec1") {
+          const qaBtn = document.querySelectorAll("#sidebarNav .nav-btn")[1];
+          switchTab("sec2", qaBtn);
+        }
+      }
+
+      document.querySelectorAll(".searchable-card").forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    }
+
+    function changeFontSize(delta) {
+      if (delta === 0) {
+        currentFontScale = 1;
+      } else {
+        currentFontScale = Math.min(1.35, Math.max(0.85, +(currentFontScale + delta).toFixed(2)));
+      }
+      document.documentElement.style.setProperty("--font-scale", currentFontScale);
+    }
+
+    function toggleTheme() {
+      const curr = document.documentElement.getAttribute("data-theme") || "light";
+      const next = curr === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      safeSetStorage(STORAGE_KEYS.THEME, next);
+      updateThemeBtnLabel(next);
+    }
+
+    function updateThemeBtnLabel(theme) {
+      const btn = document.getElementById("themeToggleBtn");
+      if (btn) {
+        btn.textContent = theme === "dark" ? "☀️ الوضع النهاري" : "🌙 الوضع الليلي";
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", initApp);
+  </script>
+</body>
+</html>

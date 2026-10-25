@@ -73,6 +73,7 @@
       overflow-x: hidden;
     }
 
+    /* Sticky Top Header */
     .top-header {
       position: sticky;
       top: 0;
@@ -176,7 +177,6 @@
       display: inline-flex;
       align-items: center;
       gap: 0.25rem;
-      text-decoration: none;
     }
 
     .ctrl-btn:hover {
@@ -185,6 +185,7 @@
       border-color: var(--primary);
     }
 
+    /* Progress Bar in Header */
     .progress-bar-wrap {
       margin-top: 0.6rem;
       display: flex;
@@ -212,6 +213,7 @@
       border-radius: 999px;
     }
 
+    /* Layout Grid */
     .app-layout {
       display: grid;
       grid-template-columns: 290px 1fr;
@@ -228,6 +230,7 @@
       }
     }
 
+    /* Right Sidebar */
     .sidebar {
       position: sticky;
       top: 118px;
@@ -335,6 +338,7 @@
       border-color: var(--gold);
     }
 
+    /* Main Content Area */
     .main-area {
       min-width: 0;
     }
@@ -353,6 +357,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* Section Banner */
     .section-banner {
       background: linear-gradient(135deg, var(--navy), var(--primary));
       color: #fff;
@@ -385,6 +390,7 @@
       opacity: 0.92;
     }
 
+    /* Cards */
     .card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -405,6 +411,7 @@
       gap: 0.5rem;
     }
 
+    /* Filter Pills */
     .filter-bar {
       display: flex;
       flex-wrap: wrap;
@@ -439,6 +446,7 @@
       border-color: var(--primary);
     }
 
+    /* Q&A Accordion Cards */
     .qa-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -580,6 +588,7 @@
     [data-theme="dark"] .imam-muhammad { background: rgba(134, 25, 143, 0.35); color: #f0abfc; }
     [data-theme="dark"] .imam-zufar { background: rgba(154, 52, 18, 0.35); color: #fdba74; }
 
+    /* Tables */
     .table-responsive {
       width: 100%;
       overflow-x: auto;
@@ -640,6 +649,7 @@
       font-size: 0.82rem;
     }
 
+    /* Interactive MCQ & True/False */
     .score-board {
       background: var(--bg-card);
       border: 2px solid var(--primary);
@@ -723,6 +733,7 @@
       display: block;
     }
 
+    /* Confidence Calibration Buttons */
     .confidence-bar {
       margin-top: 0.85rem;
       padding: 0.75rem 1rem;
@@ -766,6 +777,7 @@
       color: var(--gold);
     }
 
+    /* Concept Map Tree */
     .concept-tree {
       display: flex;
       flex-direction: column;
@@ -789,17 +801,17 @@
 
     .branches-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
       width: 100%;
     }
 
     .branch-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
-      border-top: 5px solid var(--crimson);
+      border-top: 5px solid var(--primary);
       border-radius: var(--radius);
-      padding: 1.15rem;
+      padding: 1rem;
       box-shadow: var(--shadow-sm);
     }
 
@@ -807,32 +819,38 @@
       border-top-color: var(--gold);
     }
 
+    .branch-card.appendix {
+      border-top-color: var(--crimson);
+    }
+
     .branch-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 0.75rem;
-      padding-bottom: 0.5rem;
+      margin-bottom: 0.65rem;
+      padding-bottom: 0.45rem;
       border-bottom: 1px solid var(--border-color);
     }
 
     .branch-title {
       font-weight: 800;
-      font-size: 1.05rem;
-      color: var(--crimson);
+      font-size: 1rem;
+      color: var(--primary);
     }
 
     .branch-card.temporary .branch-title { color: var(--gold); }
+    .branch-card.appendix .branch-title { color: var(--crimson); }
 
     .leaf-item {
       background: var(--bg-card-alt);
-      padding: 0.55rem 0.8rem;
+      padding: 0.5rem 0.75rem;
       border-radius: 8px;
-      margin-bottom: 0.5rem;
-      font-size: 0.9rem;
+      margin-bottom: 0.45rem;
+      font-size: 0.88rem;
       font-weight: 600;
     }
 
+    /* Toast Notification */
     .toast-container {
       position: fixed;
       bottom: 1.25rem;
@@ -864,6 +882,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* Matching Select */
     .match-select {
       padding: 0.4rem 0.65rem;
       border-radius: 8px;
@@ -899,7 +918,7 @@
 
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="search" id="globalSearchInput" placeholder="ابحث في نصوص الأسئلة، الأدلة، رأي زفر، المسائل..." oninput="handleGlobalSearch(this.value)" />
+        <input type="search" id="globalSearchInput" placeholder="ابحث في نصوص الأسئلة، الأحاديث، المسائل..." oninput="handleGlobalSearch(this.value)" />
       </div>
 
       <div class="header-controls">
@@ -912,7 +931,7 @@
     </div>
 
     <div class="progress-bar-wrap">
-      <span id="progressText">مؤشر الإنجاز الدراسي: تم استعراض 0 من 49 عنصر مذاكرة — 0%</span>
+      <span id="progressText">مؤشر الإنجاز الدراسي: تم استعراض 0 من 76 عنصر مذاكرة — 0%</span>
       <div class="progress-track">
         <div class="progress-fill" id="progressFill"></div>
       </div>
@@ -973,7 +992,7 @@
         <li>
           <button class="nav-btn" onclick="switchTab('sec8', this)">
             <span>٨. سابعًا: خريطة المفاهيم</span>
-            <span class="nav-count">شجرة شاملة</span>
+            <span class="nav-count">5 عقد</span>
           </button>
         </li>
       </ul>
@@ -1020,17 +1039,17 @@
                   <td>تعريف النكاح وحكمه العام وركنه وشروط الشهود على العقد</td>
                   <td><span class="status-badge status-done">مكتمل ✓</span></td>
                 </tr>
-                <tr>
+                <tr class="current-unit-row">
                   <td>2</td>
                   <td>كتاب النكاح — الوحدة الثانية</td>
                   <td>محرمات النكاح (القرابة، الصهرية، الرضاع، الجمع، حق الغير، الكفر، الثلاث)</td>
-                  <td><span class="status-badge status-done">مكتمل ✓</span></td>
+                  <td><span class="status-badge status-current">هذا الجزء 🌟</span></td>
                 </tr>
-                <tr class="current-unit-row">
+                <tr>
                   <td>3</td>
                   <td>كتاب النكاح — الوحدة الثالثة</td>
-                  <td>نكاح المتعة والنكاح المؤقت والفرق بينهما ورأي زفر والرد عليه</td>
-                  <td><span class="status-badge status-current">هذا الجزء 🌟</span></td>
+                  <td>نكاح المتعة والنكاح المؤقت والفرق بينهما ورأي زفر</td>
+                  <td><span class="status-badge status-upcoming">قادم</span></td>
                 </tr>
                 <tr>
                   <td>4</td>
@@ -1090,7 +1109,7 @@
             <span>📅 جدول متابعة المراجعة بنظام التكرار المتباعد (Spaced Repetition)</span>
             <button class="ctrl-btn" onclick="resetSpacedDates()">🗑️ تصفير التواريخ المسجلة</button>
           </div>
-          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.75rem;">سجّل تاريخ مذاكرتك الأولى ومواعيد المراجعة الدورية (بعد يوم، بعد أسبوع، بعد شهر)؛ تُحفظ تواريخك تلقائيًّا في متصفحك بمعرّف مستقل للوحدة الثالثة.</p>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.75rem;">سجّل تاريخ مذاكرتك الأولى ومواعيد المراجعة الدورية (بعد يوم، بعد أسبوع، بعد شهر)؛ تُحفظ تواريخك تلقائيًّا على جهازك.</p>
           <div class="table-responsive">
             <table class="zad-table" id="spacedRepTable">
               <thead>
@@ -1109,18 +1128,18 @@
         </div>
       </section>
 
-      <!-- SECTION 2: Q&A Bank (13 Questions across 2 Axes) -->
+      <!-- SECTION 2: Q&A Bank (33 Questions across 9 Axes) -->
       <section id="sec2" class="tab-section">
         <div class="section-banner">
-          <h2>أولًا: بنك الأسئلة والأجوبة الشامل (١٣ سؤالًا وجوابًا)</h2>
-          <p>جميع أسئلة وأجوبة الوحدة الثالثة من كتاب النكاح موزعة على المحورين: (١) نكاح المتعة، و(٢) النكاح المؤقت، بنظام الاستدعاء النشط (Active Recall).</p>
+          <h2>أولًا: بنك الأسئلة والأجوبة الشامل (٣٣ سؤالًا وجوابًا)</h2>
+          <p>جميع أسئلة وأجوبة الوحدة الثانية من كتاب النكاح موزعة على المحاور التسعة بنظام الاستدعاء النشط (Active Recall). اضغط على السؤال أو زر «إظهار الإجابة» لكشف الجواب التفصيلي.</p>
         </div>
 
         <div class="filter-bar" id="qaFilterBar"></div>
         <div id="qaListContainer"></div>
       </section>
 
-      <!-- SECTION 3: Visual Summary & Comparison Table -->
+      <!-- SECTION 3: Visual Summary & Comparison Tables (3 Tables) -->
       <section id="sec3" class="tab-section">
         <div class="section-banner">
           <h2>ثانيًا: الملخص البصري والتقطير المعرفي (الجداول المقارنة الثلاثة)</h2>
@@ -1248,25 +1267,25 @@
         </div>
 </section>
 
-      <!-- SECTION 4: Applied Scenarios (3 Cases) -->
+      <!-- SECTION 4: Applied Scenarios (4 Cases) -->
       <section id="sec4" class="tab-section">
         <div class="section-banner">
-          <h2>ثالثًا: النوازل والأسئلة التطبيقية («قيِّم نفسك» — ٣ نوازل فقهية)</h2>
-          <p>تطبيقات عملية ووقائع فقهية لتدريب الملكة الفقهية على تنزيل أحكام نكاح المتعة والنكاح المؤقت والرد على الشبهات القياسية.</p>
+          <h2>ثالثًا: النوازل والأسئلة التطبيقية («قيِّم نفسك» — ٤ نوازل فقهية)</h2>
+          <p>تطبيقات عملية ووقائع فقهية لتدريب الملكة الفقهية على تنزيل أحكام محرمات النكاح على الصور الواقعية.</p>
         </div>
         <div id="casesContainer"></div>
       </section>
 
-      <!-- SECTION 5: Interactive MCQ Bank (5 Questions) -->
+      <!-- SECTION 5: Interactive MCQ Bank -->
       <section id="sec5" class="tab-section">
         <div class="section-banner">
-          <h2>رابعًا: بنك أسئلة الاختيار من متعدد التفاعلي (٥ أسئلة)</h2>
-          <p>اختر الإجابة الصحيحة لتظهر لك التغذية الراجعة الفورية مع صندوق «التوضيح والتعليل» لتفنيد الخلط الشائع بين الطلاب.</p>
+          <h2>رابعًا: بنك أسئلة الاختيار من متعدد التفاعلي</h2>
+          <p>اختر الإجابة الصحيحة لتظهر لك التغذية الراجعة الفورية مع صندوق «التوضيح والتعليل» لتفنيد الخلط الشائع.</p>
         </div>
 
         <div class="score-board">
           <div class="score-stats">
-            <span class="score-pill" id="mcqScoreText">النتيجة: 0 / 5</span>
+            <span class="score-pill" id="mcqScoreText">النتيجة: 0 / 7</span>
             <span class="status-badge status-done" id="mcqPercentText">نسبة الإتقان: 0%</span>
           </div>
           <button class="ctrl-btn" onclick="resetMcqQuiz()">🔄 إعادة الاختبار</button>
@@ -1278,8 +1297,8 @@
       <!-- SECTION 6: Interactive Model Exam & Self-Assessment Exam -->
       <section id="sec6" class="tab-section">
         <div class="section-banner">
-          <h2>خامسًا: الاختبار النموذجي التفاعلي والاختبار الختامي الذاتي للوحدة الثالثة</h2>
-          <p>يضم هذا القسم: (أ) الاختبار النموذجي للوحدة شاملاً أسئلة الصواب والخطأ التفاعلية والأسئلة المقالية والتعليلية، و(ب) الاختبار الذاتي الختامي للوحدة الثالثة (١٣ سؤالًا — ٦٠ درجة) مبنيًّا على مستويات بلوم المعرفية.</p>
+          <h2>خامسًا: الاختبار النموذجي التفاعلي والاختبار الختامي الذاتي للوحدة الثانية</h2>
+          <p>يضم هذا القسم: (أ) الاختبار النموذجي للوحدة شاملاً أسئلة الصواب والخطأ التفاعلية والأسئلة المقالية والتعليلية، و(ب) الاختبار الذاتي الختامي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة) مبنيًّا على مستويات بلوم المعرفية.</p>
         </div>
 
         <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
@@ -1293,10 +1312,10 @@
         <h3 style="margin: 1.25rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (أ): أسئلة الصواب والخطأ التفاعلية مع التصويب والتعليل الفوري</h3>
         <div id="examTfContainer"></div>
 
-        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (ب): الأسئلة المقالية والتعليلية في الاختبار النموذجي</h3>
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">القسم الأول (ب): الأسئلة المقالية والتعليلية وتفكير المستويات العليا في الاختبار النموذجي</h3>
         <div id="examEssayContainer"></div>
 
-        <h3 style="margin: 1.75rem 0 0.75rem; color:var(--crimson); font-weight:800;">القسم الثاني: الاختبار الختامي الذاتي للوحدة الثالثة (١٣ سؤالًا — ٦٠ درجة — تدرج مستويات بلوم)</h3>
+        <h3 style="margin: 1.75rem 0 0.75rem; color:var(--crimson); font-weight:800;">القسم الثاني: الاختبار الختامي الذاتي للوحدة الثانية (١٣ سؤالًا — ٦٠ درجة — تدرج مستويات بلوم)</h3>
         <div id="selfExamContainer"></div>
       </section>
 
@@ -1304,13 +1323,13 @@
       <section id="sec7" class="tab-section">
         <div class="section-banner">
           <h2>سادسًا: حل تدريبات الكتاب المدرسي (بنظام تقييم الثقة الذاتية)</h2>
-          <p>شامل لجميع أسئلة «المناقشة والتدريبات» وأسئلة «تطبيق عام» الواردة في الكتاب المدرسي على الوحدة الثالثة. قيّم ثقتك في إجابتك أولًا ([متأكد 👍] أو [غير متأكد 🧐]) ليفتح لك الحل النموذجي الكامل!</p>
+          <p>شامل لجميع أسئلة «المناقشة والتدريبات» وأسئلة «تطبيق عام» الواردة في الكتاب المدرسي على الوحدة الثانية. قيّم ثقتك في إجابتك أولًا ([متأكد 👍] أو [غير متأكد 🧐]) ليفتح لك الحل النموذجي الكامل!</p>
         </div>
 
-        <h3 style="margin: 1rem 0 0.75rem; color:var(--primary); font-weight:800;">أولًا: من «المناقشة والتدريبات» بالكتاب المدرسي (٣ مسائل)</h3>
+        <h3 style="margin: 1rem 0 0.75rem; color:var(--primary); font-weight:800;">أولًا: من «المناقشة والتدريبات» بالكتاب المدرسي (٦ مسائل)</h3>
         <div id="tbDiscussContainer"></div>
 
-        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">ثانيًا: من «تطبيق عام» بالكتاب المدرسي (مسألتان)</h3>
+        <h3 style="margin: 1.5rem 0 0.75rem; color:var(--primary); font-weight:800;">ثانيًا: من «تطبيق عام» بالكتاب المدرسي (٣ مسائل)</h3>
         <div id="tbGeneralContainer"></div>
       </section>
 
@@ -1388,10 +1407,14 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <script>
+    // =========================================================================
+    // 1. DATA REPOSITORY (100% Verbatim Coverage of Unit 2)
+    // =========================================================================
+
     const SPACED_UNITS = [
       { id: 1, title: "الوحدة ١: تعريف النكاح وحكمه وركنه وشروط انعقاده" },
-      { id: 2, title: "الوحدة ٢: محرمات النكاح" },
-      { id: 3, title: "الوحدة ٣: نكاح المتعة والنكاح المؤقت (الوحدة الحالية 🌟)" },
+      { id: 2, title: "الوحدة ٢: محرمات النكاح (الوحدة الحالية 🌟)" },
+      { id: 3, title: "الوحدة ٣: نكاح المتعة والنكاح المؤقت" },
       { id: 4, title: "الوحدة ٤: عبارة النساء في النكاح" },
       { id: 5, title: "الوحدة ٥: ترتيب الأولياء" },
       { id: 6, title: "الوحدة ٦: الكفاءة في النكاح" },
@@ -1417,6 +1440,13 @@
 
     const TEXTBOOK_GENERAL = [{"id": "tbg1", "q": "س1: عرّف النكاح لغة وشرعًا، ومتى يستخدم النكاح حقيقة، ومتى يراد به المجاز؟", "a": "الحل النموذجي: لغة: الضمّ والجمع. شرعًا: عبارة عن ضمّ وجمع مخصوص هو الوطء وهذا استعماله الحقيقي عند الإطلاق بلا قرينة. ويُستعمل مجازًا في العقد إذا قامت قرينة تصرفه إليه، كتوقف الحكم على إذن الأهل أو تعلقه بالعدد أو الشهود."}, {"id": "tbg2", "q": "س2: ما حكم النكاح؟ وما دليله؟ وما ركنه؟ وممن يكون الإيجاب؟ وممن يكون القبول؟", "a": "الحل النموذجي: حكمه: مشروع مستحب مندوب إليه. دليله: الكتاب (﴿وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ﴾) والسنة («تَنَاكَحُوا تَكْثُرُوا») والإجماع. ركنه: الإيجاب والقبول، ويكون الإيجاب ممن يبدأ بالعقد (الزوج أو الزوجة أو وليّها)، والقبول ممن يرد عليه بعد الإيجاب."}, {"id": "tbg3", "q": "س3: علّل: النكاح حالة الاعتدال سنة مؤكدة / حالة التوقان واجب / حالة الخوف من الجَوْر مكروه.", "a": "الحل النموذجي: الاعتدال سنة مؤكدة لدلالة النصوص بالأمر والترغيب. التوقان واجب لأن الامتناع عن الوقوع في الزنا فرض والنكاح وسيلته. الخوف من الجَوْر مكروه لأن مرتكبه يأثم بالظلم المحتمل فترجح مفسدته."}, {"id": "tbg4", "q": "س4: ما العدد المطلوب من الشهود لانعقاد نكاح المسلمين؟ وما الذي يُشترط فيهم؟ وما دليل ذلك؟", "a": "الحل النموذجي: العدد: رجلان، أو رجل وامرأتان. يُشترط فيهم: الإسلام والعقل والبلوغ (دون العدالة). الدليل: قوله ﷺ: «لَا نِكَاحَ إِلَّا بِشُهُودٍ»."}, {"id": "tbg5", "q": "س5 (أ، ب، ج): علّل: (أ) لا بد في شهود عقد نكاح المسلمين من العقل والبلوغ والإسلام. (ب) ينعقد نكاح المسلمين بحضور فاسقين. (ج) ينعقد النكاح بشهادة العميان.", "a": "الحل النموذجي: (أ) لأن الصبي والمجنون ليسا من أهل الشهادة ولا يملكان القبول بأنفسهما، ولا بد من الإسلام في نكاح المسلمين خاصة. (ب) لأن النص لم يفرّق بين الفاسق والعدل، والفاسق يملك القبول بنفسه، والفسق يؤثر في الأداء لا التحمّل. (ج) لأن الأعمى يملك القبول بنفسه فصار كالبصير في هذا الحكم، وهي مسألة مجتهَد فيها أجازها بعض الأئمة."}];
 
+    // =========================================================================
+    // 2. STATE & LOCAL STORAGE HELPERS (Safe try/catch wrapper)
+    // =========================================================================
+    const MATCHING_ROWS = [{"id": "m1", "a": "١. حالة الاعتدال في النكاح", "correct": "هـ"}, {"id": "m2", "a": "٢. حالة التوقان (خوف الوقوع في الزنا)", "correct": "أ"}, {"id": "m3", "a": "٣. حالة الخوف من الجَوْر", "correct": "د"}, {"id": "m4", "a": "٤. حالة تيقُّن الجَوْر", "correct": "ج"}, {"id": "m5", "a": "٥. شهادة الفاسقين على العقد", "correct": "ب"}];
+
+    const MATCHING_OPTIONS = [{"val": "أ", "text": "أ) واجب"}, {"val": "ب", "text": "ب) ينعقد النكاح بحضورهما"}, {"val": "ج", "text": "ج) حرام"}, {"val": "د", "text": "د) مكروه كراهة تحريمية"}, {"val": "هـ", "text": "هـ) سنة مؤكدة"}];
+
     const STORAGE_KEYS = {
       THEME: "zad_3sec_nikah_u1_theme",
       PROGRESS: "zad_3sec_nikah_u1_progress",
@@ -1424,7 +1454,7 @@
       CONFIDENCE: "zad_3sec_nikah_u1_conf"
     };
 
-    const TOTAL_STUDY_ITEMS = 62;
+    const TOTAL_STUDY_ITEMS = 33 + 4 + 7 + 5 + 6 + 12 + 9; // 76 interactive items
     let reviewedItems = new Set();
     let savedDates = {};
     let savedConf = {};
@@ -1444,17 +1474,26 @@
     function safeSetStorage(key, val) {
       try {
         localStorage.setItem(key, JSON.stringify(val));
-      } catch (e) {}
+      } catch (e) {
+        // Ignore storage quota/privacy errors
+      }
     }
 
+    // =========================================================================
+    // 3. UI RENDERING FUNCTIONS
+    // =========================================================================
+
     function initApp() {
+      // Load Theme
       const savedTheme = safeGetStorage(STORAGE_KEYS.THEME, "light");
       document.documentElement.setAttribute("data-theme", savedTheme);
       updateThemeBtnLabel(savedTheme);
 
+      // Load Progress
       const loadedProg = safeGetStorage(STORAGE_KEYS.PROGRESS, []);
       reviewedItems = new Set(loadedProg);
 
+      // Load Dates & Confidence
       savedDates = safeGetStorage(STORAGE_KEYS.DATES, {});
       savedConf = safeGetStorage(STORAGE_KEYS.CONFIDENCE, {});
 
@@ -1496,6 +1535,7 @@
       document.getElementById("progressFill").style.width = pct + "%";
     }
 
+    // Spaced Repetition Table
     function renderSpacedRepetition() {
       const tbody = document.getElementById("spacedRepBody");
       tbody.innerHTML = SPACED_UNITS.map(u => {
@@ -1530,6 +1570,7 @@
       showToast("تم تصفير جميع التواريخ المسجلة بنجاح 🔄", "info");
     }
 
+    // Q&A Bank & Axis Filtering
     function renderQaFilters() {
       const bar = document.getElementById("qaFilterBar");
       bar.innerHTML = QA_AXES.map(ax => `
@@ -1588,6 +1629,7 @@
       }
     }
 
+    // Applied Cases
     function renderAppliedCases() {
       const container = document.getElementById("casesContainer");
       container.innerHTML = APPLIED_CASES.map((c, idx) => `
@@ -1609,6 +1651,7 @@
       `).join("");
     }
 
+    // Interactive MCQ Bank
     function renderMcqBank() {
       const container = document.getElementById("mcqContainer");
       container.innerHTML = MCQ_BANK.map(item => `
@@ -1631,7 +1674,7 @@
     }
 
     function answerMcq(mcqId, chosenIdx) {
-      if (mcqState[mcqId] !== undefined) return;
+      if (mcqState[mcqId] !== undefined) return; // Already answered
       const item = MCQ_BANK.find(m => m.id === mcqId);
       if (!item) return;
 
@@ -1678,7 +1721,9 @@
       showToast("تمت إعادة ضبط بنك الاختيار من متعدد 🔄", "info");
     }
 
+    // Model Exam & Self-Assessment Exam
     function renderExamSections() {
+      // 1. True/False Interactive
       const tfContainer = document.getElementById("examTfContainer");
       tfContainer.innerHTML = EXAM_TF.map(item => `
         <div class="card searchable-card">
@@ -1699,6 +1744,7 @@
         </div>
       `).join("");
 
+      // 2. Model Exam Essays
       const essayContainer = document.getElementById("examEssayContainer");
       essayContainer.innerHTML = EXAM_ESSAY.map(item => `
         <div class="qa-card searchable-card" id="card_${item.id}">
@@ -1712,7 +1758,9 @@
         </div>
       `).join("");
 
+      // 3. Self-Assessment Exam (13 questions, 60 marks)
       const selfContainer = document.getElementById("selfExamContainer");
+      const optsHtml = MATCHING_OPTIONS.map(o => `<option value="${o.val}">${o.text}</option>`).join("");
       const matchingCardHtml = `
         <div class="card searchable-card">
           <div class="q-text" style="margin-bottom:0.75rem;">س3 [مزاوجة تفاعلية — ٥ درجات]: صِلْ بين عناصر المجموعة (أ) وما يناسبها من المجموعة (ب):</div>
@@ -1726,23 +1774,13 @@
                 </tr>
               </thead>
               <tbody>
-                ${[
-                  { id: "m1", a: "١. لفظ نكاح المتعة", correct: "ب" },
-                  { id: "m2", a: "٢. لفظ النكاح المؤقت", correct: "أ" },
-                  { id: "m3", a: "٣. حكم الصورتين عند الجمهور", correct: "د" },
-                  { id: "m4", a: "٤. رأي زفر في النكاح المؤقت", correct: "هـ" },
-                  { id: "m5", a: "٥. دليل تحريم المتعة من السنة", correct: "ج" }
-                ].map(row => `
+                ${MATCHING_ROWS.map(row => `
                   <tr>
                     <td><strong>${row.a}</strong></td>
                     <td>
                       <select class="match-select" onchange="checkMatchRow('${row.id}', '${row.correct}', this.value)">
                         <option value="">-- اختر الإجابة --</option>
-                        <option value="أ">أ) تزوجتك شهرًا</option>
-                        <option value="ب">ب) متعيني نفسك</option>
-                        <option value="ج">ج) تحريمه ﷺ لها يوم خيبر</option>
-                        <option value="د">د) باطل</option>
-                        <option value="هـ">هـ) يصح ويلغو شرط التوقيت</option>
+                        ${optsHtml}
                       </select>
                     </td>
                     <td id="match_res_${row.id}" style="font-weight:800;">—</td>
@@ -1787,6 +1825,7 @@
         }
       });
 
+      // Insert matching card right after se2
       otherSelfItemsHtml.splice(2, 0, matchingCardHtml);
       selfContainer.innerHTML = otherSelfItemsHtml.join("");
     }
@@ -1851,6 +1890,7 @@
       showToast(isCorrect ? "إجابة صحيحة! 🌟" : "راجع التوضيح بالأسفل 💡", isCorrect ? "success" : "error");
     }
 
+    // Textbook Exercises with Confidence Calibration
     function renderTextbookExercises() {
       const renderGroup = (list) => list.map(item => {
         const confVal = savedConf[item.id];
@@ -1895,6 +1935,10 @@
       );
     }
 
+    // =========================================================================
+    // 4. NAVIGATION, SEARCH, FONT & THEME CONTROLS
+    // =========================================================================
+
     function switchTab(sectionId, btnEl) {
       document.querySelectorAll(".tab-section").forEach(sec => sec.classList.remove("active"));
       const target = document.getElementById(sectionId);
@@ -1927,6 +1971,7 @@
     function handleGlobalSearch(query) {
       const q = query.trim().toLowerCase();
       if (q.length > 0) {
+        // Switch to Q&A tab if currently on cover so user sees immediate results
         const activeSec = document.querySelector(".tab-section.active");
         if (activeSec && activeSec.id === "sec1") {
           const qaBtn = document.querySelectorAll("#sidebarNav .nav-btn")[1];
@@ -1960,7 +2005,7 @@
     function updateThemeBtnLabel(theme) {
       const btn = document.getElementById("themeToggleBtn");
       if (btn) {
-        btn.textContent = theme === "dark" ? "☀️ الوضع النهاري" : "🌙 الوضع النهاري/الليلي";
+        btn.textContent = theme === "dark" ? "☀️ الوضع النهاري" : "🌙 الوضع الليلي";
       }
     }
 
